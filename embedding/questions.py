@@ -1,6 +1,6 @@
 # Creating a list of questions based on the given examples and adding onto it.
 questions = [
-    "Summarize key vulnerabilities for the product with the most entries from the provided JSON data, including vulnerability name, severity, affected systems, and brief description, using CVE, exploit, and patch keywords; merge similar descriptions and provide actionable insights with update versions.",
+    "Summarize key vulnerabilities for Google Chrome from the provided JSON data, including vulnerability name, severity, affected systems, and brief description, using CVE, exploit, and patch keywords; merge similar descriptions and provide actionable insights with update versions.",
     "How to mitigate these vulnerabilities?",
     "Provide a list of the top 5 vulnerabilities from the data, ranked by severity, and suggest the most critical actions to address them.",
     "Identify potential exploitation scenarios for the vulnerabilities listed and recommend countermeasures.",
