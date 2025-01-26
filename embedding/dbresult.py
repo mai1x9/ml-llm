@@ -2,7 +2,13 @@ import psycopg2
 import json
 
 # Connect to the PostgreSQL database
-conn = psycopg2.connect("dbname=testdb user=myuser password=mypassword")
+conn = psycopg2.connect(
+    dbname="testdb",
+    user="myuser",
+    password="mypassword",
+    host="localhost",
+    port=5433,
+)
 cur = conn.cursor()
 
 # Fetch data from the table
