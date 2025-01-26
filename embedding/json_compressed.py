@@ -2,11 +2,12 @@ import json
 import os
 
 # Define the paths for the data folders
-input_folder = "/home/ubuntu/ml-llm/data"
-output_folder = "/home/ubuntu/ml-llm/data_compressed"
+input_folder = "/home/ubuntu/ml-llm/embedding/data"
+output_folder = "/home/ubuntu/ml-llm/embedding/data_compressed"
 
 # Define the keys you want to extract
 keys_to_extract = [
+    "cve",
     "name",
     "description",
     "severity",

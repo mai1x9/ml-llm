@@ -22,7 +22,7 @@ def load_embeddings(filename):
 
 
 # Function to query the stored embeddings
-def query_embeddings(query_text, stored_data, model="nomic-embed-text", top_k=5):
+def query_embeddings(query_text, stored_data, model="bge-m3", top_k=5):
     query_embedding = generate_embeddings([query_text], model)[0]
     stored_embeddings = np.array([entry["embedding"] for entry in stored_data])
     similarities = cosine_similarity([query_embedding], stored_embeddings)[0]
@@ -40,7 +40,7 @@ def answer_question(question, relevant_texts, model):
         question, context
     )
     url = "http://localhost:11434/api/generate"
-    payload = {"model": model, "prompt": prompt, "options": {"num_ctx": 8192}}
+    payload = {"model": model, "prompt": prompt}
     headers = {"Content-Type": "application/json"}
     try:
         response = requests.post(
@@ -85,12 +85,7 @@ def main(top_k):
         return
 
     # List of models to test
-    models = [
-        "gemma2:27b",
-        "deepseek-r1",
-        "deepseek-r1:14b",
-        "deepseek-r1:32b",
-    ]
+    models = ["deepseek-r1"]
 
     # Process each question
     for question in questions:

@@ -4,7 +4,7 @@ import os
 
 
 # Function to generate embeddings from text
-def generate_embeddings(text_list, model="nomic-embed-text"):
+def generate_embeddings(text_list, model="bge-m3"):
     url = "http://localhost:11434/api/embed"
     payload = {"model": model, "input": text_list}
     headers = {"Content-Type": "application/json"}

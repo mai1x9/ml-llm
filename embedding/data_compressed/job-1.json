@@ -1,6 +1,9 @@
 {
     "results": [
         {
+            "cve": [
+                "CVE-2024-32002"
+            ],
             "name": "Git's recursive clones on case-insensitive filesystems that support symlinks are susceptible to Remote Code Execution",
             "description": "Git is a revision control system. Prior to versions 2.45.1, 2.44.1, 2.43.4, 2.42.2, 2.41.1, 2.40.2, and 2.39.4, repositories with submodules can be crafted in a way that exploits a bug in Git whereby it can be fooled into writing files not into the submodule's worktree but into a `.git/` directory. This allows writing a hook that will be executed while the clone operation is still running, giving the user no opportunity to inspect the code that is being executed. The problem has been patched in versions 2.45.1, 2.44.1, 2.43.4, 2.42.2, 2.41.1, 2.40.2, and 2.39.4. If symbolic link support is disabled in Git (e.g. via `git config --global core.symlinks false`), the described attack won't work. As always, it is best to avoid cloning repositories from untrusted sources.",
             "severity": 9,
@@ -14,6 +17,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-32002"
+            ],
             "name": "Git's recursive clones on case-insensitive filesystems that support symlinks are susceptible to Remote Code Execution",
             "description": "Git is a revision control system. Prior to versions 2.45.1, 2.44.1, 2.43.4, 2.42.2, 2.41.1, 2.40.2, and 2.39.4, repositories with submodules can be crafted in a way that exploits a bug in Git whereby it can be fooled into writing files not into the submodule's worktree but into a `.git/` directory. This allows writing a hook that will be executed while the clone operation is still running, giving the user no opportunity to inspect the code that is being executed. The problem has been patched in versions 2.45.1, 2.44.1, 2.43.4, 2.42.2, 2.41.1, 2.40.2, and 2.39.4. If symbolic link support is disabled in Git (e.g. via `git config --global core.symlinks false`), the described attack won't work. As always, it is best to avoid cloning repositories from untrusted sources.",
             "severity": 9,
@@ -27,6 +33,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2021-20047"
+            ],
             "name": "SonicWall Global VPN client version 4.10.6 (32-bit and 64-bit) and earlier have a DLL Search Order Hijacking vulnerability (CVE-2021-20047)",
             "description": "SonicWall Global VPN client version 4.10.6 (32-bit and 64-bit) and earlier have a DLL Search Order Hijacking vulnerability. Successful exploitation via a local attacker could result in remote code execution in the target system.",
             "severity": 7.8,
@@ -40,6 +49,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2021-20051"
+            ],
             "name": "SonicWall Global VPN Client 4.10.7.1117 installer (32-bit and 64-bit) and earlier versions have a DLL Search Order Hijacking vulnerability in one of the installer components (CVE-2021-20051)",
             "description": "SonicWall Global VPN Client 4.10.7.1117 installer (32-bit and 64-bit) and earlier versions have a DLL Search Order Hijacking vulnerability in one of the installer components. Successful exploitation via a local attacker could result in command execution in the target system.",
             "severity": 7.8,
@@ -53,6 +65,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2021-3057"
+            ],
             "name": "GlobalProtect App: Buffer Overflow Vulnerability When Connecting to Portal or Gateway",
             "description": "A stack-based buffer overflow vulnerability exists in the Palo Alto Networks GlobalProtect app that enables a man-in-the-middle attacker to disrupt system processes and potentially execute arbitrary code with SYSTEM privileges. This issue impacts: GlobalProtect app 5.1 versions earlier than GlobalProtect app 5.1.9 on Windows; GlobalProtect app 5.2 versions earlier than GlobalProtect app 5.2.8 on Windows; GlobalProtect app 5.2 versions earlier than GlobalProtect app 5.2.8 on the Universal Windows Platform; GlobalProtect app 5.3 versions earlier than GlobalProtect app 5.3.1 on Linux.",
             "severity": 9.3,
@@ -66,6 +81,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2022-0016"
+            ],
             "name": "GlobalProtect App: Privilege Escalation Vulnerability When Using Connect Before Logon",
             "description": "An improper handling of exceptional conditions vulnerability exists within the Connect Before Logon feature of the Palo Alto Networks GlobalProtect app that enables a local attacker to escalate to SYSTEM or root privileges when authenticating with Connect Before Logon under certain circumstances. This issue impacts GlobalProtect app 5.2 versions earlier than GlobalProtect app 5.2.9 on Windows and MacOS. This issue does not affect the GlobalProtect app on other platforms.",
             "severity": 7.8,
@@ -79,6 +97,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2022-0018"
+            ],
             "name": "GlobalProtect App: Information Exposure Vulnerability When Connecting to GlobalProtect Portal With Single Sign-On Enabled",
             "description": "An information exposure vulnerability exists in the Palo Alto Networks GlobalProtect app on Windows and MacOS where the credentials of the local user account are sent to the GlobalProtect portal when the Single Sign-On feature is enabled in the GlobalProtect portal configuration. This product behavior is intentional and poses no security risk when connecting to trusted GlobalProtect portals configured to use the same Single Sign-On credentials both for the local user account as well as the GlobalProtect login. However when the credentials are different, the local account credentials are inadvertently sent to the GlobalProtect portal for authentication. A third party MITM type of attacker cannot see these credentials in transit. This vulnerability is a concern where the GlobalProtect app is deployed on Bring-your-Own-Device (BYOD) type of clients with private local user accounts or GlobalProtect app is used to connect to different organizations. Fixed versions of GlobalProtect app have an app setting to prevent the transmission of the user's local user credentials to the target GlobalProtect portal regardless of the portal configuration. This issue impacts: GlobalProtect app 5.1 versions earlier than GlobalProtect app 5.1.10 on Windows and MacOS; GlobalProtect app 5.2 versions earlier than GlobalProtect app 5.2.9 on Windows and MacOS This issue does not affect GlobalProtect app on other platforms.",
             "severity": 6.5,
@@ -92,6 +113,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2022-0019"
+            ],
             "name": "GlobalProtect App: Insufficiently Protected Credentials Vulnerability on Linux",
             "description": "An insufficiently protected credentials vulnerability exists in the Palo Alto Networks GlobalProtect app on Linux that exposes the hashed credentials of GlobalProtect users that saved their password during previous GlobalProtect app sessions to other local users on the system. The exposed credentials enable a local attacker to authenticate to the GlobalProtect portal or gateway as the target user without knowing of the target user\u2019s plaintext password. This issue impacts: GlobalProtect app 5.1 versions earlier than GlobalProtect app 5.1.10 on Linux. GlobalProtect app 5.2 versions earlier than and including GlobalProtect app 5.2.7 on Linux. GlobalProtect app 5.3 versions earlier than GlobalProtect app 5.3.2 on Linux. This issue does not affect the GlobalProtect app on other platforms.",
             "severity": 5.5,
@@ -105,6 +129,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2022-0021"
+            ],
             "name": "GlobalProtect App: Information Exposure Vulnerability When Using Connect Before Logon",
             "description": "An information exposure through log file vulnerability exists in the Palo Alto Networks GlobalProtect app on Windows that logs the cleartext credentials of the connecting GlobalProtect user when authenticating using Connect Before Logon feature. This issue impacts GlobalProtect App 5.2 versions earlier than 5.2.9 on Windows. This issue does not affect the GlobalProtect app on other platforms.",
             "severity": 5.5,
@@ -118,6 +145,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-0006"
+            ],
             "name": "GlobalProtect App: Local File Deletion Vulnerability",
             "description": "A local file deletion vulnerability in the Palo Alto Networks GlobalProtect app on Windows devices enables a user to delete system files from the endpoint with elevated privileges through a race condition.",
             "severity": 6.3,
@@ -131,6 +161,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-0009"
+            ],
             "name": "GlobalProtect App: Local Privilege Escalation (PE) Vulnerability",
             "description": "A local privilege escalation (PE) vulnerability in the Palo Alto Networks GlobalProtect app on Windows enables a local user to execute programs with elevated privileges.\n",
             "severity": 7.8,
@@ -142,6 +175,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-8687"
+            ],
             "name": "PAN-OS: Cleartext Exposure of GlobalProtect Portal Passcodes",
             "description": "An information exposure vulnerability exists in Palo Alto Networks PAN-OS software that enables a GlobalProtect end user to learn both the configured GlobalProtect uninstall password and the configured disable or disconnect passcode. After the password or passcode is known, end users can uninstall, disable, or disconnect GlobalProtect even if the GlobalProtect app configuration would not normally permit them to do so.",
             "severity": 7.1,
@@ -153,6 +189,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-9473"
+            ],
             "name": "GlobalProtect App: Local Privilege Escalation (PE) Vulnerability",
             "description": "A privilege escalation vulnerability in the Palo Alto Networks GlobalProtect app on Windows allows a locally authenticated non-administrative Windows user to escalate their privileges to NT AUTHORITY/SYSTEM through the use of the repair functionality offered by the .msi file used to install GlobalProtect.",
             "severity": 7.8,
@@ -164,6 +203,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-0369"
+            ],
             "name": "GoToWP <= 5.1.1 - Contributor+ Stored XSS",
             "description": "The GoToWP WordPress plugin through 5.1.1 does not validate and escape some of its shortcode attributes before outputting them back in a page/post where the shortcode is embed, which could allow users with the contributor role and above to perform Stored Cross-Site Scripting attacks.",
             "severity": 5.4,
@@ -175,6 +217,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2012-4929"
+            ],
             "name": "The TLS protocol 1.2 and earlier (CVE-2012-4929)",
             "description": "The TLS protocol 1.2 and earlier, as used in Mozilla Firefox, Google Chrome, Qt, and other products, can encrypt compressed data without properly obfuscating the length of the unencrypted data, which allows man-in-the-middle attackers to obtain plaintext HTTP headers by observing length differences during a series of guesses in which a string in an HTTP request potentially matches an unknown string in an HTTP header, aka a \"CRIME\" attack.",
             "severity": 2.6,
@@ -188,6 +233,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2012-4930"
+            ],
             "name": "The SPDY protocol 3 and earlier (CVE-2012-4930)",
             "description": "The SPDY protocol 3 and earlier, as used in Mozilla Firefox, Google Chrome, and other products, can perform TLS encryption of compressed data without properly obfuscating the length of the unencrypted data, which allows man-in-the-middle attackers to obtain plaintext HTTP headers by observing length differences during a series of guesses in which a string in an HTTP request potentially matches an unknown string in an HTTP header, aka a \"CRIME\" attack.",
             "severity": 2.6,
@@ -201,6 +249,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2013-6662"
+            ],
             "name": "Google Chrome caches TLS sessions before certificate validation occurs (CVE-2013-6662)",
             "description": "Google Chrome caches TLS sessions before certificate validation occurs.",
             "severity": 6.5,
@@ -214,6 +265,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2013-6662"
+            ],
             "name": "Google Chrome caches TLS sessions before certificate validation occurs (CVE-2013-6662)",
             "description": "Google Chrome caches TLS sessions before certificate validation occurs.",
             "severity": 6.5,
@@ -227,6 +281,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-2312"
+            ],
             "name": "Use after free in Offline in Google Chrome on Android prior to 116.0.5845.96 allowed a remote attacker who had compromised the renderer process to potentially exploit heap corruption via a crafted HTML page (CVE-2023-2312)",
             "description": "Use after free in Offline in Google Chrome on Android prior to 116.0.5845.96 allowed a remote attacker who had compromised the renderer process to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -240,6 +297,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-3422"
+            ],
             "name": "Use after free in Guest View in Google Chrome prior to 114.0.5735.198 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted HTML page (CVE-2023-3422)",
             "description": "Use after free in Guest View in Google Chrome prior to 114.0.5735.198 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -253,6 +313,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4362"
+            ],
             "name": "Heap buffer overflow in Mojom IDL in Google Chrome prior to 116.0.5845.96 allowed a remote attacker who had compromised the renderer process and gained control of a WebUI process to potentially exploit heap corruption via a crafted HTML page (CVE-2023-4362)",
             "description": "Heap buffer overflow in Mojom IDL in Google Chrome prior to 116.0.5845.96 allowed a remote attacker who had compromised the renderer process and gained control of a WebUI process to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -266,6 +329,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4901"
+            ],
             "name": "Inappropriate implementation in Prompts in Google Chrome prior to 117.0.5938.62 allowed a remote attacker to potentially spoof security UI via a crafted HTML page (CVE-2023-4901)",
             "description": "Inappropriate implementation in Prompts in Google Chrome prior to 117.0.5938.62 allowed a remote attacker to potentially spoof security UI via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -277,6 +343,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-5187"
+            ],
             "name": "Use after free in Extensions in Google Chrome prior to 117.0.5938.132 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted HTML page (CVE-2023-5187)",
             "description": "Use after free in Extensions in Google Chrome prior to 117.0.5938.132 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -290,6 +359,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-5218"
+            ],
             "name": "Use after free in Site Isolation in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-5218)",
             "description": "Use after free in Site Isolation in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)",
             "severity": 8.8,
@@ -303,6 +375,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-5346"
+            ],
             "name": "Type confusion in V8 in Google Chrome prior to 117.0.5938.149 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-5346)",
             "description": "Type confusion in V8 in Google Chrome prior to 117.0.5938.149 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -316,6 +391,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-5472"
+            ],
             "name": "Use after free in Profiles in Google Chrome prior to 118.0.5993.117 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-5472)",
             "description": "Use after free in Profiles in Google Chrome prior to 118.0.5993.117 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -329,6 +407,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-5473"
+            ],
             "name": "Use after free in Cast in Google Chrome prior to 118.0.5993.70 allowed a remote attacker who had compromised the renderer process to potentially exploit heap corruption via a crafted HTML page (CVE-2023-5473)",
             "description": "Use after free in Cast in Google Chrome prior to 118.0.5993.70 allowed a remote attacker who had compromised the renderer process to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Low)",
             "severity": 6.3,
@@ -342,6 +423,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-5474"
+            ],
             "name": "Heap buffer overflow in PDF in Google Chrome prior to 118.0.5993.70 allowed a remote attacker who convinced a user to engage in specific user interactions to potentially exploit heap corruption via a crafted PDF file (CVE-2023-5474)",
             "description": "Heap buffer overflow in PDF in Google Chrome prior to 118.0.5993.70 allowed a remote attacker who convinced a user to engage in specific user interactions to potentially exploit heap corruption via a crafted PDF file. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -355,6 +439,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-5475"
+            ],
             "name": "Inappropriate implementation in DevTools in Google Chrome prior to 118.0.5993.70 allowed an attacker who convinced a user to install a malicious extension to bypass discretionary access control via a crafted Chrome Extension (CVE-2023-5475)",
             "description": "Inappropriate implementation in DevTools in Google Chrome prior to 118.0.5993.70 allowed an attacker who convinced a user to install a malicious extension to bypass discretionary access control via a crafted Chrome Extension. (Chromium security severity: Medium)",
             "severity": 6.5,
@@ -366,6 +453,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-5476"
+            ],
             "name": "Use after free in Blink History in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-5476)",
             "description": "Use after free in Blink History in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -379,6 +469,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-5477"
+            ],
             "name": "Inappropriate implementation in Installer in Google Chrome prior to 118.0.5993.70 allowed a local attacker to bypass discretionary access control via a crafted command (CVE-2023-5477)",
             "description": "Inappropriate implementation in Installer in Google Chrome prior to 118.0.5993.70 allowed a local attacker to bypass discretionary access control via a crafted command. (Chromium security severity: Low)",
             "severity": 4.3,
@@ -390,6 +483,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-5478"
+            ],
             "name": "Inappropriate implementation in Autofill in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to leak cross-origin data via a crafted HTML page (CVE-2023-5478)",
             "description": "Inappropriate implementation in Autofill in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: Low)",
             "severity": 4.3,
@@ -401,6 +497,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-5479"
+            ],
             "name": "Inappropriate implementation in Extensions API in Google Chrome prior to 118.0.5993.70 allowed an attacker who convinced a user to install a malicious extension to bypass an enterprise policy via a crafted HTML page (CVE-2023-5479)",
             "description": "Inappropriate implementation in Extensions API in Google Chrome prior to 118.0.5993.70 allowed an attacker who convinced a user to install a malicious extension to bypass an enterprise policy via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 6.5,
@@ -412,6 +511,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-5480"
+            ],
             "name": "Inappropriate implementation in Payments in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to bypass XSS preventions via a malicious file (CVE-2023-5480)",
             "description": "Inappropriate implementation in Payments in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to bypass XSS preventions via a malicious file. (Chromium security severity: High)",
             "severity": 6.1,
@@ -425,6 +527,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-5481"
+            ],
             "name": "Inappropriate implementation in Downloads in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to spoof security UI via a crafted HTML page (CVE-2023-5481)",
             "description": "Inappropriate implementation in Downloads in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to spoof security UI via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 6.5,
@@ -436,6 +541,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-5482"
+            ],
             "name": "Insufficient data validation in USB in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to perform out of bounds memory access via a crafted HTML page (CVE-2023-5482)",
             "description": "Insufficient data validation in USB in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to perform out of bounds memory access via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -449,6 +557,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-5483"
+            ],
             "name": "Inappropriate implementation in Intents in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to bypass content security policy via a crafted HTML page (CVE-2023-5483)",
             "description": "Inappropriate implementation in Intents in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to bypass content security policy via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 6.5,
@@ -460,6 +571,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-5484"
+            ],
             "name": "Inappropriate implementation in Navigation in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to spoof security UI via a crafted HTML page (CVE-2023-5484)",
             "description": "Inappropriate implementation in Navigation in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to spoof security UI via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 6.5,
@@ -471,6 +585,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-5485"
+            ],
             "name": "Inappropriate implementation in Autofill in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to bypass autofill restrictions via a crafted HTML page (CVE-2023-5485)",
             "description": "Inappropriate implementation in Autofill in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to bypass autofill restrictions via a crafted HTML page. (Chromium security severity: Low)",
             "severity": 4.3,
@@ -482,6 +599,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-5486"
+            ],
             "name": "Inappropriate implementation in Input in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to spoof security UI via a crafted HTML page (CVE-2023-5486)",
             "description": "Inappropriate implementation in Input in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to spoof security UI via a crafted HTML page. (Chromium security severity: Low)",
             "severity": 4.3,
@@ -493,6 +613,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-5487"
+            ],
             "name": "Inappropriate implementation in Fullscreen in Google Chrome prior to 118.0.5993.70 allowed an attacker who convinced a user to install a malicious extension to bypass navigation restrictions via a crafted Chrome Extension (CVE-2023-5487)",
             "description": "Inappropriate implementation in Fullscreen in Google Chrome prior to 118.0.5993.70 allowed an attacker who convinced a user to install a malicious extension to bypass navigation restrictions via a crafted Chrome Extension. (Chromium security severity: Medium)",
             "severity": 6.5,
@@ -504,6 +627,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-5849"
+            ],
             "name": "Integer overflow in USB in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-5849)",
             "description": "Integer overflow in USB in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -517,6 +643,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-5850"
+            ],
             "name": "Incorrect security UI in Downloads in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to perform domain spoofing via a crafted domain name (CVE-2023-5850)",
             "description": "Incorrect security UI in Downloads in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to perform domain spoofing via a crafted domain name. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -528,6 +657,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-5851"
+            ],
             "name": "Inappropriate implementation in Downloads in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to obfuscate security UI via a crafted HTML page (CVE-2023-5851)",
             "description": "Inappropriate implementation in Downloads in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to obfuscate security UI via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -541,6 +673,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-5852"
+            ],
             "name": "Use after free in Printing in Google Chrome prior to 119.0.6045.105 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via specific UI gestures (CVE-2023-5852)",
             "description": "Use after free in Printing in Google Chrome prior to 119.0.6045.105 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via specific UI gestures. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -554,6 +689,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-5853"
+            ],
             "name": "Incorrect security UI in Downloads in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to obfuscate security UI via a crafted HTML page (CVE-2023-5853)",
             "description": "Incorrect security UI in Downloads in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to obfuscate security UI via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -567,6 +705,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-5854"
+            ],
             "name": "Use after free in Profiles in Google Chrome prior to 119.0.6045.105 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via specific UI gestures (CVE-2023-5854)",
             "description": "Use after free in Profiles in Google Chrome prior to 119.0.6045.105 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via specific UI gestures. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -580,6 +721,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-5855"
+            ],
             "name": "Use after free in Reading Mode in Google Chrome prior to 119.0.6045.105 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via specific UI gestures (CVE-2023-5855)",
             "description": "Use after free in Reading Mode in Google Chrome prior to 119.0.6045.105 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via specific UI gestures. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -593,6 +737,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-5856"
+            ],
             "name": "Use after free in Side Panel in Google Chrome prior to 119.0.6045.105 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HTML page (CVE-2023-5856)",
             "description": "Use after free in Side Panel in Google Chrome prior to 119.0.6045.105 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -606,6 +753,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-5857"
+            ],
             "name": "Inappropriate implementation in Downloads in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to potentially execute arbitrary code via a malicious file (CVE-2023-5857)",
             "description": "Inappropriate implementation in Downloads in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to potentially execute arbitrary code via a malicious file. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -617,6 +767,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-5858"
+            ],
             "name": "Inappropriate implementation in WebApp Provider in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to obfuscate security UI via a crafted HTML page (CVE-2023-5858)",
             "description": "Inappropriate implementation in WebApp Provider in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to obfuscate security UI via a crafted HTML page. (Chromium security severity: Low)",
             "severity": 4.3,
@@ -630,6 +783,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-5859"
+            ],
             "name": "Incorrect security UI in Picture In Picture in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to perform domain spoofing via a crafted local HTML page (CVE-2023-5859)",
             "description": "Incorrect security UI in Picture In Picture in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to perform domain spoofing via a crafted local HTML page. (Chromium security severity: Low)",
             "severity": 4.3,
@@ -643,6 +799,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-5996"
+            ],
             "name": "Use after free in WebAudio in Google Chrome prior to 119.0.6045.123 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-5996)",
             "description": "Use after free in WebAudio in Google Chrome prior to 119.0.6045.123 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -656,6 +815,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-5997"
+            ],
             "name": "Use after free in Garbage Collection in Google Chrome prior to 119.0.6045.159 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-5997)",
             "description": "Use after free in Garbage Collection in Google Chrome prior to 119.0.6045.159 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -669,6 +831,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-6112"
+            ],
             "name": "Use after free in Navigation in Google Chrome prior to 119.0.6045.159 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-6112)",
             "description": "Use after free in Navigation in Google Chrome prior to 119.0.6045.159 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -682,6 +847,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-6345"
+            ],
             "name": "Integer overflow in Skia in Google Chrome prior to 119.0.6045.199 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a malicious file (CVE-2023-6345)",
             "description": "Integer overflow in Skia in Google Chrome prior to 119.0.6045.199 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a malicious file. (Chromium security severity: High)",
             "severity": 9.6,
@@ -695,6 +863,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-6346"
+            ],
             "name": "Use after free in WebAudio in Google Chrome prior to 119.0.6045.199 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-6346)",
             "description": "Use after free in WebAudio in Google Chrome prior to 119.0.6045.199 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -708,6 +879,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-6347"
+            ],
             "name": "Use after free in Mojo in Google Chrome prior to 119.0.6045.199 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-6347)",
             "description": "Use after free in Mojo in Google Chrome prior to 119.0.6045.199 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -721,6 +895,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-6348"
+            ],
             "name": "Type Confusion in Spellcheck in Google Chrome prior to 119.0.6045.199 allowed a remote attacker who had compromised the renderer process to potentially exploit heap corruption via a crafted HTML page (CVE-2023-6348)",
             "description": "Type Confusion in Spellcheck in Google Chrome prior to 119.0.6045.199 allowed a remote attacker who had compromised the renderer process to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -734,6 +911,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-6350"
+            ],
             "name": "Use after free in libavif in Google Chrome prior to 119.0.6045.199 allowed a remote attacker to potentially exploit heap corruption via a crafted avif file (CVE-2023-6350)",
             "description": "Use after free in libavif in Google Chrome prior to 119.0.6045.199 allowed a remote attacker to potentially exploit heap corruption via a crafted avif file. (Chromium security severity: High)",
             "severity": 8.8,
@@ -747,6 +927,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-6351"
+            ],
             "name": "Use after free in libavif in Google Chrome prior to 119.0.6045.199 allowed a remote attacker to potentially exploit heap corruption via a crafted avif file (CVE-2023-6351)",
             "description": "Use after free in libavif in Google Chrome prior to 119.0.6045.199 allowed a remote attacker to potentially exploit heap corruption via a crafted avif file. (Chromium security severity: High)",
             "severity": 8.8,
@@ -760,6 +943,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-6508"
+            ],
             "name": "Use after free in Media Stream in Google Chrome prior to 120.0.6099.62 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-6508)",
             "description": "Use after free in Media Stream in Google Chrome prior to 120.0.6099.62 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -773,6 +959,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-6509"
+            ],
             "name": "Use after free in Side Panel Search in Google Chrome prior to 120.0.6099.62 allowed a remote attacker who convinced a user to engage in specific UI interaction to potentially exploit heap corruption via specific UI interaction (CVE-2023-6509)",
             "description": "Use after free in Side Panel Search in Google Chrome prior to 120.0.6099.62 allowed a remote attacker who convinced a user to engage in specific UI interaction to potentially exploit heap corruption via specific UI interaction. (Chromium security severity: High)",
             "severity": 8.8,
@@ -786,6 +975,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-6510"
+            ],
             "name": "Use after free in Media Capture in Google Chrome prior to 120.0.6099.62 allowed a remote attacker who convinced a user to engage in specific UI interaction to potentially exploit heap corruption via specific UI interaction (CVE-2023-6510)",
             "description": "Use after free in Media Capture in Google Chrome prior to 120.0.6099.62 allowed a remote attacker who convinced a user to engage in specific UI interaction to potentially exploit heap corruption via specific UI interaction. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -799,6 +991,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-6511"
+            ],
             "name": "Inappropriate implementation in Autofill in Google Chrome prior to 120.0.6099.62 allowed a remote attacker to bypass Autofill restrictions via a crafted HTML page (CVE-2023-6511)",
             "description": "Inappropriate implementation in Autofill in Google Chrome prior to 120.0.6099.62 allowed a remote attacker to bypass Autofill restrictions via a crafted HTML page. (Chromium security severity: Low)",
             "severity": 4.3,
@@ -810,6 +1005,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-6512"
+            ],
             "name": "Inappropriate implementation in Web Browser UI in Google Chrome prior to 120.0.6099.62 allowed a remote attacker to potentially spoof the contents of an iframe dialog context menu via a crafted HTML page (CVE-2023-6512)",
             "description": "Inappropriate implementation in Web Browser UI in Google Chrome prior to 120.0.6099.62 allowed a remote attacker to potentially spoof the contents of an iframe dialog context menu via a crafted HTML page. (Chromium security severity: Low)",
             "severity": 6.5,
@@ -821,6 +1019,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-6702"
+            ],
             "name": "Type confusion in V8 in Google Chrome prior to 120.0.6099.109 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-6702)",
             "description": "Type confusion in V8 in Google Chrome prior to 120.0.6099.109 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -834,6 +1035,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-6703"
+            ],
             "name": "Use after free in Blink in Google Chrome prior to 120.0.6099.109 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-6703)",
             "description": "Use after free in Blink in Google Chrome prior to 120.0.6099.109 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -847,6 +1051,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-6704"
+            ],
             "name": "Use after free in libavif in Google Chrome prior to 120.0.6099.109 allowed a remote attacker to potentially exploit heap corruption via a crafted image file (CVE-2023-6704)",
             "description": "Use after free in libavif in Google Chrome prior to 120.0.6099.109 allowed a remote attacker to potentially exploit heap corruption via a crafted image file. (Chromium security severity: High)",
             "severity": 8.8,
@@ -860,6 +1067,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-6705"
+            ],
             "name": "Use after free in WebRTC in Google Chrome prior to 120.0.6099.109 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-6705)",
             "description": "Use after free in WebRTC in Google Chrome prior to 120.0.6099.109 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -873,6 +1083,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-6706"
+            ],
             "name": "Use after free in FedCM in Google Chrome prior to 120.0.6099.109 allowed a remote attacker who convinced a user to engage in specific UI interaction to potentially exploit heap corruption via a crafted HTML page (CVE-2023-6706)",
             "description": "Use after free in FedCM in Google Chrome prior to 120.0.6099.109 allowed a remote attacker who convinced a user to engage in specific UI interaction to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -886,6 +1099,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-6707"
+            ],
             "name": "Use after free in CSS in Google Chrome prior to 120.0.6099.109 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-6707)",
             "description": "Use after free in CSS in Google Chrome prior to 120.0.6099.109 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -899,6 +1115,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-7013"
+            ],
             "name": "Inappropriate implementation in Compositing in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to potentially spoof security UI via a crafted HTML page (CVE-2023-7013)",
             "description": "Inappropriate implementation in Compositing in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to potentially spoof security UI via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.7,
@@ -912,6 +1131,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-7024"
+            ],
             "name": "Heap buffer overflow in WebRTC in Google Chrome prior to 120.0.6099.129 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-7024)",
             "description": "Heap buffer overflow in WebRTC in Google Chrome prior to 120.0.6099.129 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -925,6 +1147,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-0222"
+            ],
             "name": "Use after free in ANGLE in Google Chrome prior to 120.0.6099.199 allowed a remote attacker who had compromised the renderer process to potentially exploit heap corruption via a crafted HTML page (CVE-2024-0222)",
             "description": "Use after free in ANGLE in Google Chrome prior to 120.0.6099.199 allowed a remote attacker who had compromised the renderer process to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -938,6 +1163,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-0223"
+            ],
             "name": "Heap buffer overflow in ANGLE in Google Chrome prior to 120.0.6099.199 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-0223)",
             "description": "Heap buffer overflow in ANGLE in Google Chrome prior to 120.0.6099.199 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -951,6 +1179,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-0224"
+            ],
             "name": "Use after free in WebAudio in Google Chrome prior to 120.0.6099.199 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-0224)",
             "description": "Use after free in WebAudio in Google Chrome prior to 120.0.6099.199 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -964,6 +1195,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-0225"
+            ],
             "name": "Use after free in WebGPU in Google Chrome prior to 120.0.6099.199 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-0225)",
             "description": "Use after free in WebGPU in Google Chrome prior to 120.0.6099.199 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -977,6 +1211,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-0333"
+            ],
             "name": "Insufficient data validation in Extensions in Google Chrome prior to 120.0.6099.216 allowed an attacker in a privileged network position to install a malicious extension via a crafted HTML page (CVE-2024-0333)",
             "description": "Insufficient data validation in Extensions in Google Chrome prior to 120.0.6099.216 allowed an attacker in a privileged network position to install a malicious extension via a crafted HTML page. (Chromium security severity: High)",
             "severity": 5.3,
@@ -988,6 +1225,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-0517"
+            ],
             "name": "Out of bounds write in V8 in Google Chrome prior to 120.0.6099.224 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-0517)",
             "description": "Out of bounds write in V8 in Google Chrome prior to 120.0.6099.224 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1001,6 +1241,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-0518"
+            ],
             "name": "Type confusion in V8 in Google Chrome prior to 120.0.6099.224 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-0518)",
             "description": "Type confusion in V8 in Google Chrome prior to 120.0.6099.224 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1014,6 +1257,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-0519"
+            ],
             "name": "Out of bounds memory access in V8 in Google Chrome prior to 120.0.6099.224 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-0519)",
             "description": "Out of bounds memory access in V8 in Google Chrome prior to 120.0.6099.224 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1027,6 +1273,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-0804"
+            ],
             "name": "Insufficient policy enforcement in iOS Security UI in Google Chrome prior to 121.0.6167.85 allowed a remote attacker to leak cross-origin data via a crafted HTML page (CVE-2024-0804)",
             "description": "Insufficient policy enforcement in iOS Security UI in Google Chrome prior to 121.0.6167.85 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 7.5,
@@ -1038,6 +1287,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-0805"
+            ],
             "name": "Inappropriate implementation in Downloads in Google Chrome prior to 121.0.6167.85 allowed a remote attacker to perform domain spoofing via a crafted domain name (CVE-2024-0805)",
             "description": "Inappropriate implementation in Downloads in Google Chrome prior to 121.0.6167.85 allowed a remote attacker to perform domain spoofing via a crafted domain name. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -1049,6 +1301,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-0806"
+            ],
             "name": "Use after free in Passwords in Google Chrome prior to 121.0.6167.85 allowed a remote attacker to potentially exploit heap corruption via specific UI interaction (CVE-2024-0806)",
             "description": "Use after free in Passwords in Google Chrome prior to 121.0.6167.85 allowed a remote attacker to potentially exploit heap corruption via specific UI interaction. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -1062,6 +1317,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-0807"
+            ],
             "name": "Use after free in Web Audio in Google Chrome prior to 121.0.6167.85 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-0807)",
             "description": "Use after free in Web Audio in Google Chrome prior to 121.0.6167.85 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1075,6 +1333,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-0808"
+            ],
             "name": "Integer underflow in WebUI in Google Chrome prior to 121.0.6167.85 allowed a remote attacker to potentially exploit heap corruption via a malicious file (CVE-2024-0808)",
             "description": "Integer underflow in WebUI in Google Chrome prior to 121.0.6167.85 allowed a remote attacker to potentially exploit heap corruption via a malicious file. (Chromium security severity: High)",
             "severity": 9.8,
@@ -1088,6 +1349,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-0809"
+            ],
             "name": "Inappropriate implementation in Autofill in Google Chrome prior to 121.0.6167.85 allowed a remote attacker to bypass Autofill restrictions via a crafted HTML page (CVE-2024-0809)",
             "description": "Inappropriate implementation in Autofill in Google Chrome prior to 121.0.6167.85 allowed a remote attacker to bypass Autofill restrictions via a crafted HTML page. (Chromium security severity: Low)",
             "severity": 4.3,
@@ -1099,6 +1363,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-0810"
+            ],
             "name": "Insufficient policy enforcement in DevTools in Google Chrome prior to 121.0.6167.85 allowed an attacker who convinced a user to install a malicious extension to leak cross-origin data via a crafted Chrome Extension (CVE-2024-0810)",
             "description": "Insufficient policy enforcement in DevTools in Google Chrome prior to 121.0.6167.85 allowed an attacker who convinced a user to install a malicious extension to leak cross-origin data via a crafted Chrome Extension. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -1110,6 +1377,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-0811"
+            ],
             "name": "Inappropriate implementation in Extensions API in Google Chrome prior to 121.0.6167.85 allowed an attacker who convinced a user to install a malicious extension to leak cross-origin data via a crafted Chrome Extension (CVE-2024-0811)",
             "description": "Inappropriate implementation in Extensions API in Google Chrome prior to 121.0.6167.85 allowed an attacker who convinced a user to install a malicious extension to leak cross-origin data via a crafted Chrome Extension. (Chromium security severity: Low)",
             "severity": 4.3,
@@ -1121,6 +1391,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-0812"
+            ],
             "name": "Inappropriate implementation in Accessibility in Google Chrome prior to 121.0.6167.85 allowed a remote attacker to potentially exploit object corruption via a crafted HTML page (CVE-2024-0812)",
             "description": "Inappropriate implementation in Accessibility in Google Chrome prior to 121.0.6167.85 allowed a remote attacker to potentially exploit object corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1132,6 +1405,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-0813"
+            ],
             "name": "Use after free in Reading Mode in Google Chrome prior to 121.0.6167.85 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via specific UI interaction (CVE-2024-0813)",
             "description": "Use after free in Reading Mode in Google Chrome prior to 121.0.6167.85 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via specific UI interaction. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -1145,6 +1421,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-0814"
+            ],
             "name": "Incorrect security UI in Payments in Google Chrome prior to 121.0.6167.85 allowed a remote attacker to potentially spoof security UI via a crafted HTML page (CVE-2024-0814)",
             "description": "Incorrect security UI in Payments in Google Chrome prior to 121.0.6167.85 allowed a remote attacker to potentially spoof security UI via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 6.5,
@@ -1158,6 +1437,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-10229"
+            ],
             "name": "Inappropriate implementation in Extensions in Google Chrome prior to 130.0.6723.69 allowed a remote attacker to bypass site isolation via a crafted Chrome Extension (CVE-2024-10229)",
             "description": "Inappropriate implementation in Extensions in Google Chrome prior to 130.0.6723.69 allowed a remote attacker to bypass site isolation via a crafted Chrome Extension. (Chromium security severity: High)",
             "severity": 8.1,
@@ -1169,6 +1451,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-10230"
+            ],
             "name": "Type Confusion in V8 in Google Chrome prior to 130.0.6723.69 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-10230)",
             "description": "Type Confusion in V8 in Google Chrome prior to 130.0.6723.69 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1182,6 +1467,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-10231"
+            ],
             "name": "Type Confusion in V8 in Google Chrome prior to 130.0.6723.69 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-10231)",
             "description": "Type Confusion in V8 in Google Chrome prior to 130.0.6723.69 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1195,6 +1483,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-1059"
+            ],
             "name": "Use after free in Peer Connection in Google Chrome prior to 121.0.6167.139 allowed a remote attacker to potentially exploit stack corruption via a crafted HTML page (CVE-2024-1059)",
             "description": "Use after free in Peer Connection in Google Chrome prior to 121.0.6167.139 allowed a remote attacker to potentially exploit stack corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1208,6 +1499,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-1060"
+            ],
             "name": "Use after free in Canvas in Google Chrome prior to 121.0.6167.139 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-1060)",
             "description": "Use after free in Canvas in Google Chrome prior to 121.0.6167.139 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1221,6 +1515,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-1077"
+            ],
             "name": "Use after free in Network in Google Chrome prior to 121.0.6167.139 allowed a remote attacker to potentially exploit heap corruption via a malicious file (CVE-2024-1077)",
             "description": "Use after free in Network in Google Chrome prior to 121.0.6167.139 allowed a remote attacker to potentially exploit heap corruption via a malicious file. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1234,6 +1531,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-12381"
+            ],
             "name": "Type Confusion in V8 in Google Chrome prior to 131.0.6778.139 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-12381)",
             "description": "Type Confusion in V8 in Google Chrome prior to 131.0.6778.139 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1247,6 +1547,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-12382"
+            ],
             "name": "Use after free in Translate in Google Chrome prior to 131.0.6778.139 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-12382)",
             "description": "Use after free in Translate in Google Chrome prior to 131.0.6778.139 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1260,6 +1563,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-1283"
+            ],
             "name": "Heap buffer overflow in Skia in Google Chrome prior to 121.0.6167.160 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-1283)",
             "description": "Heap buffer overflow in Skia in Google Chrome prior to 121.0.6167.160 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 9.8,
@@ -1273,6 +1579,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-1284"
+            ],
             "name": "Use after free in Mojo in Google Chrome prior to 121.0.6167.160 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-1284)",
             "description": "Use after free in Mojo in Google Chrome prior to 121.0.6167.160 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 9.8,
@@ -1286,6 +1595,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-1671"
+            ],
             "name": "Inappropriate implementation in Site Isolation in Google Chrome prior to 122.0.6261.57 allowed a remote attacker to bypass content security policy via a crafted HTML page (CVE-2024-1671)",
             "description": "Inappropriate implementation in Site Isolation in Google Chrome prior to 122.0.6261.57 allowed a remote attacker to bypass content security policy via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 6.5,
@@ -1297,6 +1609,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-1674"
+            ],
             "name": "Inappropriate implementation in Navigation in Google Chrome prior to 122.0.6261.57 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page (CVE-2024-1674)",
             "description": "Inappropriate implementation in Navigation in Google Chrome prior to 122.0.6261.57 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -1308,6 +1623,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-2625"
+            ],
             "name": "Object lifecycle issue in V8 in Google Chrome prior to 123.0.6312.58 allowed a remote attacker to potentially exploit object corruption via a crafted HTML page (CVE-2024-2625)",
             "description": "Object lifecycle issue in V8 in Google Chrome prior to 123.0.6312.58 allowed a remote attacker to potentially exploit object corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1319,6 +1637,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-2626"
+            ],
             "name": "Out of bounds read in Swiftshader in Google Chrome prior to 123.0.6312.58 allowed a remote attacker to perform out of bounds memory access via a crafted HTML page (CVE-2024-2626)",
             "description": "Out of bounds read in Swiftshader in Google Chrome prior to 123.0.6312.58 allowed a remote attacker to perform out of bounds memory access via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 6.5,
@@ -1332,6 +1653,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-2627"
+            ],
             "name": "Use after free in Canvas in Google Chrome prior to 123.0.6312.58 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-2627)",
             "description": "Use after free in Canvas in Google Chrome prior to 123.0.6312.58 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -1345,6 +1669,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-2628"
+            ],
             "name": "Inappropriate implementation in Downloads in Google Chrome prior to 123.0.6312.58 allowed a remote attacker to perform UI spoofing via a crafted URL (CVE-2024-2628)",
             "description": "Inappropriate implementation in Downloads in Google Chrome prior to 123.0.6312.58 allowed a remote attacker to perform UI spoofing via a crafted URL. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -1356,6 +1683,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-2629"
+            ],
             "name": "Incorrect security UI in iOS in Google Chrome prior to 123.0.6312.58 allowed a remote attacker to perform UI spoofing via a crafted HTML page (CVE-2024-2629)",
             "description": "Incorrect security UI in iOS in Google Chrome prior to 123.0.6312.58 allowed a remote attacker to perform UI spoofing via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -1367,6 +1697,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-2630"
+            ],
             "name": "Inappropriate implementation in iOS in Google Chrome prior to 123.0.6312.58 allowed a remote attacker to leak cross-origin data via a crafted HTML page (CVE-2024-2630)",
             "description": "Inappropriate implementation in iOS in Google Chrome prior to 123.0.6312.58 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 6.5,
@@ -1378,6 +1711,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-2631"
+            ],
             "name": "Inappropriate implementation in iOS in Google Chrome prior to 123.0.6312.58 allowed a remote attacker to perform UI spoofing via a crafted HTML page (CVE-2024-2631)",
             "description": "Inappropriate implementation in iOS in Google Chrome prior to 123.0.6312.58 allowed a remote attacker to perform UI spoofing via a crafted HTML page. (Chromium security severity: Low)",
             "severity": 4.3,
@@ -1389,6 +1725,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-2884"
+            ],
             "name": "Out of bounds read in V8 in Google Chrome prior to 121.0.6167.139 allowed a remote attacker to potentially perform out of bounds memory access via a crafted HTML page (CVE-2024-2884)",
             "description": "Out of bounds read in V8 in Google Chrome prior to 121.0.6167.139 allowed a remote attacker to potentially perform out of bounds memory access via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 6.5,
@@ -1402,6 +1741,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-3156"
+            ],
             "name": "Inappropriate implementation in V8 in Google Chrome prior to 123.0.6312.105 allowed a remote attacker to potentially perform out of bounds memory access via a crafted HTML page (CVE-2024-3156)",
             "description": "Inappropriate implementation in V8 in Google Chrome prior to 123.0.6312.105 allowed a remote attacker to potentially perform out of bounds memory access via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1413,6 +1755,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-3158"
+            ],
             "name": "Use after free in Bookmarks in Google Chrome prior to 123.0.6312.105 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-3158)",
             "description": "Use after free in Bookmarks in Google Chrome prior to 123.0.6312.105 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1426,6 +1771,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-3159"
+            ],
             "name": "Out of bounds memory access in V8 in Google Chrome prior to 123.0.6312.105 allowed a remote attacker to perform arbitrary read/write via a crafted HTML page (CVE-2024-3159)",
             "description": "Out of bounds memory access in V8 in Google Chrome prior to 123.0.6312.105 allowed a remote attacker to perform arbitrary read/write via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1439,6 +1787,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-3168"
+            ],
             "name": "Use after free in DevTools in Google Chrome prior to 122.0.6261.57 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-3168)",
             "description": "Use after free in DevTools in Google Chrome prior to 122.0.6261.57 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -1452,6 +1803,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-3169"
+            ],
             "name": "Use after free in V8 in Google Chrome prior to 121.0.6167.139 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-3169)",
             "description": "Use after free in V8 in Google Chrome prior to 121.0.6167.139 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1465,6 +1819,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-3170"
+            ],
             "name": "Use after free in WebRTC in Google Chrome prior to 121.0.6167.85 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-3170)",
             "description": "Use after free in WebRTC in Google Chrome prior to 121.0.6167.85 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1478,6 +1835,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-3171"
+            ],
             "name": "Use after free in Accessibility in Google Chrome prior to 122.0.6261.57 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via specific UI gestures (CVE-2024-3171)",
             "description": "Use after free in Accessibility in Google Chrome prior to 122.0.6261.57 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via specific UI gestures. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -1491,6 +1851,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-3172"
+            ],
             "name": "Insufficient data validation in DevTools in Google Chrome prior to 121.0.6167.85 allowed a remote attacker who convinced a user to engage in specific UI gestures to execute arbitrary code via a crafted HTML page (CVE-2024-3172)",
             "description": "Insufficient data validation in DevTools in Google Chrome prior to 121.0.6167.85 allowed a remote attacker who convinced a user to engage in specific UI gestures to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1502,6 +1865,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-3173"
+            ],
             "name": "Insufficient data validation in Updater in Google Chrome prior to 120.0.6099.62 allowed a remote attacker to perform OS-level privilege escalation via a malicious file (CVE-2024-3173)",
             "description": "Insufficient data validation in Updater in Google Chrome prior to 120.0.6099.62 allowed a remote attacker to perform OS-level privilege escalation via a malicious file. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1515,6 +1881,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-3174"
+            ],
             "name": "Inappropriate implementation in V8 in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to potentially exploit object corruption via a crafted HTML page (CVE-2024-3174)",
             "description": "Inappropriate implementation in V8 in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to potentially exploit object corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1526,6 +1895,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-3175"
+            ],
             "name": "Insufficient data validation in Extensions in Google Chrome prior to 120.0.6099.62 allowed a remote attacker to perform privilege escalation via a crafted Chrome Extension (CVE-2024-3175)",
             "description": "Insufficient data validation in Extensions in Google Chrome prior to 120.0.6099.62 allowed a remote attacker to perform privilege escalation via a crafted Chrome Extension. (Chromium security severity: Low)",
             "severity": 6.3,
@@ -1537,6 +1909,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-3176"
+            ],
             "name": "Out of bounds write in SwiftShader in Google Chrome prior to 117.0.5938.62 allowed a remote attacker to perform an out of bounds memory write via a crafted HTML page (CVE-2024-3176)",
             "description": "Out of bounds write in SwiftShader in Google Chrome prior to 117.0.5938.62 allowed a remote attacker to perform an out of bounds memory write via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1550,6 +1925,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-3834"
+            ],
             "name": "Use after free in Downloads in Google Chrome prior to 124.0.6367.60 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-3834)",
             "description": "Use after free in Downloads in Google Chrome prior to 124.0.6367.60 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1563,6 +1941,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-3837"
+            ],
             "name": "Use after free in QUIC in Google Chrome prior to 124.0.6367.60 allowed a remote attacker who had compromised the renderer process to potentially exploit heap corruption via a crafted HTML page (CVE-2024-3837)",
             "description": "Use after free in QUIC in Google Chrome prior to 124.0.6367.60 allowed a remote attacker who had compromised the renderer process to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -1576,6 +1957,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-3838"
+            ],
             "name": "Inappropriate implementation in Autofill in Google Chrome prior to 124.0.6367.60 allowed an attacker who convinced a user to install a malicious app to perform UI spoofing via a crafted app (CVE-2024-3838)",
             "description": "Inappropriate implementation in Autofill in Google Chrome prior to 124.0.6367.60 allowed an attacker who convinced a user to install a malicious app to perform UI spoofing via a crafted app. (Chromium security severity: Medium)",
             "severity": 5.5,
@@ -1587,6 +1971,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-3839"
+            ],
             "name": "Out of bounds read in Fonts in Google Chrome prior to 124.0.6367.60 allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page (CVE-2024-3839)",
             "description": "Out of bounds read in Fonts in Google Chrome prior to 124.0.6367.60 allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 6.5,
@@ -1600,6 +1987,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-4058"
+            ],
             "name": "Type confusion in ANGLE in Google Chrome prior to 124.0.6367.78 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-4058)",
             "description": "Type confusion in ANGLE in Google Chrome prior to 124.0.6367.78 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)",
             "severity": 8.8,
@@ -1613,6 +2003,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-4671"
+            ],
             "name": "Use after free in Visuals in Google Chrome prior to 124.0.6367.201 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page (CVE-2024-4671)",
             "description": "Use after free in Visuals in Google Chrome prior to 124.0.6367.201 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
             "severity": 9.6,
@@ -1626,6 +2019,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-4761"
+            ],
             "name": "Out of bounds write in V8 in Google Chrome prior to 124.0.6367.207 allowed a remote attacker to perform an out of bounds memory write via a crafted HTML page (CVE-2024-4761)",
             "description": "Out of bounds write in V8 in Google Chrome prior to 124.0.6367.207 allowed a remote attacker to perform an out of bounds memory write via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1639,6 +2035,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-4947"
+            ],
             "name": "Type Confusion in V8 in Google Chrome prior to 125.0.6422.60 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page (CVE-2024-4947)",
             "description": "Type Confusion in V8 in Google Chrome prior to 125.0.6422.60 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
             "severity": 9.6,
@@ -1652,6 +2051,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-5274"
+            ],
             "name": "Type Confusion in V8 in Google Chrome prior to 125.0.6422.112 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page (CVE-2024-5274)",
             "description": "Type Confusion in V8 in Google Chrome prior to 125.0.6422.112 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
             "severity": 9.6,
@@ -1665,6 +2067,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-5500"
+            ],
             "name": "Inappropriate implementation in Sign-In in Google Chrome prior to 1.3.36.351 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page (CVE-2024-5500)",
             "description": "Inappropriate implementation in Sign-In in Google Chrome prior to 1.3.36.351 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 6.5,
@@ -1676,6 +2081,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-5830"
+            ],
             "name": "Type Confusion in V8 in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to perform an out of bounds memory write via a crafted HTML page (CVE-2024-5830)",
             "description": "Type Confusion in V8 in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to perform an out of bounds memory write via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1689,6 +2097,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-5831"
+            ],
             "name": "Use after free in Dawn in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-5831)",
             "description": "Use after free in Dawn in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1702,6 +2113,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-5832"
+            ],
             "name": "Use after free in Dawn in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-5832)",
             "description": "Use after free in Dawn in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1715,6 +2129,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-5833"
+            ],
             "name": "Type Confusion in V8 in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to potentially perform out of bounds memory access via a crafted HTML page (CVE-2024-5833)",
             "description": "Type Confusion in V8 in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to potentially perform out of bounds memory access via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1728,6 +2145,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-5834"
+            ],
             "name": "Inappropriate implementation in Dawn in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to execute arbitrary code via a crafted HTML page (CVE-2024-5834)",
             "description": "Inappropriate implementation in Dawn in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1739,6 +2159,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-5835"
+            ],
             "name": "Heap buffer overflow in Tab Groups in Google Chrome prior to 126.0.6478.54 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HTML page (CVE-2024-5835)",
             "description": "Heap buffer overflow in Tab Groups in Google Chrome prior to 126.0.6478.54 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1752,6 +2175,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-5836"
+            ],
             "name": "Inappropriate Implementation in DevTools in Google Chrome prior to 126.0.6478.54 allowed an attacker who convinced a user to install a malicious extension to execute arbitrary code via a crafted Chrome Extension (CVE-2024-5836)",
             "description": "Inappropriate Implementation in DevTools in Google Chrome prior to 126.0.6478.54 allowed an attacker who convinced a user to install a malicious extension to execute arbitrary code via a crafted Chrome Extension. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1763,6 +2189,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-5837"
+            ],
             "name": "Type Confusion in V8 in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to potentially perform out of bounds memory access via a crafted HTML page (CVE-2024-5837)",
             "description": "Type Confusion in V8 in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to potentially perform out of bounds memory access via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1776,6 +2205,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-5838"
+            ],
             "name": "Type Confusion in V8 in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to perform out of bounds memory access via a crafted HTML page (CVE-2024-5838)",
             "description": "Type Confusion in V8 in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to perform out of bounds memory access via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1789,6 +2221,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-5839"
+            ],
             "name": "Inappropriate Implementation in Memory Allocator in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-5839)",
             "description": "Inappropriate Implementation in Memory Allocator in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 6.5,
@@ -1800,6 +2235,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-5840"
+            ],
             "name": "Policy bypass in CORS in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to bypass discretionary access control via a crafted HTML page (CVE-2024-5840)",
             "description": "Policy bypass in CORS in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to bypass discretionary access control via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 6.5,
@@ -1811,6 +2249,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-5841"
+            ],
             "name": "Use after free in V8 in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-5841)",
             "description": "Use after free in V8 in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -1824,6 +2265,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-5842"
+            ],
             "name": "Use after free in Browser UI in Google Chrome prior to 126.0.6478.54 allowed a remote attacker who convinced a user to engage in specific UI gestures to perform an out of bounds memory read via a crafted HTML page (CVE-2024-5842)",
             "description": "Use after free in Browser UI in Google Chrome prior to 126.0.6478.54 allowed a remote attacker who convinced a user to engage in specific UI gestures to perform an out of bounds memory read via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -1837,6 +2281,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-5843"
+            ],
             "name": "Inappropriate implementation in Downloads in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to obfuscate security UI via a malicious file (CVE-2024-5843)",
             "description": "Inappropriate implementation in Downloads in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to obfuscate security UI via a malicious file. (Chromium security severity: Medium)",
             "severity": 6.5,
@@ -1848,6 +2295,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-5844"
+            ],
             "name": "Heap buffer overflow in Tab Strip in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page (CVE-2024-5844)",
             "description": "Heap buffer overflow in Tab Strip in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -1861,6 +2311,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-5845"
+            ],
             "name": "Use after free in Audio in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to potentially exploit heap corruption via a crafted PDF file (CVE-2024-5845)",
             "description": "Use after free in Audio in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to potentially exploit heap corruption via a crafted PDF file. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -1874,6 +2327,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-5846"
+            ],
             "name": "Use after free in PDFium in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to potentially exploit heap corruption via a crafted PDF file (CVE-2024-5846)",
             "description": "Use after free in PDFium in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to potentially exploit heap corruption via a crafted PDF file. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -1887,6 +2343,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-5847"
+            ],
             "name": "Use after free in PDFium in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to potentially exploit heap corruption via a crafted PDF file (CVE-2024-5847)",
             "description": "Use after free in PDFium in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to potentially exploit heap corruption via a crafted PDF file. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -1900,6 +2359,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-6100"
+            ],
             "name": "Type Confusion in V8 in Google Chrome prior to 126.0.6478.114 allowed a remote attacker to execute arbitrary code via a crafted HTML page (CVE-2024-6100)",
             "description": "Type Confusion in V8 in Google Chrome prior to 126.0.6478.114 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1913,6 +2375,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-6101"
+            ],
             "name": "Inappropriate implementation in V8 in Google Chrome prior to 126.0.6478.114 allowed a remote attacker to perform out of bounds memory access via a crafted HTML page (CVE-2024-6101)",
             "description": "Inappropriate implementation in V8 in Google Chrome prior to 126.0.6478.114 allowed a remote attacker to perform out of bounds memory access via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1924,6 +2389,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-6102"
+            ],
             "name": "Out of bounds memory access in Dawn in Google Chrome prior to 126.0.6478.114 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-6102)",
             "description": "Out of bounds memory access in Dawn in Google Chrome prior to 126.0.6478.114 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1937,6 +2405,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-6103"
+            ],
             "name": "Use after free in Dawn in Google Chrome prior to 126.0.6478.114 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-6103)",
             "description": "Use after free in Dawn in Google Chrome prior to 126.0.6478.114 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1950,6 +2421,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-6988"
+            ],
             "name": "Use after free in Downloads in Google Chrome on iOS prior to 127.0.6533.72 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-6988)",
             "description": "Use after free in Downloads in Google Chrome on iOS prior to 127.0.6533.72 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1963,6 +2437,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-6989"
+            ],
             "name": "Use after free in Loader in Google Chrome prior to 127.0.6533.72 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-6989)",
             "description": "Use after free in Loader in Google Chrome prior to 127.0.6533.72 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -1976,6 +2453,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-6990"
+            ],
             "name": "Uninitialized Use in Dawn in Google Chrome on Android prior to 127.0.6533.88 allowed a remote attacker to potentially perform out of bounds memory access via a crafted HTML page (CVE-2024-6990)",
             "description": "Uninitialized Use in Dawn in Google Chrome on Android prior to 127.0.6533.88 allowed a remote attacker to potentially perform out of bounds memory access via a crafted HTML page. (Chromium security severity: Critical)",
             "severity": 8.8,
@@ -1989,6 +2469,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-6991"
+            ],
             "name": "Use after free in Dawn in Google Chrome prior to 127.0.6533.72 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-6991)",
             "description": "Use after free in Dawn in Google Chrome prior to 127.0.6533.72 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2002,6 +2485,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-6994"
+            ],
             "name": "Heap buffer overflow in Layout in Google Chrome prior to 127.0.6533.72 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-6994)",
             "description": "Heap buffer overflow in Layout in Google Chrome prior to 127.0.6533.72 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -2015,6 +2501,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-6995"
+            ],
             "name": "Inappropriate implementation in Fullscreen in Google Chrome on Android prior to 127.0.6533.72 allowed a remote attacker who convinced a user to engage in specific UI gestures to spoof the contents of the Omnibox (URL bar) via a crafted HTML page (CVE-2024-6995)",
             "description": "Inappropriate implementation in Fullscreen in Google Chrome on Android prior to 127.0.6533.72 allowed a remote attacker who convinced a user to engage in specific UI gestures to spoof the contents of the Omnibox (URL bar) via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.7,
@@ -2026,6 +2515,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-6996"
+            ],
             "name": "Race in Frames in Google Chrome prior to 127.0.6533.72 allowed a remote attacker who convinced a user to engage in specific UI gestures to perform UI spoofing via a crafted HTML page (CVE-2024-6996)",
             "description": "Race in Frames in Google Chrome prior to 127.0.6533.72 allowed a remote attacker who convinced a user to engage in specific UI gestures to perform UI spoofing via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 3.1,
@@ -2039,6 +2531,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-6997"
+            ],
             "name": "Use after free in Tabs in Google Chrome prior to 127.0.6533.72 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HTML page (CVE-2024-6997)",
             "description": "Use after free in Tabs in Google Chrome prior to 127.0.6533.72 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -2052,6 +2547,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-6998"
+            ],
             "name": "Use after free in User Education in Google Chrome prior to 127.0.6533.72 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HTML page (CVE-2024-6998)",
             "description": "Use after free in User Education in Google Chrome prior to 127.0.6533.72 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -2065,6 +2563,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-6999"
+            ],
             "name": "Inappropriate implementation in FedCM in Google Chrome prior to 127.0.6533.72 allowed a remote attacker who convinced a user to engage in specific UI gestures to perform UI spoofing via a crafted HTML page (CVE-2024-6999)",
             "description": "Inappropriate implementation in FedCM in Google Chrome prior to 127.0.6533.72 allowed a remote attacker who convinced a user to engage in specific UI gestures to perform UI spoofing via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -2076,6 +2577,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-7000"
+            ],
             "name": "Use after free in CSS in Google Chrome prior to 127.0.6533.72 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HTML page (CVE-2024-7000)",
             "description": "Use after free in CSS in Google Chrome prior to 127.0.6533.72 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -2089,6 +2593,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-7001"
+            ],
             "name": "Inappropriate implementation in HTML in Google Chrome prior to 127.0.6533.72 allowed a remote attacker who convinced a user to engage in specific UI gestures to perform UI spoofing via a crafted HTML page (CVE-2024-7001)",
             "description": "Inappropriate implementation in HTML in Google Chrome prior to 127.0.6533.72 allowed a remote attacker who convinced a user to engage in specific UI gestures to perform UI spoofing via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -2100,6 +2607,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-7003"
+            ],
             "name": "Inappropriate implementation in FedCM in Google Chrome prior to 127.0.6533.72 allowed a remote attacker who convinced a user to engage in specific UI gestures to perform UI spoofing via a crafted HTML page (CVE-2024-7003)",
             "description": "Inappropriate implementation in FedCM in Google Chrome prior to 127.0.6533.72 allowed a remote attacker who convinced a user to engage in specific UI gestures to perform UI spoofing via a crafted HTML page. (Chromium security severity: Low)",
             "severity": 4.3,
@@ -2111,6 +2621,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-7004"
+            ],
             "name": "Insufficient validation of untrusted input in Safe Browsing in Google Chrome prior to 127.0.6533.72 allowed a remote attacker who convinced a user to engage in specific UI gestures to bypass discretionary access control via a malicious file (CVE-2024-7004)",
             "description": "Insufficient validation of untrusted input in Safe Browsing in Google Chrome prior to 127.0.6533.72 allowed a remote attacker who convinced a user to engage in specific UI gestures to bypass discretionary access control via a malicious file. (Chromium security severity: Low)",
             "severity": 4.3,
@@ -2122,6 +2635,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-7005"
+            ],
             "name": "Insufficient validation of untrusted input in Safe Browsing in Google Chrome prior to 127.0.6533.72 allowed a remote attacker who convinced a user to engage in specific UI gestures to bypass discretionary access control via a malicious file (CVE-2024-7005)",
             "description": "Insufficient validation of untrusted input in Safe Browsing in Google Chrome prior to 127.0.6533.72 allowed a remote attacker who convinced a user to engage in specific UI gestures to bypass discretionary access control via a malicious file. (Chromium security severity: Low)",
             "severity": 4.3,
@@ -2133,6 +2649,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-7255"
+            ],
             "name": "Out of bounds read in WebTransport in Google Chrome prior to 127.0.6533.88 allowed a remote attacker to potentially perform out of bounds memory access via a crafted HTML page (CVE-2024-7255)",
             "description": "Out of bounds read in WebTransport in Google Chrome prior to 127.0.6533.88 allowed a remote attacker to potentially perform out of bounds memory access via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2146,6 +2665,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-7532"
+            ],
             "name": "Out of bounds memory access in ANGLE in Google Chrome prior to 127.0.6533.99 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-7532)",
             "description": "Out of bounds memory access in ANGLE in Google Chrome prior to 127.0.6533.99 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)",
             "severity": 8.8,
@@ -2159,6 +2681,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-7533"
+            ],
             "name": "Use after free in Sharing in Google Chrome on iOS prior to 127.0.6533.99 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-7533)",
             "description": "Use after free in Sharing in Google Chrome on iOS prior to 127.0.6533.99 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2172,6 +2697,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-7534"
+            ],
             "name": "Heap buffer overflow in Layout in Google Chrome prior to 127.0.6533.99 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-7534)",
             "description": "Heap buffer overflow in Layout in Google Chrome prior to 127.0.6533.99 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2185,6 +2713,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-7535"
+            ],
             "name": "Inappropriate implementation in V8 in Google Chrome prior to 127.0.6533.99 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-7535)",
             "description": "Inappropriate implementation in V8 in Google Chrome prior to 127.0.6533.99 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2198,6 +2729,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-7536"
+            ],
             "name": "Use after free in WebAudio in Google Chrome prior to 127.0.6533.99 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-7536)",
             "description": "Use after free in WebAudio in Google Chrome prior to 127.0.6533.99 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2211,6 +2745,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-7550"
+            ],
             "name": "Type Confusion in V8 in Google Chrome prior to 127.0.6533.99 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-7550)",
             "description": "Type Confusion in V8 in Google Chrome prior to 127.0.6533.99 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2224,6 +2761,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-7964"
+            ],
             "name": "Use after free in Passwords in Google Chrome on Android prior to 128.0.6613.84 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-7964)",
             "description": "Use after free in Passwords in Google Chrome on Android prior to 128.0.6613.84 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2237,6 +2777,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-7965"
+            ],
             "name": "Inappropriate implementation in V8 in Google Chrome prior to 128.0.6613.84 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-7965)",
             "description": "Inappropriate implementation in V8 in Google Chrome prior to 128.0.6613.84 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2250,6 +2793,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-7966"
+            ],
             "name": "Out of bounds memory access in Skia in Google Chrome prior to 128.0.6613.84 allowed a remote attacker who had compromised the renderer process to perform out of bounds memory access via a crafted HTML page (CVE-2024-7966)",
             "description": "Out of bounds memory access in Skia in Google Chrome prior to 128.0.6613.84 allowed a remote attacker who had compromised the renderer process to perform out of bounds memory access via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2263,6 +2809,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-7967"
+            ],
             "name": "Heap buffer overflow in Fonts in Google Chrome prior to 128.0.6613.84 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-7967)",
             "description": "Heap buffer overflow in Fonts in Google Chrome prior to 128.0.6613.84 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2276,6 +2825,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-7968"
+            ],
             "name": "Use after free in Autofill in Google Chrome prior to 128.0.6613.84 allowed a remote attacker who had convinced the user to engage in specific UI interactions to potentially exploit heap corruption via a crafted HTML page (CVE-2024-7968)",
             "description": "Use after free in Autofill in Google Chrome prior to 128.0.6613.84 allowed a remote attacker who had convinced the user to engage in specific UI interactions to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2289,6 +2841,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-7969"
+            ],
             "name": "Type Confusion in V8 in Google Chrome prior to 128.0.6613.113 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-7969)",
             "description": "Type Confusion in V8 in Google Chrome prior to 128.0.6613.113 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2302,6 +2857,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-7971"
+            ],
             "name": "Type confusion in V8 in Google Chrome prior to 128.0.6613.84 allowed a remote attacker to exploit heap corruption via a crafted HTML page (CVE-2024-7971)",
             "description": "Type confusion in V8 in Google Chrome prior to 128.0.6613.84 allowed a remote attacker to exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 9.6,
@@ -2315,6 +2873,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-7972"
+            ],
             "name": "Inappropriate implementation in V8 in Google Chrome prior to 128.0.6613.84 allowed a remote attacker to potentially perform out of bounds memory access via a crafted HTML page (CVE-2024-7972)",
             "description": "Inappropriate implementation in V8 in Google Chrome prior to 128.0.6613.84 allowed a remote attacker to potentially perform out of bounds memory access via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -2326,6 +2887,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-7973"
+            ],
             "name": "Heap buffer overflow in PDFium in Google Chrome prior to 128.0.6613.84 allowed a remote attacker to perform an out of bounds memory read via a crafted PDF file (CVE-2024-7973)",
             "description": "Heap buffer overflow in PDFium in Google Chrome prior to 128.0.6613.84 allowed a remote attacker to perform an out of bounds memory read via a crafted PDF file. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -2339,6 +2903,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-7974"
+            ],
             "name": "Insufficient data validation in V8 API in Google Chrome prior to 128.0.6613.84 allowed a remote attacker to potentially exploit heap corruption via a crafted Chrome Extension (CVE-2024-7974)",
             "description": "Insufficient data validation in V8 API in Google Chrome prior to 128.0.6613.84 allowed a remote attacker to potentially exploit heap corruption via a crafted Chrome Extension. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -2350,6 +2917,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-7975"
+            ],
             "name": "Inappropriate implementation in Permissions in Google Chrome prior to 128.0.6613.84 allowed a remote attacker to perform UI spoofing via a crafted HTML page (CVE-2024-7975)",
             "description": "Inappropriate implementation in Permissions in Google Chrome prior to 128.0.6613.84 allowed a remote attacker to perform UI spoofing via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -2361,6 +2931,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-7976"
+            ],
             "name": "Inappropriate implementation in FedCM in Google Chrome prior to 128.0.6613.84 allowed a remote attacker to perform UI spoofing via a crafted HTML page (CVE-2024-7976)",
             "description": "Inappropriate implementation in FedCM in Google Chrome prior to 128.0.6613.84 allowed a remote attacker to perform UI spoofing via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -2372,6 +2945,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-7977"
+            ],
             "name": "Insufficient data validation in Installer in Google Chrome on Windows prior to 128.0.6613.84 allowed a local attacker to perform privilege escalation via a malicious file (CVE-2024-7977)",
             "description": "Insufficient data validation in Installer in Google Chrome on Windows prior to 128.0.6613.84 allowed a local attacker to perform privilege escalation via a malicious file. (Chromium security severity: Medium)",
             "severity": 7.8,
@@ -2383,6 +2959,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-7978"
+            ],
             "name": "Insufficient policy enforcement in Data Transfer in Google Chrome prior to 128.0.6613.84 allowed a remote attacker who convinced a user to engage in specific UI gestures to leak cross-origin data via a crafted HTML page (CVE-2024-7978)",
             "description": "Insufficient policy enforcement in Data Transfer in Google Chrome prior to 128.0.6613.84 allowed a remote attacker who convinced a user to engage in specific UI gestures to leak cross-origin data via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -2394,6 +2973,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-7979"
+            ],
             "name": "Insufficient data validation in Installer in Google Chrome on Windows prior to 128.0.6613.84 allowed a local attacker to perform privilege escalation via a crafted symbolic link (CVE-2024-7979)",
             "description": "Insufficient data validation in Installer in Google Chrome on Windows prior to 128.0.6613.84 allowed a local attacker to perform privilege escalation via a crafted symbolic link. (Chromium security severity: Medium)",
             "severity": 7.8,
@@ -2407,6 +2989,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-7980"
+            ],
             "name": "Insufficient data validation in Installer in Google Chrome on Windows prior to 128.0.6613.84 allowed a local attacker to perform privilege escalation via a crafted symbolic link (CVE-2024-7980)",
             "description": "Insufficient data validation in Installer in Google Chrome on Windows prior to 128.0.6613.84 allowed a local attacker to perform privilege escalation via a crafted symbolic link. (Chromium security severity: Medium)",
             "severity": 7.8,
@@ -2420,6 +3005,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-7981"
+            ],
             "name": "Inappropriate implementation in Views in Google Chrome prior to 128.0.6613.84 allowed a remote attacker to perform UI spoofing via a crafted HTML page (CVE-2024-7981)",
             "description": "Inappropriate implementation in Views in Google Chrome prior to 128.0.6613.84 allowed a remote attacker to perform UI spoofing via a crafted HTML page. (Chromium security severity: Low)",
             "severity": 4.3,
@@ -2431,6 +3019,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-8033"
+            ],
             "name": "Inappropriate implementation in WebApp Installs in Google Chrome on Windows prior to 128.0.6613.84 allowed an attacker who convinced a user to install a malicious application to perform UI spoofing via a crafted HTML page (CVE-2024-8033)",
             "description": "Inappropriate implementation in WebApp Installs in Google Chrome on Windows prior to 128.0.6613.84 allowed an attacker who convinced a user to install a malicious application to perform UI spoofing via a crafted HTML page. (Chromium security severity: Low)",
             "severity": 4.3,
@@ -2442,6 +3033,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-8034"
+            ],
             "name": "Inappropriate implementation in Custom Tabs in Google Chrome on Android prior to 128.0.6613.84 allowed a remote attacker to perform UI spoofing via a crafted HTML page (CVE-2024-8034)",
             "description": "Inappropriate implementation in Custom Tabs in Google Chrome on Android prior to 128.0.6613.84 allowed a remote attacker to perform UI spoofing via a crafted HTML page. (Chromium security severity: Low)",
             "severity": 4.3,
@@ -2453,6 +3047,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-8035"
+            ],
             "name": "Inappropriate implementation in Extensions in Google Chrome on Windows prior to 128.0.6613.84 allowed a remote attacker to perform UI spoofing via a crafted HTML page (CVE-2024-8035)",
             "description": "Inappropriate implementation in Extensions in Google Chrome on Windows prior to 128.0.6613.84 allowed a remote attacker to perform UI spoofing via a crafted HTML page. (Chromium security severity: Low)",
             "severity": 4.3,
@@ -2464,6 +3061,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-8193"
+            ],
             "name": "Heap buffer overflow in Skia in Google Chrome prior to 128.0.6613.113 allowed a remote attacker who had compromised the renderer process to potentially exploit heap corruption via a crafted HTML page (CVE-2024-8193)",
             "description": "Heap buffer overflow in Skia in Google Chrome prior to 128.0.6613.113 allowed a remote attacker who had compromised the renderer process to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2477,6 +3077,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-8194"
+            ],
             "name": "Type Confusion in V8 in Google Chrome prior to 128.0.6613.113 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-8194)",
             "description": "Type Confusion in V8 in Google Chrome prior to 128.0.6613.113 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2490,6 +3093,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-8198"
+            ],
             "name": "Heap buffer overflow in Skia in Google Chrome prior to 128.0.6613.113 allowed a remote attacker who had compromised the renderer process to potentially exploit heap corruption via a crafted HTML page (CVE-2024-8198)",
             "description": "Heap buffer overflow in Skia in Google Chrome prior to 128.0.6613.113 allowed a remote attacker who had compromised the renderer process to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2503,6 +3109,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-8636"
+            ],
             "name": "Heap buffer overflow in Skia in Google Chrome prior to 128.0.6613.137 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-8636)",
             "description": "Heap buffer overflow in Skia in Google Chrome prior to 128.0.6613.137 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2516,6 +3125,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-8637"
+            ],
             "name": "Use after free in Media Router in Google Chrome on Android prior to 128.0.6613.137 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-8637)",
             "description": "Use after free in Media Router in Google Chrome on Android prior to 128.0.6613.137 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2529,6 +3141,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-8638"
+            ],
             "name": "Type Confusion in V8 in Google Chrome prior to 128.0.6613.137 allowed a remote attacker to potentially exploit object corruption via a crafted HTML page (CVE-2024-8638)",
             "description": "Type Confusion in V8 in Google Chrome prior to 128.0.6613.137 allowed a remote attacker to potentially exploit object corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2542,6 +3157,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-8639"
+            ],
             "name": "Use after free in Autofill in Google Chrome on Android prior to 128.0.6613.137 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-8639)",
             "description": "Use after free in Autofill in Google Chrome on Android prior to 128.0.6613.137 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2555,6 +3173,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-8906"
+            ],
             "name": "Incorrect security UI in Downloads in Google Chrome prior to 129.0.6668.58 allowed a remote attacker who convinced a user to engage in specific UI gestures to perform UI spoofing via a crafted HTML page (CVE-2024-8906)",
             "description": "Incorrect security UI in Downloads in Google Chrome prior to 129.0.6668.58 allowed a remote attacker who convinced a user to engage in specific UI gestures to perform UI spoofing via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -2566,6 +3187,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-8907"
+            ],
             "name": "Insufficient data validation in Omnibox in Google Chrome on Android prior to 129.0.6668.58 allowed a remote attacker who convinced a user to engage in specific UI gestures to inject arbitrary scripts or HTML (XSS) via a crafted set of UI gestures (CVE-2024-8907)",
             "description": "Insufficient data validation in Omnibox in Google Chrome on Android prior to 129.0.6668.58 allowed a remote attacker who convinced a user to engage in specific UI gestures to inject arbitrary scripts or HTML (XSS) via a crafted set of UI gestures. (Chromium security severity: Medium)",
             "severity": 6.1,
@@ -2579,6 +3203,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-8908"
+            ],
             "name": "Inappropriate implementation in Autofill in Google Chrome prior to 129.0.6668.58 allowed a remote attacker to perform UI spoofing via a crafted HTML page (CVE-2024-8908)",
             "description": "Inappropriate implementation in Autofill in Google Chrome prior to 129.0.6668.58 allowed a remote attacker to perform UI spoofing via a crafted HTML page. (Chromium security severity: Low)",
             "severity": 4.3,
@@ -2590,6 +3217,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-8909"
+            ],
             "name": "Inappropriate implementation in UI in Google Chrome on iOS prior to 129.0.6668.58 allowed a remote attacker to perform UI spoofing via a crafted HTML page (CVE-2024-8909)",
             "description": "Inappropriate implementation in UI in Google Chrome on iOS prior to 129.0.6668.58 allowed a remote attacker to perform UI spoofing via a crafted HTML page. (Chromium security severity: Low)",
             "severity": 4.3,
@@ -2601,6 +3231,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-9954"
+            ],
             "name": "Use after free in AI in Google Chrome prior to 130.0.6723.58 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-9954)",
             "description": "Use after free in AI in Google Chrome prior to 130.0.6723.58 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2614,6 +3247,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2024-9958"
+            ],
             "name": "Inappropriate implementation in PictureInPicture in Google Chrome prior to 130.0.6723.58 allowed a remote attacker to perform UI spoofing via a crafted HTML page (CVE-2024-9958)",
             "description": "Inappropriate implementation in PictureInPicture in Google Chrome prior to 130.0.6723.58 allowed a remote attacker to perform UI spoofing via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -2625,6 +3261,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-9962"
+            ],
             "name": "Inappropriate implementation in Permissions in Google Chrome prior to 130.0.6723.58 allowed a remote attacker who convinced a user to engage in specific UI gestures to perform UI spoofing via a crafted HTML page (CVE-2024-9962)",
             "description": "Inappropriate implementation in Permissions in Google Chrome prior to 130.0.6723.58 allowed a remote attacker who convinced a user to engage in specific UI gestures to perform UI spoofing via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -2636,6 +3275,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-9963"
+            ],
             "name": "Insufficient data validation in Downloads in Google Chrome prior to 130.0.6723.58 allowed a remote attacker who convinced a user to engage in specific UI gestures to perform UI spoofing via a crafted HTML page (CVE-2024-9963)",
             "description": "Insufficient data validation in Downloads in Google Chrome prior to 130.0.6723.58 allowed a remote attacker who convinced a user to engage in specific UI gestures to perform UI spoofing via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -2647,6 +3289,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-9964"
+            ],
             "name": "Inappropriate implementation in Payments in Google Chrome prior to 130.0.6723.58 allowed a remote attacker who convinced a user to engage in specific UI gestures to perform UI spoofing via a crafted Chrome Extension (CVE-2024-9964)",
             "description": "Inappropriate implementation in Payments in Google Chrome prior to 130.0.6723.58 allowed a remote attacker who convinced a user to engage in specific UI gestures to perform UI spoofing via a crafted Chrome Extension. (Chromium security severity: Low)",
             "severity": 4.3,
@@ -2658,6 +3303,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-9965"
+            ],
             "name": "Insufficient data validation in DevTools in Google Chrome on Windows prior to 130.0.6723.58 allowed a remote attacker who convinced a user to engage in specific UI gestures to execute arbitrary code via a crafted HTML page (CVE-2024-9965)",
             "description": "Insufficient data validation in DevTools in Google Chrome on Windows prior to 130.0.6723.58 allowed a remote attacker who convinced a user to engage in specific UI gestures to execute arbitrary code via a crafted HTML page. (Chromium security severity: Low)",
             "severity": 8.8,
@@ -2669,6 +3317,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2024-9966"
+            ],
             "name": "Inappropriate implementation in Navigations in Google Chrome prior to 130.0.6723.58 allowed a remote attacker to bypass content security policy via a crafted HTML page (CVE-2024-9966)",
             "description": "Inappropriate implementation in Navigations in Google Chrome prior to 130.0.6723.58 allowed a remote attacker to bypass content security policy via a crafted HTML page. (Chromium security severity: Low)",
             "severity": 5.3,
@@ -2680,6 +3331,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2012-4929"
+            ],
             "name": "The TLS protocol 1.2 and earlier (CVE-2012-4929)",
             "description": "The TLS protocol 1.2 and earlier, as used in Mozilla Firefox, Google Chrome, Qt, and other products, can encrypt compressed data without properly obfuscating the length of the unencrypted data, which allows man-in-the-middle attackers to obtain plaintext HTTP headers by observing length differences during a series of guesses in which a string in an HTTP request potentially matches an unknown string in an HTTP header, aka a \"CRIME\" attack.",
             "severity": 2.6,
@@ -2693,6 +3347,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2012-4930"
+            ],
             "name": "The SPDY protocol 3 and earlier (CVE-2012-4930)",
             "description": "The SPDY protocol 3 and earlier, as used in Mozilla Firefox, Google Chrome, and other products, can perform TLS encryption of compressed data without properly obfuscating the length of the unencrypted data, which allows man-in-the-middle attackers to obtain plaintext HTTP headers by observing length differences during a series of guesses in which a string in an HTTP request potentially matches an unknown string in an HTTP header, aka a \"CRIME\" attack.",
             "severity": 2.6,
@@ -2706,6 +3363,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-2929"
+            ],
             "name": "Out of bounds write in Swiftshader in Google Chrome prior to 114.0.5735.90 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-2929)",
             "description": "Out of bounds write in Swiftshader in Google Chrome prior to 114.0.5735.90 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2719,6 +3379,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-2930"
+            ],
             "name": "Use after free in Extensions in Google Chrome prior to 114.0.5735.90 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted HTML page (CVE-2023-2930)",
             "description": "Use after free in Extensions in Google Chrome prior to 114.0.5735.90 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2732,6 +3395,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-2931"
+            ],
             "name": "Use after free in PDF in Google Chrome prior to 114.0.5735.90 allowed a remote attacker to potentially exploit heap corruption via a crafted PDF file (CVE-2023-2931)",
             "description": "Use after free in PDF in Google Chrome prior to 114.0.5735.90 allowed a remote attacker to potentially exploit heap corruption via a crafted PDF file. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2745,6 +3411,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-2932"
+            ],
             "name": "Use after free in PDF in Google Chrome prior to 114.0.5735.90 allowed a remote attacker to potentially exploit heap corruption via a crafted PDF file (CVE-2023-2932)",
             "description": "Use after free in PDF in Google Chrome prior to 114.0.5735.90 allowed a remote attacker to potentially exploit heap corruption via a crafted PDF file. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2758,6 +3427,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-2933"
+            ],
             "name": "Use after free in PDF in Google Chrome prior to 114.0.5735.90 allowed a remote attacker to potentially exploit heap corruption via a crafted PDF file (CVE-2023-2933)",
             "description": "Use after free in PDF in Google Chrome prior to 114.0.5735.90 allowed a remote attacker to potentially exploit heap corruption via a crafted PDF file. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2771,6 +3443,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-2934"
+            ],
             "name": "Out of bounds memory access in Mojo in Google Chrome prior to 114.0.5735.90 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-2934)",
             "description": "Out of bounds memory access in Mojo in Google Chrome prior to 114.0.5735.90 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2784,6 +3459,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-2935"
+            ],
             "name": "Type Confusion in V8 in Google Chrome prior to 114.0.5735.90 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-2935)",
             "description": "Type Confusion in V8 in Google Chrome prior to 114.0.5735.90 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2797,6 +3475,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-2936"
+            ],
             "name": "Type Confusion in V8 in Google Chrome prior to 114.0.5735.90 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-2936)",
             "description": "Type Confusion in V8 in Google Chrome prior to 114.0.5735.90 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2810,6 +3491,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-2937"
+            ],
             "name": "Inappropriate implementation in Picture In Picture in Google Chrome prior to 114.0.5735.90 allowed a remote attacker who had compromised the renderer process to spoof the contents of the Omnibox (URL bar) via a crafted HTML page (CVE-2023-2937)",
             "description": "Inappropriate implementation in Picture In Picture in Google Chrome prior to 114.0.5735.90 allowed a remote attacker who had compromised the renderer process to spoof the contents of the Omnibox (URL bar) via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -2821,6 +3505,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-2938"
+            ],
             "name": "Inappropriate implementation in Picture In Picture in Google Chrome prior to 114.0.5735.90 allowed a remote attacker who had compromised the renderer process to spoof the contents of the Omnibox (URL bar) via a crafted HTML page (CVE-2023-2938)",
             "description": "Inappropriate implementation in Picture In Picture in Google Chrome prior to 114.0.5735.90 allowed a remote attacker who had compromised the renderer process to spoof the contents of the Omnibox (URL bar) via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -2832,6 +3519,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-2939"
+            ],
             "name": "Insufficient data validation in Installer in Google Chrome on Windows prior to 114.0.5735.90 allowed a local attacker to perform privilege escalation via crafted symbolic link (CVE-2023-2939)",
             "description": "Insufficient data validation in Installer in Google Chrome on Windows prior to 114.0.5735.90 allowed a local attacker to perform privilege escalation via crafted symbolic link. (Chromium security severity: Medium)",
             "severity": 7.8,
@@ -2845,6 +3535,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-2940"
+            ],
             "name": "Inappropriate implementation in Downloads in Google Chrome prior to 114.0.5735.90 allowed an attacker who convinced a user to install a malicious extension to bypass file access restrictions via a crafted HTML page (CVE-2023-2940)",
             "description": "Inappropriate implementation in Downloads in Google Chrome prior to 114.0.5735.90 allowed an attacker who convinced a user to install a malicious extension to bypass file access restrictions via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 6.5,
@@ -2856,6 +3549,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-2941"
+            ],
             "name": "Inappropriate implementation in Extensions API in Google Chrome prior to 114.0.5735.90 allowed an attacker who convinced a user to install a malicious extension to spoof the contents of the UI via a crafted Chrome Extension (CVE-2023-2941)",
             "description": "Inappropriate implementation in Extensions API in Google Chrome prior to 114.0.5735.90 allowed an attacker who convinced a user to install a malicious extension to spoof the contents of the UI via a crafted Chrome Extension. (Chromium security severity: Low)",
             "severity": 4.3,
@@ -2867,6 +3563,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-3079"
+            ],
             "name": "Type confusion in V8 in Google Chrome prior to 114.0.5735.110 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-3079)",
             "description": "Type confusion in V8 in Google Chrome prior to 114.0.5735.110 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2880,6 +3579,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-3214"
+            ],
             "name": "Use after free in Autofill payments in Google Chrome prior to 114.0.5735.133 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-3214)",
             "description": "Use after free in Autofill payments in Google Chrome prior to 114.0.5735.133 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)",
             "severity": 8.8,
@@ -2893,6 +3595,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-3215"
+            ],
             "name": "Use after free in WebRTC in Google Chrome prior to 114.0.5735.133 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-3215)",
             "description": "Use after free in WebRTC in Google Chrome prior to 114.0.5735.133 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2906,6 +3611,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-3216"
+            ],
             "name": "Type confusion in V8 in Google Chrome prior to 114.0.5735.133 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-3216)",
             "description": "Type confusion in V8 in Google Chrome prior to 114.0.5735.133 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2919,6 +3627,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-3217"
+            ],
             "name": "Use after free in WebXR in Google Chrome prior to 114.0.5735.133 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-3217)",
             "description": "Use after free in WebXR in Google Chrome prior to 114.0.5735.133 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2932,6 +3643,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-3420"
+            ],
             "name": "Type Confusion in V8 in Google Chrome prior to 114.0.5735.198 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-3420)",
             "description": "Type Confusion in V8 in Google Chrome prior to 114.0.5735.198 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2945,6 +3659,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-3421"
+            ],
             "name": "Use after free in Media in Google Chrome prior to 114.0.5735.198 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-3421)",
             "description": "Use after free in Media in Google Chrome prior to 114.0.5735.198 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2958,6 +3675,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-3497"
+            ],
             "name": "Out of bounds read in Google Security Processor firmware in Google Chrome on Chrome OS prior to 114.0.5735.90 allowed a local attacker to perform denial of service via physical access to the device (CVE-2023-3497)",
             "description": "Out of bounds read in Google Security Processor firmware in Google Chrome on Chrome OS prior to 114.0.5735.90 allowed a local attacker to perform denial of service via physical access to the device. (Chromium security severity: Medium)",
             "severity": 4.6,
@@ -2971,6 +3691,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-3598"
+            ],
             "name": "Out of bounds read and write in ANGLE in Google Chrome prior to 114.0.5735.90 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-3598)",
             "description": "Out of bounds read and write in ANGLE in Google Chrome prior to 114.0.5735.90 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2984,6 +3707,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-3727"
+            ],
             "name": "Use after free in WebRTC in Google Chrome prior to 115.0.5790.98 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-3727)",
             "description": "Use after free in WebRTC in Google Chrome prior to 115.0.5790.98 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -2997,6 +3723,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-3728"
+            ],
             "name": "Use after free in WebRTC in Google Chrome prior to 115.0.5790.98 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-3728)",
             "description": "Use after free in WebRTC in Google Chrome prior to 115.0.5790.98 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -3010,6 +3739,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-3729"
+            ],
             "name": "Use after free in Splitscreen in Google Chrome on ChromeOS prior to 115.0.5790.131 allowed a remote attacker who convinced a user to engage in specific UI interactions to potentially exploit heap corruption via crafted UI interactions (CVE-2023-3729)",
             "description": "Use after free in Splitscreen in Google Chrome on ChromeOS prior to 115.0.5790.131 allowed a remote attacker who convinced a user to engage in specific UI interactions to potentially exploit heap corruption via crafted UI interactions. (Chromium security severity: High)",
             "severity": 8.8,
@@ -3023,6 +3755,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-3730"
+            ],
             "name": "Use after free in Tab Groups in Google Chrome prior to 115.0.5790.98 allowed a remote attacker who convinced a user to engage in specific UI interactions to potentially exploit heap corruption via a crafted HTML page (CVE-2023-3730)",
             "description": "Use after free in Tab Groups in Google Chrome prior to 115.0.5790.98 allowed a remote attacker who convinced a user to engage in specific UI interactions to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -3036,6 +3771,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-3731"
+            ],
             "name": "Use after free in Diagnostics in Google Chrome on ChromeOS prior to 115.0.5790.131 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted Chrome Extension (CVE-2023-3731)",
             "description": "Use after free in Diagnostics in Google Chrome on ChromeOS prior to 115.0.5790.131 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted Chrome Extension. (Chromium security severity: High)",
             "severity": 8.8,
@@ -3049,6 +3787,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-3732"
+            ],
             "name": "Out of bounds memory access in Mojo in Google Chrome prior to 115.0.5790.98 allowed a remote attacker who had compromised the renderer process to potentially exploit heap corruption via a crafted HTML page (CVE-2023-3732)",
             "description": "Out of bounds memory access in Mojo in Google Chrome prior to 115.0.5790.98 allowed a remote attacker who had compromised the renderer process to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -3062,6 +3803,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-3733"
+            ],
             "name": "Inappropriate implementation in WebApp Installs in Google Chrome prior to 115.0.5790.98 allowed a remote attacker to potentially spoof the contents of the Omnibox (URL bar) via a crafted HTML page (CVE-2023-3733)",
             "description": "Inappropriate implementation in WebApp Installs in Google Chrome prior to 115.0.5790.98 allowed a remote attacker to potentially spoof the contents of the Omnibox (URL bar) via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -3073,6 +3817,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-3734"
+            ],
             "name": "Inappropriate implementation in Picture In Picture in Google Chrome prior to 115.0.5790.98 allowed a remote attacker to potentially spoof the contents of the Omnibox (URL bar) via a crafted HTML page (CVE-2023-3734)",
             "description": "Inappropriate implementation in Picture In Picture in Google Chrome prior to 115.0.5790.98 allowed a remote attacker to potentially spoof the contents of the Omnibox (URL bar) via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -3084,6 +3831,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-3735"
+            ],
             "name": "Inappropriate implementation in Web API Permission Prompts in Google Chrome prior to 115.0.5790.98 allowed a remote attacker to obfuscate security UI via a crafted HTML page (CVE-2023-3735)",
             "description": "Inappropriate implementation in Web API Permission Prompts in Google Chrome prior to 115.0.5790.98 allowed a remote attacker to obfuscate security UI via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -3095,6 +3845,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-3736"
+            ],
             "name": "Inappropriate implementation in Custom Tabs in Google Chrome on Android prior to 115.0.5790.98 allowed a remote attacker to leak cross-origin data via a crafted HTML page (CVE-2023-3736)",
             "description": "Inappropriate implementation in Custom Tabs in Google Chrome on Android prior to 115.0.5790.98 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -3106,6 +3859,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-3737"
+            ],
             "name": "Inappropriate implementation in Notifications in Google Chrome prior to 115.0.5790.98 allowed a remote attacker to spoof the contents of media notifications via a crafted HTML page (CVE-2023-3737)",
             "description": "Inappropriate implementation in Notifications in Google Chrome prior to 115.0.5790.98 allowed a remote attacker to spoof the contents of media notifications via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -3117,6 +3873,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-3738"
+            ],
             "name": "Inappropriate implementation in Autofill in Google Chrome prior to 115.0.5790.98 allowed a remote attacker to obfuscate security UI via a crafted HTML page (CVE-2023-3738)",
             "description": "Inappropriate implementation in Autofill in Google Chrome prior to 115.0.5790.98 allowed a remote attacker to obfuscate security UI via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -3128,6 +3887,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-3739"
+            ],
             "name": "Insufficient validation of untrusted input in Chromad in Google Chrome on ChromeOS prior to 115.0.5790.131 allowed a remote attacker to execute arbitrary code via a crafted shell script (CVE-2023-3739)",
             "description": "Insufficient validation of untrusted input in Chromad in Google Chrome on ChromeOS prior to 115.0.5790.131 allowed a remote attacker to execute arbitrary code via a crafted shell script. (Chromium security severity: Low)",
             "severity": 6.3,
@@ -3141,6 +3903,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-3740"
+            ],
             "name": "Insufficient validation of untrusted input in Themes in Google Chrome prior to 115.0.5790.98 allowed a remote attacker to potentially serve malicious content to a user via a crafted background URL (CVE-2023-3740)",
             "description": "Insufficient validation of untrusted input in Themes in Google Chrome prior to 115.0.5790.98 allowed a remote attacker to potentially serve malicious content to a user via a crafted background URL. (Chromium security severity: Low)",
             "severity": 4.3,
@@ -3152,6 +3917,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-3742"
+            ],
             "name": "Insufficient policy enforcement in ADB in Google Chrome on ChromeOS prior to 114.0.5735.90 allowed a local attacker to bypass device policy restrictions via physical access to the device (CVE-2023-3742)",
             "description": "Insufficient policy enforcement in ADB in Google Chrome on ChromeOS prior to 114.0.5735.90 allowed a local attacker to bypass device policy restrictions via physical access to the device. (Chromium security severity: High)",
             "severity": 6.8,
@@ -3163,6 +3931,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-4068"
+            ],
             "name": "Type Confusion in V8 in Google Chrome prior to 115.0.5790.170 allowed a remote attacker to perform arbitrary read/write via a crafted HTML page (CVE-2023-4068)",
             "description": "Type Confusion in V8 in Google Chrome prior to 115.0.5790.170 allowed a remote attacker to perform arbitrary read/write via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.1,
@@ -3176,6 +3947,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4069"
+            ],
             "name": "Type Confusion in V8 in Google Chrome prior to 115.0.5790.170 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-4069)",
             "description": "Type Confusion in V8 in Google Chrome prior to 115.0.5790.170 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -3189,6 +3963,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4070"
+            ],
             "name": "Type Confusion in V8 in Google Chrome prior to 115.0.5790.170 allowed a remote attacker to perform arbitrary read/write via a crafted HTML page (CVE-2023-4070)",
             "description": "Type Confusion in V8 in Google Chrome prior to 115.0.5790.170 allowed a remote attacker to perform arbitrary read/write via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.1,
@@ -3202,6 +3979,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4071"
+            ],
             "name": "Heap buffer overflow in Visuals in Google Chrome prior to 115.0.5790.170 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-4071)",
             "description": "Heap buffer overflow in Visuals in Google Chrome prior to 115.0.5790.170 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -3215,6 +3995,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4072"
+            ],
             "name": "Out of bounds read and write in WebGL in Google Chrome prior to 115.0.5790.170 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-4072)",
             "description": "Out of bounds read and write in WebGL in Google Chrome prior to 115.0.5790.170 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -3229,6 +4012,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4073"
+            ],
             "name": "Out of bounds memory access in ANGLE in Google Chrome on Mac prior to 115.0.5790.170 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-4073)",
             "description": "Out of bounds memory access in ANGLE in Google Chrome on Mac prior to 115.0.5790.170 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -3242,6 +4028,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4074"
+            ],
             "name": "Use after free in Blink Task Scheduling in Google Chrome prior to 115.0.5790.170 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-4074)",
             "description": "Use after free in Blink Task Scheduling in Google Chrome prior to 115.0.5790.170 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -3255,6 +4044,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4075"
+            ],
             "name": "Use after free in Cast in Google Chrome prior to 115.0.5790.170 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-4075)",
             "description": "Use after free in Cast in Google Chrome prior to 115.0.5790.170 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -3268,6 +4060,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4076"
+            ],
             "name": "Use after free in WebRTC in Google Chrome prior to 115.0.5790.170 allowed a remote attacker to potentially exploit heap corruption via a crafted WebRTC session (CVE-2023-4076)",
             "description": "Use after free in WebRTC in Google Chrome prior to 115.0.5790.170 allowed a remote attacker to potentially exploit heap corruption via a crafted WebRTC session. (Chromium security severity: High)",
             "severity": 8.8,
@@ -3281,6 +4076,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4077"
+            ],
             "name": "Insufficient data validation in Extensions in Google Chrome prior to 115.0.5790.170 allowed an attacker who convinced a user to install a malicious extension to inject scripts or HTML into a privileged page via a crafted Chrome Extension (CVE-2023-4077)",
             "description": "Insufficient data validation in Extensions in Google Chrome prior to 115.0.5790.170 allowed an attacker who convinced a user to install a malicious extension to inject scripts or HTML into a privileged page via a crafted Chrome Extension. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -3292,6 +4090,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-4078"
+            ],
             "name": "Inappropriate implementation in Extensions in Google Chrome prior to 115.0.5790.170 allowed an attacker who convinced a user to install a malicious extension to inject scripts or HTML into a privileged page via a crafted Chrome Extension (CVE-2023-4078)",
             "description": "Inappropriate implementation in Extensions in Google Chrome prior to 115.0.5790.170 allowed an attacker who convinced a user to install a malicious extension to inject scripts or HTML into a privileged page via a crafted Chrome Extension. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -3303,6 +4104,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-4349"
+            ],
             "name": "Use after free in Device Trust Connectors in Google Chrome prior to 116.0.5845.96 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-4349)",
             "description": "Use after free in Device Trust Connectors in Google Chrome prior to 116.0.5845.96 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -3316,6 +4120,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4350"
+            ],
             "name": "Inappropriate implementation in Fullscreen in Google Chrome on Android prior to 116.0.5845.96 allowed a remote attacker to potentially spoof the contents of the Omnibox (URL bar) via a crafted HTML page (CVE-2023-4350)",
             "description": "Inappropriate implementation in Fullscreen in Google Chrome on Android prior to 116.0.5845.96 allowed a remote attacker to potentially spoof the contents of the Omnibox (URL bar) via a crafted HTML page. (Chromium security severity: High)",
             "severity": 6.5,
@@ -3327,6 +4134,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-4351"
+            ],
             "name": "Use after free in Network in Google Chrome prior to 116.0.5845.96 allowed a remote attacker who has elicited a browser shutdown to potentially exploit heap corruption via a crafted HTML page (CVE-2023-4351)",
             "description": "Use after free in Network in Google Chrome prior to 116.0.5845.96 allowed a remote attacker who has elicited a browser shutdown to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -3340,6 +4150,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4352"
+            ],
             "name": "Type confusion in V8 in Google Chrome prior to 116.0.5845.96 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-4352)",
             "description": "Type confusion in V8 in Google Chrome prior to 116.0.5845.96 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -3353,6 +4166,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4353"
+            ],
             "name": "Heap buffer overflow in ANGLE in Google Chrome prior to 116.0.5845.96 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-4353)",
             "description": "Heap buffer overflow in ANGLE in Google Chrome prior to 116.0.5845.96 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -3366,6 +4182,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4354"
+            ],
             "name": "Heap buffer overflow in Skia in Google Chrome prior to 116.0.5845.96 allowed a remote attacker who had compromised the renderer process to potentially exploit heap corruption via a crafted HTML page (CVE-2023-4354)",
             "description": "Heap buffer overflow in Skia in Google Chrome prior to 116.0.5845.96 allowed a remote attacker who had compromised the renderer process to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -3379,6 +4198,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4355"
+            ],
             "name": "Out of bounds memory access in V8 in Google Chrome prior to 116.0.5845.96 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-4355)",
             "description": "Out of bounds memory access in V8 in Google Chrome prior to 116.0.5845.96 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -3392,6 +4214,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4356"
+            ],
             "name": "Use after free in Audio in Google Chrome prior to 116.0.5845.96 allowed a remote attacker who has convinced a user to engage in specific UI interaction to potentially exploit heap corruption via a crafted HTML page (CVE-2023-4356)",
             "description": "Use after free in Audio in Google Chrome prior to 116.0.5845.96 allowed a remote attacker who has convinced a user to engage in specific UI interaction to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -3405,6 +4230,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4357"
+            ],
             "name": "Insufficient validation of untrusted input in XML in Google Chrome prior to 116.0.5845.96 allowed a remote attacker to bypass file access restrictions via a crafted HTML page (CVE-2023-4357)",
             "description": "Insufficient validation of untrusted input in XML in Google Chrome prior to 116.0.5845.96 allowed a remote attacker to bypass file access restrictions via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -3416,6 +4244,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-4358"
+            ],
             "name": "Use after free in DNS in Google Chrome prior to 116.0.5845.96 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-4358)",
             "description": "Use after free in DNS in Google Chrome prior to 116.0.5845.96 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -3429,6 +4260,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4359"
+            ],
             "name": "Inappropriate implementation in App Launcher in Google Chrome on iOS prior to 116.0.5845.96 allowed a remote attacker to potentially spoof elements of the security UI via a crafted HTML page (CVE-2023-4359)",
             "description": "Inappropriate implementation in App Launcher in Google Chrome on iOS prior to 116.0.5845.96 allowed a remote attacker to potentially spoof elements of the security UI via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 5.3,
@@ -3440,6 +4274,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-4360"
+            ],
             "name": "Inappropriate implementation in Color in Google Chrome prior to 116.0.5845.96 allowed a remote attacker to obfuscate security UI via a crafted HTML page (CVE-2023-4360)",
             "description": "Inappropriate implementation in Color in Google Chrome prior to 116.0.5845.96 allowed a remote attacker to obfuscate security UI via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -3451,6 +4288,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-4361"
+            ],
             "name": "Inappropriate implementation in Autofill in Google Chrome on Android prior to 116.0.5845.96 allowed a remote attacker to bypass Autofill restrictions via a crafted HTML page (CVE-2023-4361)",
             "description": "Inappropriate implementation in Autofill in Google Chrome on Android prior to 116.0.5845.96 allowed a remote attacker to bypass Autofill restrictions via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 5.3,
@@ -3462,6 +4302,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-4363"
+            ],
             "name": "Inappropriate implementation in WebShare in Google Chrome on Android prior to 116.0.5845.96 allowed a remote attacker to spoof the contents of a dialog URL via a crafted HTML page (CVE-2023-4363)",
             "description": "Inappropriate implementation in WebShare in Google Chrome on Android prior to 116.0.5845.96 allowed a remote attacker to spoof the contents of a dialog URL via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -3473,6 +4316,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-4364"
+            ],
             "name": "Inappropriate implementation in Permission Prompts in Google Chrome prior to 116.0.5845.96 allowed a remote attacker to obfuscate security UI via a crafted HTML page (CVE-2023-4364)",
             "description": "Inappropriate implementation in Permission Prompts in Google Chrome prior to 116.0.5845.96 allowed a remote attacker to obfuscate security UI via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -3484,6 +4330,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-4365"
+            ],
             "name": "Inappropriate implementation in Fullscreen in Google Chrome prior to 116.0.5845.96 allowed a remote attacker to obfuscate security UI via a crafted HTML page (CVE-2023-4365)",
             "description": "Inappropriate implementation in Fullscreen in Google Chrome prior to 116.0.5845.96 allowed a remote attacker to obfuscate security UI via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -3495,6 +4344,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-4366"
+            ],
             "name": "Use after free in Extensions in Google Chrome prior to 116.0.5845.96 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted HTML page (CVE-2023-4366)",
             "description": "Use after free in Extensions in Google Chrome prior to 116.0.5845.96 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -3508,6 +4360,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4367"
+            ],
             "name": "Insufficient policy enforcement in Extensions API in Google Chrome prior to 116.0.5845.96 allowed an attacker who convinced a user to install a malicious extension to bypass an enterprise policy via a crafted HTML page (CVE-2023-4367)",
             "description": "Insufficient policy enforcement in Extensions API in Google Chrome prior to 116.0.5845.96 allowed an attacker who convinced a user to install a malicious extension to bypass an enterprise policy via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 6.5,
@@ -3519,6 +4374,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-4368"
+            ],
             "name": "Insufficient policy enforcement in Extensions API in Google Chrome prior to 116.0.5845.96 allowed an attacker who convinced a user to install a malicious extension to bypass an enterprise policy via a crafted HTML page (CVE-2023-4368)",
             "description": "Insufficient policy enforcement in Extensions API in Google Chrome prior to 116.0.5845.96 allowed an attacker who convinced a user to install a malicious extension to bypass an enterprise policy via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -3530,6 +4388,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-4369"
+            ],
             "name": "Insufficient data validation in Systems Extensions in Google Chrome on ChromeOS prior to 116.0.5845.120 allowed an attacker who convinced a user to install a malicious extension to bypass file restrictions via a crafted HTML page (CVE-2023-4369)",
             "description": "Insufficient data validation in Systems Extensions in Google Chrome on ChromeOS prior to 116.0.5845.120 allowed an attacker who convinced a user to install a malicious extension to bypass file restrictions via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 8.8,
@@ -3541,6 +4402,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-4427"
+            ],
             "name": "Out of bounds memory access in V8 in Google Chrome prior to 116.0.5845.110 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page (CVE-2023-4427)",
             "description": "Out of bounds memory access in V8 in Google Chrome prior to 116.0.5845.110 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.1,
@@ -3554,6 +4418,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4428"
+            ],
             "name": "Out of bounds memory access in CSS in Google Chrome prior to 116.0.5845.110 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page (CVE-2023-4428)",
             "description": "Out of bounds memory access in CSS in Google Chrome prior to 116.0.5845.110 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.1,
@@ -3567,6 +4434,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4429"
+            ],
             "name": "Use after free in Loader in Google Chrome prior to 116.0.5845.110 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-4429)",
             "description": "Use after free in Loader in Google Chrome prior to 116.0.5845.110 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -3580,6 +4450,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4430"
+            ],
             "name": "Use after free in Vulkan in Google Chrome prior to 116.0.5845.110 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-4430)",
             "description": "Use after free in Vulkan in Google Chrome prior to 116.0.5845.110 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -3593,6 +4466,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4431"
+            ],
             "name": "Out of bounds memory access in Fonts in Google Chrome prior to 116.0.5845.110 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page (CVE-2023-4431)",
             "description": "Out of bounds memory access in Fonts in Google Chrome prior to 116.0.5845.110 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 8.1,
@@ -3606,6 +4482,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4572"
+            ],
             "name": "Use after free in MediaStream in Google Chrome prior to 116.0.5845.140 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-4572)",
             "description": "Use after free in MediaStream in Google Chrome prior to 116.0.5845.140 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -3619,6 +4498,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4761"
+            ],
             "name": "Out of bounds memory access in FedCM in Google Chrome prior to 116.0.5845.179 allowed a remote attacker who had compromised the renderer process to perform an out of bounds memory read via a crafted HTML page (CVE-2023-4761)",
             "description": "Out of bounds memory access in FedCM in Google Chrome prior to 116.0.5845.179 allowed a remote attacker who had compromised the renderer process to perform an out of bounds memory read via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.1,
@@ -3632,6 +4514,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4762"
+            ],
             "name": "Type Confusion in V8 in Google Chrome prior to 116.0.5845.179 allowed a remote attacker to execute arbitrary code via a crafted HTML page (CVE-2023-4762)",
             "description": "Type Confusion in V8 in Google Chrome prior to 116.0.5845.179 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -3645,6 +4530,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4763"
+            ],
             "name": "Use after free in Networks in Google Chrome prior to 116.0.5845.179 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-4763)",
             "description": "Use after free in Networks in Google Chrome prior to 116.0.5845.179 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
             "severity": 8.8,
@@ -3658,6 +4546,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4764"
+            ],
             "name": "Incorrect security UI in BFCache in Google Chrome prior to 116.0.5845.179 allowed a remote attacker to spoof the contents of the Omnibox (URL bar) via a crafted HTML page (CVE-2023-4764)",
             "description": "Incorrect security UI in BFCache in Google Chrome prior to 116.0.5845.179 allowed a remote attacker to spoof the contents of the Omnibox (URL bar) via a crafted HTML page. (Chromium security severity: High)",
             "severity": 6.5,
@@ -3669,6 +4560,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-4863"
+            ],
             "name": "Heap buffer overflow in libwebp in Google Chrome prior to 116.0.5845.187 and libwebp 1.3.2 allowed a remote attacker to perform an out of bounds memory write via a crafted HTML page (CVE-2023-4863)",
             "description": "Heap buffer overflow in libwebp in Google Chrome prior to 116.0.5845.187 and libwebp 1.3.2 allowed a remote attacker to perform an out of bounds memory write via a crafted HTML page. (Chromium security severity: Critical)",
             "severity": 8.8,
@@ -3682,6 +4576,9 @@
             ]
         },
         {
+            "cve": [
+                "CVE-2023-4900"
+            ],
             "name": "Inappropriate implementation in Custom Tabs in Google Chrome on Android prior to 117.0.5938.62 allowed a remote attacker to obfuscate a permission prompt via a crafted HTML page (CVE-2023-4900)",
             "description": "Inappropriate implementation in Custom Tabs in Google Chrome on Android prior to 117.0.5938.62 allowed a remote attacker to obfuscate a permission prompt via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -3693,6 +4590,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-4902"
+            ],
             "name": "Inappropriate implementation in Input in Google Chrome prior to 117.0.5938.62 allowed a remote attacker to spoof security UI via a crafted HTML page (CVE-2023-4902)",
             "description": "Inappropriate implementation in Input in Google Chrome prior to 117.0.5938.62 allowed a remote attacker to spoof security UI via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -3704,6 +4604,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-4903"
+            ],
             "name": "Inappropriate implementation in Custom Mobile Tabs in Google Chrome on Android prior to 117.0.5938.62 allowed a remote attacker to spoof security UI via a crafted HTML page (CVE-2023-4903)",
             "description": "Inappropriate implementation in Custom Mobile Tabs in Google Chrome on Android prior to 117.0.5938.62 allowed a remote attacker to spoof security UI via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -3715,6 +4618,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-4904"
+            ],
             "name": "Insufficient policy enforcement in Downloads in Google Chrome prior to 117.0.5938.62 allowed a remote attacker to bypass Enterprise policy restrictions via a crafted download (CVE-2023-4904)",
             "description": "Insufficient policy enforcement in Downloads in Google Chrome prior to 117.0.5938.62 allowed a remote attacker to bypass Enterprise policy restrictions via a crafted download. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -3726,6 +4632,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-4905"
+            ],
             "name": "Inappropriate implementation in Prompts in Google Chrome prior to 117.0.5938.62 allowed a remote attacker to spoof security UI via a crafted HTML page (CVE-2023-4905)",
             "description": "Inappropriate implementation in Prompts in Google Chrome prior to 117.0.5938.62 allowed a remote attacker to spoof security UI via a crafted HTML page. (Chromium security severity: Medium)",
             "severity": 4.3,
@@ -3737,6 +4646,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-4906"
+            ],
             "name": "Insufficient policy enforcement in Autofill in Google Chrome prior to 117.0.5938.62 allowed a remote attacker to bypass Autofill restrictions via a crafted HTML page (CVE-2023-4906)",
             "description": "Insufficient policy enforcement in Autofill in Google Chrome prior to 117.0.5938.62 allowed a remote attacker to bypass Autofill restrictions via a crafted HTML page. (Chromium security severity: Low)",
             "severity": 4.3,
@@ -3748,6 +4660,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-4907"
+            ],
             "name": "Inappropriate implementation in Intents in Google Chrome on Android prior to 117.0.5938.62 allowed a remote attacker to obfuscate security UI via a crafted HTML page (CVE-2023-4907)",
             "description": "Inappropriate implementation in Intents in Google Chrome on Android prior to 117.0.5938.62 allowed a remote attacker to obfuscate security UI via a crafted HTML page. (Chromium security severity: Low)",
             "severity": 4.3,
@@ -3759,6 +4674,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-4908"
+            ],
             "name": "Inappropriate implementation in Picture in Picture in Google Chrome prior to 117.0.5938.62 allowed a remote attacker to spoof security UI via a crafted HTML page (CVE-2023-4908)",
             "description": "Inappropriate implementation in Picture in Picture in Google Chrome prior to 117.0.5938.62 allowed a remote attacker to spoof security UI via a crafted HTML page. (Chromium security severity: Low)",
             "severity": 4.3,
@@ -3770,6 +4688,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-4909"
+            ],
             "name": "Inappropriate implementation in Interstitials in Google Chrome prior to 117.0.5938.62 allowed a remote attacker to obfuscate security UI via a crafted HTML page (CVE-2023-4909)",
             "description": "Inappropriate implementation in Interstitials in Google Chrome prior to 117.0.5938.62 allowed a remote attacker to obfuscate security UI via a crafted HTML page. (Chromium security severity: Low)",
             "severity": 4.3,
@@ -3781,6 +4702,9 @@
             "cwe": []
         },
         {
+            "cve": [
+                "CVE-2023-5186"
+            ],
             "name": "Use after free in Passwords in Google Chrome prior to 117.0.5938.132 allowed a remote attacker who convinced a user to engage in specific UI interaction to potentially exploit heap corruption via crafted UI interaction (CVE-2023-5186)",
             "description": "Use after free in Passwords in Google Chrome prior to 117.0.5938.132 allowed a remote attacker who convinced a user to engage in specific UI interaction to potentially exploit heap corruption via crafted UI interaction. (Chromium security severity: High)",
             "severity": 8.8,
