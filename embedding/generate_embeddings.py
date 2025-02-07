@@ -4,7 +4,7 @@ import requests
 EMBEDDING_API_URL = "http://localhost:11434/api/embed"
 
 
-def generate_embeddings_for_input(input_data, model="bge-m3"):
+def generate_embeddings_for_input(input_data, model="nomic-embed-text"):
     """Generate embeddings for a list of inputs"""
     payload = {"model": model, "input": input_data}
     headers = {"Content-Type": "application/json"}

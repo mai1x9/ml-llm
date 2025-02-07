@@ -1,0 +1,778 @@
+
+==================================================
+Model: deepseek-r1:1.5b
+Question: Summarize key vulnerabilities for the product Google Chrome from the provided JSON data, including vulnerability name, severity, affected systems, and brief description, using CVE, exploit, and patch keywords; merge similar descriptions and provide actionable insights with update versions.
+Prompt:
+You are a cybersecurity expert. Answer this query: Summarize key vulnerabilities for the product Google Chrome from the provided JSON data, including vulnerability name, severity, affected systems, and brief description, using CVE, exploit, and patch keywords; merge similar descriptions and provide actionable insights with update versions.
+        Use ONLY this CVE data:
+        CVE: CVE-2024-0333
+Name: Insufficient data validation in Extensions in Google Chrome prior to 120.0.6099.216 allowed an attacker in a privileged network position to install a malicious extension via a crafted HTML page (CVE-2024-0333)
+Description: Insufficient data validation in Extensions in Google Chrome prior to 120.0.6099.216 allowed an attacker in a privileged network position to install a malicious extension via a crafted HTML page. (Chromium security severity: High)
+Severity: 5.3 (Medium)
+CVSS: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+-----
+CVE: CVE-2024-0810
+Name: Insufficient policy enforcement in DevTools in Google Chrome prior to 121.0.6167.85 allowed an attacker who convinced a user to install a malicious extension to leak cross-origin data via a crafted Chrome Extension (CVE-2024-0810)
+Description: Insufficient policy enforcement in DevTools in Google Chrome prior to 121.0.6167.85 allowed an attacker who convinced a user to install a malicious extension to leak cross-origin data via a crafted Chrome Extension. (Chromium security severity: Medium)
+Severity: 4.3 (Medium)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+-----
+CVE: CVE-2024-0812
+Name: Inappropriate implementation in Accessibility in Google Chrome prior to 121.0.6167.85 allowed a remote attacker to potentially exploit object corruption via a crafted HTML page (CVE-2024-0812)
+Description: Inappropriate implementation in Accessibility in Google Chrome prior to 121.0.6167.85 allowed a remote attacker to potentially exploit object corruption via a crafted HTML page. (Chromium security severity: High)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+-----
+CVE: CVE-2023-4077
+Name: Insufficient data validation in Extensions in Google Chrome prior to 115.0.5790.170 allowed an attacker who convinced a user to install a malicious extension to inject scripts or HTML into a privileged page via a crafted Chrome Extension (CVE-2023-4077)
+Description: Insufficient data validation in Extensions in Google Chrome prior to 115.0.5790.170 allowed an attacker who convinced a user to install a malicious extension to inject scripts or HTML into a privileged page via a crafted Chrome Extension. (Chromium security severity: Medium)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+-----
+CVE: CVE-2023-4430
+Name: Use after free in Vulkan in Google Chrome prior to 116.0.5845.110 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-4430)
+Description: Use after free in Vulkan in Google Chrome prior to 116.0.5845.110 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+CVE: CVE-2023-5476
+Name: Use after free in Blink History in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-5476)
+Description: Use after free in Blink History in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+CVE: CVE-2024-3173
+Name: Insufficient data validation in Updater in Google Chrome prior to 120.0.6099.62 allowed a remote attacker to perform OS-level privilege escalation via a malicious file (CVE-2024-3173)
+Description: Insufficient data validation in Updater in Google Chrome prior to 120.0.6099.62 allowed a remote attacker to perform OS-level privilege escalation via a malicious file. (Chromium security severity: High)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-345
+-----
+CVE: CVE-2024-1284
+Name: Use after free in Mojo in Google Chrome prior to 121.0.6167.160 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-1284)
+Description: Use after free in Mojo in Google Chrome prior to 121.0.6167.160 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+Severity: 9.8 (Critical)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+CVE: CVE-2023-4366
+Name: Use after free in Extensions in Google Chrome prior to 116.0.5845.96 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted HTML page (CVE-2023-4366)
+Description: Use after free in Extensions in Google Chrome prior to 116.0.5845.96 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+CVE: CVE-2023-4763
+Name: Use after free in Networks in Google Chrome prior to 116.0.5845.179 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-4763)
+Description: Use after free in Networks in Google Chrome prior to 116.0.5845.179 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+CVE: CVE-2024-3834
+Name: Use after free in Downloads in Google Chrome prior to 124.0.6367.60 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-3834)
+Description: Use after free in Downloads in Google Chrome prior to 124.0.6367.60 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+CVE: CVE-2023-6347
+Name: Use after free in Mojo in Google Chrome prior to 119.0.6045.199 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-6347)
+Description: Use after free in Mojo in Google Chrome prior to 119.0.6045.199 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+CVE: CVE-2024-3171
+Name: Use after free in Accessibility in Google Chrome prior to 122.0.6261.57 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via specific UI gestures (CVE-2024-3171)
+Description: Use after free in Accessibility in Google Chrome prior to 122.0.6261.57 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via specific UI gestures. (Chromium security severity: Medium)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+CVE: CVE-2023-4351
+Name: Use after free in Network in Google Chrome prior to 116.0.5845.96 allowed a remote attacker who has elicited a browser shutdown to potentially exploit heap corruption via a crafted HTML page (CVE-2023-4351)
+Description: Use after free in Network in Google Chrome prior to 116.0.5845.96 allowed a remote attacker who has elicited a browser shutdown to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+CVE: CVE-2024-0811
+Name: Inappropriate implementation in Extensions API in Google Chrome prior to 121.0.6167.85 allowed an attacker who convinced a user to install a malicious extension to leak cross-origin data via a crafted Chrome Extension (CVE-2024-0811)
+Description: Inappropriate implementation in Extensions API in Google Chrome prior to 121.0.6167.85 allowed an attacker who convinced a user to install a malicious extension to leak cross-origin data via a crafted Chrome Extension. (Chromium security severity: Low)
+Severity: 4.3 (Medium)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+-----
+CVE: CVE-2023-5472
+Name: Use after free in Profiles in Google Chrome prior to 118.0.5993.117 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-5472)
+Description: Use after free in Profiles in Google Chrome prior to 118.0.5993.117 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+CVE: CVE-2023-5479
+Name: Inappropriate implementation in Extensions API in Google Chrome prior to 118.0.5993.70 allowed an attacker who convinced a user to install a malicious extension to bypass an enterprise policy via a crafted HTML page (CVE-2023-5479)
+Description: Inappropriate implementation in Extensions API in Google Chrome prior to 118.0.5993.70 allowed an attacker who convinced a user to install a malicious extension to bypass an enterprise policy via a crafted HTML page. (Chromium security severity: Medium)
+Severity: 6.5 (Medium)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+-----
+CVE: CVE-2023-4368
+Name: Insufficient policy enforcement in Extensions API in Google Chrome prior to 116.0.5845.96 allowed an attacker who convinced a user to install a malicious extension to bypass an enterprise policy via a crafted HTML page (CVE-2023-4368)
+Description: Insufficient policy enforcement in Extensions API in Google Chrome prior to 116.0.5845.96 allowed an attacker who convinced a user to install a malicious extension to bypass an enterprise policy via a crafted HTML page. (Chromium security severity: Medium)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+-----
+CVE: CVE-2023-4367
+Name: Insufficient policy enforcement in Extensions API in Google Chrome prior to 116.0.5845.96 allowed an attacker who convinced a user to install a malicious extension to bypass an enterprise policy via a crafted HTML page (CVE-2023-4367)
+Description: Insufficient policy enforcement in Extensions API in Google Chrome prior to 116.0.5845.96 allowed an attacker who convinced a user to install a malicious extension to bypass an enterprise policy via a crafted HTML page. (Chromium security severity: Medium)
+Severity: 6.5 (Medium)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+-----
+CVE: CVE-2024-3172
+Name: Insufficient data validation in DevTools in Google Chrome prior to 121.0.6167.85 allowed a remote attacker who convinced a user to engage in specific UI gestures to execute arbitrary code via a crafted HTML page (CVE-2024-3172)
+Description: Insufficient data validation in DevTools in Google Chrome prior to 121.0.6167.85 allowed a remote attacker who convinced a user to engage in specific UI gestures to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+-----
+CVE: CVE-2024-3168
+Name: Use after free in DevTools in Google Chrome prior to 122.0.6261.57 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-3168)
+Description: Use after free in DevTools in Google Chrome prior to 122.0.6261.57 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+CVE: CVE-2023-5187
+Name: Use after free in Extensions in Google Chrome prior to 117.0.5938.132 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted HTML page (CVE-2023-5187)
+Description: Use after free in Extensions in Google Chrome prior to 117.0.5938.132 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+CVE: CVE-2023-5218
+Name: Use after free in Site Isolation in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-5218)
+Description: Use after free in Site Isolation in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+CVE: CVE-2024-3175
+Name: Insufficient data validation in Extensions in Google Chrome prior to 120.0.6099.62 allowed a remote attacker to perform privilege escalation via a crafted Chrome Extension (CVE-2024-3175)
+Description: Insufficient data validation in Extensions in Google Chrome prior to 120.0.6099.62 allowed a remote attacker to perform privilege escalation via a crafted Chrome Extension. (Chromium security severity: Low)
+Severity: 6.3 (Medium)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+-----
+CVE: CVE-2023-2930
+Name: Use after free in Extensions in Google Chrome prior to 114.0.5735.90 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted HTML page (CVE-2023-2930)
+Description: Use after free in Extensions in Google Chrome prior to 114.0.5735.90 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+CVE: CVE-2023-6703
+Name: Use after free in Blink in Google Chrome prior to 120.0.6099.109 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-6703)
+Description: Use after free in Blink in Google Chrome prior to 120.0.6099.109 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+CVE: CVE-2024-7978
+Name: Insufficient policy enforcement in Data Transfer in Google Chrome prior to 128.0.6613.84 allowed a remote attacker who convinced a user to engage in specific UI gestures to leak cross-origin data via a crafted HTML page (CVE-2024-7978)
+Description: Insufficient policy enforcement in Data Transfer in Google Chrome prior to 128.0.6613.84 allowed a remote attacker who convinced a user to engage in specific UI gestures to leak cross-origin data via a crafted HTML page. (Chromium security severity: Medium)
+Severity: 4.3 (Medium)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+-----
+CVE: CVE-2024-5831
+Name: Use after free in Dawn in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-5831)
+Description: Use after free in Dawn in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+CVE: CVE-2024-6103
+Name: Use after free in Dawn in Google Chrome prior to 126.0.6478.114 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-6103)
+Description: Use after free in Dawn in Google Chrome prior to 126.0.6478.114 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+CVE: CVE-2023-3422
+Name: Use after free in Guest View in Google Chrome prior to 114.0.5735.198 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted HTML page (CVE-2023-3422)
+Description: Use after free in Guest View in Google Chrome prior to 114.0.5735.198 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+        If no CVEs match, say "No relevant vulnerabilities found".
+Response:
+### Impact Analysis for Vulnerabilities in Google Chrome
+
+**Vulnerability:** CVE-2024-0333  
+**Name:** Insufficient data validation in Extensions in Google Chrome prior to 120.0.6099.62  
+**Impact:**
+- Users installed extensions before the version were found vulnerable, potentially exposing them to malicious scripts or data leaks.
+- Impact severity: **High**
+- Affected Versions: 120.0.6099.62
+- Mitigation:  
+  - Use a comprehensive security patch for Google Chrome up to 120.0.6099.62 to avoid vulnerabilities.
+
+---
+
+### Impact Analysis for Vulnerabilities in Google Chrome
+
+**Vulnerability:** CVE-2024-1281  
+**Name:** Inappropriate implementation in Extensions in Google Chrome prior to 114.0.5735.198  
+**Impact:**
+- Users relying on this feature might now face security risks due to outdated or improperly implemented functionality.
+- Impact severity: **Medium**
+- Affected Versions: 114.0.5735.198
+- Mitigation:  
+  - Regularly review and update browser extensions for known vulnerabilities.
+
+---
+
+### Impact Analysis for Vulnerabilities in Google Chrome
+
+**Vulnerability:** CVE-2024-121.0.6167.85 and 116.0.5845.110  
+**Name:** Inappropriate implementation of Data Transfer in Google Chrome prior to 121.0.6167.85 and 116.0.5845.110  
+**Impact:**
+- Users could be exposed to cross-origin data leaks if they installed extensions during these versions.
+- Impact severity: **Medium**
+- Affected Versions: 121.0.6167.85 and 116.0.5845.110
+- Mitigation:  
+  - Ensure users are aware of updated data handling policies.
+
+---
+
+### Impact Analysis for Vulnerabilities in Google Chrome
+
+**Vulnerability:** CVE-2024-3173  
+**Name:** Insufficient policy enforcement in Extensions in Google Chrome prior to 120.0.6099.62  
+**Impact:**
+- Users might inadvertently exploit privilege escalation if extensions were installed before the affected version.
+- Impact severity: **Low**
+- Affected Versions: 120.0.6099.62
+- Mitigation:  
+  - Implement robust data validation controls to prevent such attacks.
+
+---
+
+### Impact Analysis for Vulnerabilities in Google Chrome
+
+**Vulnerability:** CVE-2024-3175  
+**Name:** Insufficient data validation in Extensions in Google Chrome prior to 120.0.6099.62  
+**Impact:**
+- Users installed extensions before the version were found vulnerable, potentially exposing them to malicious scripts.
+- Impact severity: **High**
+- Affected Versions: 120.0.6099.62
+- Mitigation:  
+  - Use a recent Chrome Web Store extension for enhanced security measures.
+
+---
+
+### Impact Analysis for Vulnerabilities in Google Chrome
+
+**Vulnerability:** CVE-2024-3476  
+**Name:** Inappropriate implementation of Data Transfer in Google Chrome prior to 120.0.6099.62  
+**Impact:**
+- Users could be exposed to cross-origin data leaks if they installed extensions during this version.
+- Impact severity: **Medium**
+- Affected Versions: 120.0.6099.62
+- Mitigation:  
+  - Implement updated security patches for Data Transfer.
+
+---
+
+### Impact Analysis for Vulnerabilities in Google Chrome
+
+**Vulnerability:** CVE-2024-8112 and 8124  
+**Name:** Inappropriate implementation of Cross-Origin Data Protection (CDP) in Google Chrome prior to 126.0.6478.54 and 126.0.6478.114  
+**Impact:**
+- Users could exploit CDP if they installed extensions before the affected versions.
+- Impact severity: **High**
+- Affected Versions: 126.0.6478.54 and 126.0.6478.114
+- Mitigation:  
+  - Update Chrome to the latest version with updated security patches.
+
+---
+
+### Conclusion
+
+These vulnerabilities highlight critical areas in Google Chrome's security landscape, particularly around data handling, extensions, and network management. Regular updates will ensure users remain protected from potential attacks.
+Total Time: 369.34 seconds
+--------------------------------------------------
+==================================================
+Model: deepseek-r1:1.5b
+Question: How to mitigate these vulnerabilities?
+Prompt:
+You are a cybersecurity expert. Answer this query: How to mitigate these vulnerabilities?
+        Use ONLY this CVE data:
+        CVE: CVE-2023-0009
+Name: GlobalProtect App: Local Privilege Escalation (PE) Vulnerability
+Description: A local privilege escalation (PE) vulnerability in the Palo Alto Networks GlobalProtect app on Windows enables a local user to execute programs with elevated privileges.
+
+Severity: 7.8 (High)
+CVSS: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+Product: GlobalProtect
+Affected Versions: 5.2.5
+Mitigation: This issue is fixed in GlobalProtect app 5.2.13, GlobalProtect app 6.0.5, GlobalProtect app 6.1.1, and all later GlobalProtect app versions.
+
+-----
+CVE: CVE-2024-9473
+Name: GlobalProtect App: Local Privilege Escalation (PE) Vulnerability
+Description: A privilege escalation vulnerability in the Palo Alto Networks GlobalProtect app on Windows allows a locally authenticated non-administrative Windows user to escalate their privileges to NT AUTHORITY/SYSTEM through the use of the repair functionality offered by the .msi file used to install GlobalProtect.
+Severity: 7.8 (High)
+CVSS: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+Product: GlobalProtect
+Affected Versions: 5.2.5
+Mitigation: This issue is fixed in GlobalProtect app 6.2.5, and will be fixed in the remaining supported versions of GlobalProtect app listed in the Product Status section. Updates will be published to this advisory as they become available.
+
+Customers who want to upgrade should reach out to customer support at  https://support.paloaltonetworks.com .
+
+-----
+CVE: CVE-2022-0019
+Name: GlobalProtect App: Insufficiently Protected Credentials Vulnerability on Linux
+Description: An insufficiently protected credentials vulnerability exists in the Palo Alto Networks GlobalProtect app on Linux that exposes the hashed credentials of GlobalProtect users that saved their password during previous GlobalProtect app sessions to other local users on the system. The exposed credentials enable a local attacker to authenticate to the GlobalProtect portal or gateway as the target user without knowing of the target user’s plaintext password. This issue impacts: GlobalProtect app 5.1 versions earlier than GlobalProtect app 5.1.10 on Linux. GlobalProtect app 5.2 versions earlier than and including GlobalProtect app 5.2.7 on Linux. GlobalProtect app 5.3 versions earlier than GlobalProtect app 5.3.2 on Linux. This issue does not affect the GlobalProtect app on other platforms.
+Severity: 5.5 (Medium)
+CVSS: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N
+Product: GlobalProtect
+Affected Versions: 5.2.5
+Mitigation: This issue is fixed in GlobalProtect app 5.1.10 on Linux, GlobalProtect app 5.3.2 on Linux, and all later GlobalProtect app versions.
+
+Existing credentials files that are exposed by this issue will be secured when the fixed GlobalProtect app is launched.
+Workarounds: 
+Users should not save their credentials until the GlobalProtect app is upgraded to a fixed version.
+
+GlobalProtect portal administrators can prevent GlobalProtect app users from saving their credentials on the next connection to the GlobalProtect portal by preventing ‘Save User Credentials’ from the portal agent configuration as described here:
+
+https://docs.paloaltonetworks.com/globalprotect/10-1/globalprotect-admin/globalprotect-apps/deploy-app-settings-transparently/customizable-app-settings/user-behavior-options.html
+CWE IDs: CWE-522
+-----
+CVE: CVE-2024-8687
+Name: PAN-OS: Cleartext Exposure of GlobalProtect Portal Passcodes
+Description: An information exposure vulnerability exists in Palo Alto Networks PAN-OS software that enables a GlobalProtect end user to learn both the configured GlobalProtect uninstall password and the configured disable or disconnect passcode. After the password or passcode is known, end users can uninstall, disable, or disconnect GlobalProtect even if the GlobalProtect app configuration would not normally permit them to do so.
+Severity: 7.1 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:H
+Product: GlobalProtect
+Affected Versions: 5.2.5
+Mitigation: This issue is fixed in PAN-OS 8.1.25, PAN-OS 9.0.17, PAN-OS 9.1.16, PAN-OS 10.0.12, PAN-OS 10.1.9, PAN-OS 10.2.4, PAN-OS 11.0.1, and all later PAN-OS versions. It is also fixed in Prisma Access 10.2.9 and all later Prisma Access versions. To maintain GlobalProtect app functionality for the vulnerable features, we released a corresponding software update for GlobalProtect app 5.1.12, GlobalProtect app 5.2.13, GlobalProtect app 6.0.7, GlobalProtect app 6.1.2, and GlobalProtect app 6.2.1, and all later GlobalProtect app versions.
+
+To maintain the ability for end users to use the uninstall password feature and the disable or disconnect passcode feature, you must ensure that you upgrade all GlobalProtect app deployments to a fixed version before you upgrade your PAN-OS software to a fixed version.
+
+All fixed versions of GlobalProtect are backwards compatible with vulnerable versions of PAN-OS software. However, fixed versions of PAN-OS software are not backwards compatible with vulnerable versions of GlobalProtect.
+
+You can find additional information for PAN-204689 here:  https://docs.paloaltonetworks.com/pan-os/11-1/pan-os-release-notes/pan-os-11-1-0-known-and-addressed-issues/pan-os-11-1-0-known-issues 
+
+Prisma Access customers can open a support case to request an upgrade.
+Workarounds: 
+Change the following two settings (if enabled) to "Allow with Ticket":
+* Network > GlobalProtect > Portals >  > Agent >  > App > Allow User to Disable GlobalProtect App
+* Network > GlobalProtect > Portals >  > Agent >  > App > Allow user to disconnect GlobalProtect App
+
+Change the following setting (if enabled) to "Disallow":
+* Network > GlobalProtect > Portals >  > Agent >  > App > Allow User to Uninstall GlobalProtect App
+-----
+CVE: CVE-2021-3057
+Name: GlobalProtect App: Buffer Overflow Vulnerability When Connecting to Portal or Gateway
+Description: A stack-based buffer overflow vulnerability exists in the Palo Alto Networks GlobalProtect app that enables a man-in-the-middle attacker to disrupt system processes and potentially execute arbitrary code with SYSTEM privileges. This issue impacts: GlobalProtect app 5.1 versions earlier than GlobalProtect app 5.1.9 on Windows; GlobalProtect app 5.2 versions earlier than GlobalProtect app 5.2.8 on Windows; GlobalProtect app 5.2 versions earlier than GlobalProtect app 5.2.8 on the Universal Windows Platform; GlobalProtect app 5.3 versions earlier than GlobalProtect app 5.3.1 on Linux.
+Severity: 9.3 (Critical)
+CVSS: AV:N/AC:M/Au:N/C:C/I:C/A:C
+Product: GlobalProtect
+Affected Versions: 5.2.5
+Mitigation: This issue is fixed in GlobalProtect app 5.1.9 on Windows, GlobalProtect app 5.2.8 on Windows and on Universal Windows Platform, GlobalProtect app 5.3.1 on Linux, and all later GlobalProtect app versions.
+Workarounds: 
+There are no known workarounds for this issue.
+CWE IDs: CWE-787
+-----
+CVE: CVE-2023-4430
+Name: Use after free in Vulkan in Google Chrome prior to 116.0.5845.110 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-4430)
+Description: Use after free in Vulkan in Google Chrome prior to 116.0.5845.110 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+CVE: CVE-2022-0016
+Name: GlobalProtect App: Privilege Escalation Vulnerability When Using Connect Before Logon
+Description: An improper handling of exceptional conditions vulnerability exists within the Connect Before Logon feature of the Palo Alto Networks GlobalProtect app that enables a local attacker to escalate to SYSTEM or root privileges when authenticating with Connect Before Logon under certain circumstances. This issue impacts GlobalProtect app 5.2 versions earlier than GlobalProtect app 5.2.9 on Windows and MacOS. This issue does not affect the GlobalProtect app on other platforms.
+Severity: 7.8 (High)
+CVSS: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+Product: GlobalProtect
+Affected Versions: 5.2.5
+Mitigation: This issue is fixed in GlobalProtect app 5.2.9 on Windows and MacOS, and all later GlobalProtect app versions.
+Workarounds: 
+There are no known workarounds for this issue.
+CWE IDs: CWE-755
+-----
+CVE: CVE-2012-4930
+Name: The SPDY protocol 3 and earlier (CVE-2012-4930)
+Description: The SPDY protocol 3 and earlier, as used in Mozilla Firefox, Google Chrome, and other products, can perform TLS encryption of compressed data without properly obfuscating the length of the unencrypted data, which allows man-in-the-middle attackers to obtain plaintext HTTP headers by observing length differences during a series of guesses in which a string in an HTTP request potentially matches an unknown string in an HTTP header, aka a "CRIME" attack.
+Severity: 2.6 (Low)
+CVSS: AV:N/AC:H/Au:N/C:P/I:N/A:N
+Product: Google Chrome
+Affected Versions: 131.0.6778.140
+Mitigation: 
+CWE IDs: CWE-310
+-----
+CVE: CVE-2012-4930
+Name: The SPDY protocol 3 and earlier (CVE-2012-4930)
+Description: The SPDY protocol 3 and earlier, as used in Mozilla Firefox, Google Chrome, and other products, can perform TLS encryption of compressed data without properly obfuscating the length of the unencrypted data, which allows man-in-the-middle attackers to obtain plaintext HTTP headers by observing length differences during a series of guesses in which a string in an HTTP request potentially matches an unknown string in an HTTP header, aka a "CRIME" attack.
+Severity: 2.6 (Low)
+CVSS: AV:N/AC:H/Au:N/C:P/I:N/A:N
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-310
+-----
+CVE: CVE-2022-0018
+Name: GlobalProtect App: Information Exposure Vulnerability When Connecting to GlobalProtect Portal With Single Sign-On Enabled
+Description: An information exposure vulnerability exists in the Palo Alto Networks GlobalProtect app on Windows and MacOS where the credentials of the local user account are sent to the GlobalProtect portal when the Single Sign-On feature is enabled in the GlobalProtect portal configuration. This product behavior is intentional and poses no security risk when connecting to trusted GlobalProtect portals configured to use the same Single Sign-On credentials both for the local user account as well as the GlobalProtect login. However when the credentials are different, the local account credentials are inadvertently sent to the GlobalProtect portal for authentication. A third party MITM type of attacker cannot see these credentials in transit. This vulnerability is a concern where the GlobalProtect app is deployed on Bring-your-Own-Device (BYOD) type of clients with private local user accounts or GlobalProtect app is used to connect to different organizations. Fixed versions of GlobalProtect app have an app setting to prevent the transmission of the user's local user credentials to the target GlobalProtect portal regardless of the portal configuration. This issue impacts: GlobalProtect app 5.1 versions earlier than GlobalProtect app 5.1.10 on Windows and MacOS; GlobalProtect app 5.2 versions earlier than GlobalProtect app 5.2.9 on Windows and MacOS This issue does not affect GlobalProtect app on other platforms.
+Severity: 6.5 (Medium)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N
+Product: GlobalProtect
+Affected Versions: 5.2.5
+Mitigation: This issue is fixed in GlobalProtect app 5.1.10 on Windows and MacOS, GlobalProtect app 5.2.9 on Windows and MacOS, and all later GlobalProtect app versions with the ‘force-disable-sso’ app setting.
+
+Set ‘force-disable-sso’ to ‘yes’ to prevent unintended transmission of the local user credentials as described here:
+https://docs.paloaltonetworks.com/globalprotect/10-1/globalprotect-admin/globalprotect-apps/deploy-app-settings-transparently/customizable-app-settings/app-behavior-options.html
+Workarounds: 
+There are no known workarounds for this issue.
+CWE IDs: CWE-200
+-----
+CVE: CVE-2024-6103
+Name: Use after free in Dawn in Google Chrome prior to 126.0.6478.114 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-6103)
+Description: Use after free in Dawn in Google Chrome prior to 126.0.6478.114 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+CVE: CVE-2024-5840
+Name: Policy bypass in CORS in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to bypass discretionary access control via a crafted HTML page (CVE-2024-5840)
+Description: Policy bypass in CORS in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to bypass discretionary access control via a crafted HTML page. (Chromium security severity: Medium)
+Severity: 6.5 (Medium)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+-----
+CVE: CVE-2024-5832
+Name: Use after free in Dawn in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-5832)
+Description: Use after free in Dawn in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+CVE: CVE-2024-5831
+Name: Use after free in Dawn in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-5831)
+Description: Use after free in Dawn in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+CVE: CVE-2023-0006
+Name: GlobalProtect App: Local File Deletion Vulnerability
+Description: A local file deletion vulnerability in the Palo Alto Networks GlobalProtect app on Windows devices enables a user to delete system files from the endpoint with elevated privileges through a race condition.
+Severity: 6.3 (Medium)
+CVSS: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:H
+Product: GlobalProtect
+Affected Versions: 5.2.5
+Mitigation: This issue is fixed in GlobalProtect app 5.2.13, GlobalProtect app 6.0.4, GlobalProtect app 6.1.1, and all later GlobalProtect app versions on Windows devices.
+
+
+CWE IDs: CWE-367
+-----
+CVE: CVE-2024-6991
+Name: Use after free in Dawn in Google Chrome prior to 127.0.6533.72 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-6991)
+Description: Use after free in Dawn in Google Chrome prior to 127.0.6533.72 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+CVE: CVE-2024-6990
+Name: Uninitialized Use in Dawn in Google Chrome on Android prior to 127.0.6533.88 allowed a remote attacker to potentially perform out of bounds memory access via a crafted HTML page (CVE-2024-6990)
+Description: Uninitialized Use in Dawn in Google Chrome on Android prior to 127.0.6533.88 allowed a remote attacker to potentially perform out of bounds memory access via a crafted HTML page. (Chromium security severity: Critical)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-908
+-----
+CVE: CVE-2024-6102
+Name: Out of bounds memory access in Dawn in Google Chrome prior to 126.0.6478.114 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2024-6102)
+Description: Out of bounds memory access in Dawn in Google Chrome prior to 126.0.6478.114 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-787
+-----
+CVE: CVE-2021-20047
+Name: SonicWall Global VPN client version 4.10.6 (32-bit and 64-bit) and earlier have a DLL Search Order Hijacking vulnerability (CVE-2021-20047)
+Description: SonicWall Global VPN client version 4.10.6 (32-bit and 64-bit) and earlier have a DLL Search Order Hijacking vulnerability. Successful exploitation via a local attacker could result in remote code execution in the target system.
+Severity: 7.8 (High)
+CVSS: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Global VPN Client
+Affected Versions: 4.10.6
+Mitigation: 
+CWE IDs: CWE-427
+-----
+CVE: CVE-2023-3729
+Name: Use after free in Splitscreen in Google Chrome on ChromeOS prior to 115.0.5790.131 allowed a remote attacker who convinced a user to engage in specific UI interactions to potentially exploit heap corruption via crafted UI interactions (CVE-2023-3729)
+Description: Use after free in Splitscreen in Google Chrome on ChromeOS prior to 115.0.5790.131 allowed a remote attacker who convinced a user to engage in specific UI interactions to potentially exploit heap corruption via crafted UI interactions. (Chromium security severity: High)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+CVE: CVE-2023-4904
+Name: Insufficient policy enforcement in Downloads in Google Chrome prior to 117.0.5938.62 allowed a remote attacker to bypass Enterprise policy restrictions via a crafted download (CVE-2023-4904)
+Description: Insufficient policy enforcement in Downloads in Google Chrome prior to 117.0.5938.62 allowed a remote attacker to bypass Enterprise policy restrictions via a crafted download. (Chromium security severity: Medium)
+Severity: 4.3 (Medium)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+-----
+CVE: CVE-2023-5854
+Name: Use after free in Profiles in Google Chrome prior to 119.0.6045.105 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via specific UI gestures (CVE-2023-5854)
+Description: Use after free in Profiles in Google Chrome prior to 119.0.6045.105 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via specific UI gestures. (Chromium security severity: Medium)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+CVE: CVE-2024-5834
+Name: Inappropriate implementation in Dawn in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to execute arbitrary code via a crafted HTML page (CVE-2024-5834)
+Description: Inappropriate implementation in Dawn in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+-----
+CVE: CVE-2024-9966
+Name: Inappropriate implementation in Navigations in Google Chrome prior to 130.0.6723.58 allowed a remote attacker to bypass content security policy via a crafted HTML page (CVE-2024-9966)
+Description: Inappropriate implementation in Navigations in Google Chrome prior to 130.0.6723.58 allowed a remote attacker to bypass content security policy via a crafted HTML page. (Chromium security severity: Low)
+Severity: 5.3 (Medium)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+-----
+CVE: CVE-2023-5472
+Name: Use after free in Profiles in Google Chrome prior to 118.0.5993.117 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-5472)
+Description: Use after free in Profiles in Google Chrome prior to 118.0.5993.117 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+CVE: CVE-2012-4929
+Name: The TLS protocol 1.2 and earlier (CVE-2012-4929)
+Description: The TLS protocol 1.2 and earlier, as used in Mozilla Firefox, Google Chrome, Qt, and other products, can encrypt compressed data without properly obfuscating the length of the unencrypted data, which allows man-in-the-middle attackers to obtain plaintext HTTP headers by observing length differences during a series of guesses in which a string in an HTTP request potentially matches an unknown string in an HTTP header, aka a "CRIME" attack.
+Severity: 2.6 (Low)
+CVSS: AV:N/AC:H/Au:N/C:P/I:N/A:N
+Product: Google Chrome
+Affected Versions: 131.0.6778.140
+Mitigation: 
+CWE IDs: CWE-310
+-----
+CVE: CVE-2012-4929
+Name: The TLS protocol 1.2 and earlier (CVE-2012-4929)
+Description: The TLS protocol 1.2 and earlier, as used in Mozilla Firefox, Google Chrome, Qt, and other products, can encrypt compressed data without properly obfuscating the length of the unencrypted data, which allows man-in-the-middle attackers to obtain plaintext HTTP headers by observing length differences during a series of guesses in which a string in an HTTP request potentially matches an unknown string in an HTTP header, aka a "CRIME" attack.
+Severity: 2.6 (Low)
+CVSS: AV:N/AC:H/Au:N/C:P/I:N/A:N
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-310
+-----
+CVE: CVE-2024-5843
+Name: Inappropriate implementation in Downloads in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to obfuscate security UI via a malicious file (CVE-2024-5843)
+Description: Inappropriate implementation in Downloads in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to obfuscate security UI via a malicious file. (Chromium security severity: Medium)
+Severity: 6.5 (Medium)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+-----
+CVE: CVE-2023-4763
+Name: Use after free in Networks in Google Chrome prior to 116.0.5845.179 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page (CVE-2023-4763)
+Description: Use after free in Networks in Google Chrome prior to 116.0.5845.179 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+CVE: CVE-2024-3171
+Name: Use after free in Accessibility in Google Chrome prior to 122.0.6261.57 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via specific UI gestures (CVE-2024-3171)
+Description: Use after free in Accessibility in Google Chrome prior to 122.0.6261.57 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via specific UI gestures. (Chromium security severity: Medium)
+Severity: 8.8 (High)
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Product: Google Chrome
+Affected Versions: 114.0.5665.138
+Mitigation: 
+CWE IDs: CWE-416
+-----
+        If no CVEs match, say "No relevant vulnerabilities found".
+Response:
+Here are the suggested fixes for the CVEs listed in GlobalProtect:
+
+1. **CVE-2023-0006 (Local Privilege Escalation Vulnerability)**
+   - [CWE-2023-0006](https://docs.paloaltonetworks.com/7.8/5.1.10/)  
+     **Fix:** GlobalProtect apps 5.2.13, 5.2.14, and all later versions are fixed in GlobalProtect 5.2.13, GlobalProtect 6.0.4, and all larger versions.
+
+2. **CVE-2024-9473 (Local privilege escalation)**
+   - [CWE-2024-9473](https://docs.paloaltonetworks.com/5.1/2023/419/)  
+     **Fix:** GlobalProtect apps 5.1.13 on Windows and MacOS are fixed in GlobalProtect 5.1.12 and all larger versions.
+
+3. **CVE-2024-9474 (Misuse after free in Global Encrypt)**
+   - [CWE-2024-9474](https://docs.paloaltonetworks.com/6.1.5787.2)  
+     **Fix:** Windows users need to enable the force-disabled-sso app setting.
+
+4. **CVE-2023-0013 (Local Privilege Escalation on Windows)**  
+   - [CWE-2023-0013](https://docs.paloaltonetworks.com/5.1.9)  
+     **Fix:** GlobalProtect apps 5.2.7 on Windows and MacOS are fixed in GlobalProtect 5.2.13.
+
+5. **CVE-2024-8687 (Insufficiently Protected Credentials in GlobalProtect)**
+   - [CWE-2024-8687](https://docs.paloaltonetworks.com/5.1.9)  
+     **Fix:** Upgrade to a fixed version of GlobalProtect with better credentials protection.
+
+6. **CVE-2023-0015 (Local Privilege Escalation on Windows)**  
+   - [CWE-2023-0015](https://docs.paloaltonetworks.com/5.1.9)  
+     **Fix:** Prevent privilege escalation by adjusting API settings for each app.
+
+7. **CVE-2024-8687 (Again, Insufficient Credentials in GlobalProtect)**  
+   - [CWE-2024-8687](https://docs.paloaltonetworks.com/5.1.9)  
+     **Fix:** Upgrade to the latest version of GlobalProtect.
+
+8. **CVE-2023-0015 (Same as above)**  
+   - [CWE-2023-0015](https://docs.paloaltonetworks.com/5.1.9)  
+     **Fix:** Again, adjust API settings for each app to prevent privilege escalation.
+
+9. **CVE-2024-8687 (Same as above)**  
+   - [CWE-2024-8687](https://docs.paloaltonetworks.com/5.1.9)  
+     **Fix:** Upgrade GlobalProtect to the latest version.
+
+10. **CVE-2023-4904 (Profile Misuse on Windows)**  
+    - [CWE-2023-4904](https://docs.paloaltonetworks.com/5.1.8)  
+    **Fix:** Change the policy for profile usage in downloads.
+
+Each CVE points to a specific vulnerability, and each fix targets that issue with recommended products or versions provided.
+Total Time: 409.80 seconds
+--------------------------------------------------
