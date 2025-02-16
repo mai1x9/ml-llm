@@ -1,0 +1,382 @@
+{
+    "results": [
+        {
+            "cve": [
+                "CVE-2019-5245"
+            ],
+            "name": "HiSuite 9.1.0.300 versions and earlier contains a DLL hijacking vulnerability (CVE-2019-5245)",
+            "description": "HiSuite 9.1.0.300 versions and earlier contains a DLL hijacking vulnerability. This vulnerability exists due to some DLL file is loaded by HiSuite improperly. And it allows an attacker to load this DLL file of the attacker's choosing that could execute arbitrary code.",
+            "severity": 5.3,
+            "cvss": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+            "threat": "Medium",
+            "mitigation": "",
+            "product": "HiSuite",
+            "version": "5.0.2",
+            "cwe": [
+                "CWE-427"
+            ]
+        },
+        {
+            "cve": [
+                "CVE-2019-5263"
+            ],
+            "name": "HiSuite with 9.1.0.305 and earlier versions and 9.1.0.305(MAC) and earlier versions and HwBackup with earlier versions before 9.1.1.308 have a brute forcing encrypted backup data vulnerability (CVE-2019-5263)",
+            "description": "HiSuite with 9.1.0.305 and earlier versions and 9.1.0.305(MAC) and earlier versions and HwBackup with earlier versions before 9.1.1.308 have a brute forcing encrypted backup data vulnerability. Huawei smartphone user backup information can be obtained by brute forcing the password for encrypting the backup.",
+            "severity": 5.5,
+            "cvss": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+            "threat": "Medium",
+            "mitigation": "",
+            "product": "HiSuite",
+            "version": "5.0.2",
+            "cwe": [
+                "CWE-307"
+            ]
+        },
+        {
+            "cve": [
+                "CVE-2020-9100"
+            ],
+            "name": "Earlier than HiSuite 10.1.0.500 have a DLL hijacking vulnerability (CVE-2020-9100)",
+            "description": "Earlier than HiSuite 10.1.0.500 have a DLL hijacking vulnerability. This vulnerability exists due to some DLL file is loaded by HiSuite improperly. And it allows an attacker to load this DLL file of the attacker's choosing.",
+            "severity": 7.8,
+            "cvss": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "threat": "High",
+            "mitigation": "",
+            "product": "HiSuite",
+            "version": "5.0.2",
+            "cwe": [
+                "CWE-427"
+            ]
+        },
+        {
+            "cve": [
+                "CVE-2024-0056"
+            ],
+            "name": "Microsoft.Data.SqlClient and System.Data.SqlClient SQL Data Provider Security Feature Bypass Vulnerability",
+            "description": "Microsoft.Data.SqlClient and System.Data.SqlClient SQL Data Provider Security Feature Bypass Vulnerability",
+            "severity": 8.7,
+            "cvss": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N/E:U/RL:O/RC:C",
+            "threat": "High",
+            "mitigation": "",
+            "product": "Microsoft .NET Framework 4.8 SDK",
+            "version": "4.8.04084",
+            "cwe": [
+                "CWE-319"
+            ]
+        },
+        {
+            "cve": [
+                "CVE-2024-0057"
+            ],
+            "name": "NET, .NET Framework, and Visual Studio Security Feature Bypass Vulnerability",
+            "description": "NET, .NET Framework, and Visual Studio Security Feature Bypass Vulnerability",
+            "severity": 9.8,
+            "cvss": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "threat": "Critical",
+            "mitigation": "",
+            "product": "Microsoft .NET Framework 4.8 SDK",
+            "version": "4.8.04084",
+            "cwe": []
+        },
+        {
+            "cve": [
+                "CVE-2024-0056"
+            ],
+            "name": "Microsoft.Data.SqlClient and System.Data.SqlClient SQL Data Provider Security Feature Bypass Vulnerability",
+            "description": "Microsoft.Data.SqlClient and System.Data.SqlClient SQL Data Provider Security Feature Bypass Vulnerability",
+            "severity": 8.7,
+            "cvss": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N/E:U/RL:O/RC:C",
+            "threat": "High",
+            "mitigation": "",
+            "product": "Microsoft .NET Framework 4.8 SDK",
+            "version": "4.8.03928",
+            "cwe": [
+                "CWE-319"
+            ]
+        },
+        {
+            "cve": [
+                "CVE-2024-0057"
+            ],
+            "name": "NET, .NET Framework, and Visual Studio Security Feature Bypass Vulnerability",
+            "description": "NET, .NET Framework, and Visual Studio Security Feature Bypass Vulnerability",
+            "severity": 9.8,
+            "cvss": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "threat": "Critical",
+            "mitigation": "",
+            "product": "Microsoft .NET Framework 4.8 SDK",
+            "version": "4.8.03928",
+            "cwe": []
+        },
+        {
+            "cve": [
+                "CVE-2023-36558"
+            ],
+            "name": "ASP.NET Core - Security Feature Bypass Vulnerability",
+            "description": "ASP.NET Core - Security Feature Bypass Vulnerability",
+            "severity": 5.5,
+            "cvss": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+            "threat": "Medium",
+            "mitigation": "",
+            "product": "Microsoft ASP.NET Core 6.0.14 Shared Framework (x64)",
+            "version": "6.0.14.23074",
+            "cwe": []
+        },
+        {
+            "cve": [
+                "CVE-2023-44487"
+            ],
+            "name": "The HTTP/2 protocol allows a denial of service (server resource consumption) because request cancellation can reset many streams quickly (CVE-2023-44487)",
+            "description": "The HTTP/2 protocol allows a denial of service (server resource consumption) because request cancellation can reset many streams quickly, as exploited in the wild in August through October 2023.",
+            "severity": 7.5,
+            "cvss": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "threat": "High",
+            "mitigation": "",
+            "product": "Microsoft ASP.NET Core 6.0.14 Shared Framework (x64)",
+            "version": "6.0.14.23074",
+            "cwe": []
+        },
+        {
+            "cve": [
+                "CVE-2024-21386"
+            ],
+            "name": ".NET Denial of Service Vulnerability",
+            "description": ".NET Denial of Service Vulnerability",
+            "severity": 7.5,
+            "cvss": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:P/RL:O/RC:C",
+            "threat": "High",
+            "mitigation": "",
+            "product": "Microsoft ASP.NET Core 6.0.14 Shared Framework (x64)",
+            "version": "6.0.14.23074",
+            "cwe": [
+                "CWE-400"
+            ]
+        },
+        {
+            "cve": [
+                "CVE-2024-21404"
+            ],
+            "name": ".NET Denial of Service Vulnerability",
+            "description": ".NET Denial of Service Vulnerability",
+            "severity": 7.5,
+            "cvss": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:P/RL:O/RC:C",
+            "threat": "High",
+            "mitigation": "",
+            "product": "Microsoft ASP.NET Core 6.0.14 Shared Framework (x64)",
+            "version": "6.0.14.23074",
+            "cwe": [
+                "CWE-476"
+            ]
+        },
+        {
+            "cve": [
+                "CVE-2023-36558"
+            ],
+            "name": "ASP.NET Core - Security Feature Bypass Vulnerability",
+            "description": "ASP.NET Core - Security Feature Bypass Vulnerability",
+            "severity": 5.5,
+            "cvss": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+            "threat": "Medium",
+            "mitigation": "",
+            "product": "Microsoft ASP.NET Core 7.0.3 Shared Framework (x64)",
+            "version": "7.0.3.23080",
+            "cwe": []
+        },
+        {
+            "cve": [
+                "CVE-2023-44487"
+            ],
+            "name": "The HTTP/2 protocol allows a denial of service (server resource consumption) because request cancellation can reset many streams quickly (CVE-2023-44487)",
+            "description": "The HTTP/2 protocol allows a denial of service (server resource consumption) because request cancellation can reset many streams quickly, as exploited in the wild in August through October 2023.",
+            "severity": 7.5,
+            "cvss": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "threat": "High",
+            "mitigation": "",
+            "product": "Microsoft ASP.NET Core 7.0.3 Shared Framework (x64)",
+            "version": "7.0.3.23080",
+            "cwe": []
+        },
+        {
+            "cve": [
+                "CVE-2024-21386"
+            ],
+            "name": ".NET Denial of Service Vulnerability",
+            "description": ".NET Denial of Service Vulnerability",
+            "severity": 7.5,
+            "cvss": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:P/RL:O/RC:C",
+            "threat": "High",
+            "mitigation": "",
+            "product": "Microsoft ASP.NET Core 7.0.3 Shared Framework (x64)",
+            "version": "7.0.3.23080",
+            "cwe": [
+                "CWE-400"
+            ]
+        },
+        {
+            "cve": [
+                "CVE-2024-21404"
+            ],
+            "name": ".NET Denial of Service Vulnerability",
+            "description": ".NET Denial of Service Vulnerability",
+            "severity": 7.5,
+            "cvss": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:P/RL:O/RC:C",
+            "threat": "High",
+            "mitigation": "",
+            "product": "Microsoft ASP.NET Core 7.0.3 Shared Framework (x64)",
+            "version": "7.0.3.23080",
+            "cwe": [
+                "CWE-476"
+            ]
+        },
+        {
+            "cve": [
+                "CVE-2004-0848"
+            ],
+            "name": "Buffer overflow in Microsoft Office XP allows remote attackers to execute arbitrary code via a link with a URL file location containing long inputs after (1) \"%00 (null byte) in  (CVE-2004-0848)",
+            "description": "Buffer overflow in Microsoft Office XP allows remote attackers to execute arbitrary code via a link with a URL file location containing long inputs after (1) \"%00 (null byte) in .doc filenames or (2) \"%0a\" (carriage return) in .rtf filenames.",
+            "severity": 7.5,
+            "cvss": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+            "threat": "High",
+            "mitigation": "",
+            "product": "Microsoft Office Access MUI (English) 2010",
+            "version": "14.0.4763.1000",
+            "cwe": []
+        },
+        {
+            "cve": [
+                "CVE-2005-2127"
+            ],
+            "name": "Microsoft Internet Explorer 5.01 (CVE-2005-2127)",
+            "description": "Microsoft Internet Explorer 5.01, 5.5, and 6 allows remote attackers to cause a denial of service (application crash) and possibly execute arbitrary code via a web page with embedded CLSIDs that reference certain COM objects that are not intended for use within Internet Explorer, as originally demonstrated using the (1) DDS Library Shape Control (Msdds.dll) COM object, and other objects including (2) Blnmgrps.dll, (3) Ciodm.dll, (4) Comsvcs.dll, (5) Danim.dll, (6) Htmlmarq.ocx, (7) Mdt2dd.dll (as demonstrated using a heap corruption attack with uninitialized memory), (8) Mdt2qd.dll, (9) Mpg4ds32.ax, (10) Msadds32.ax, (11) Msb1esen.dll, (12) Msb1fren.dll, (13) Msb1geen.dll, (14) Msdtctm.dll, (15) Mshtml.dll, (16) Msoeacct.dll, (17) Msosvfbr.dll, (18) Mswcrun.dll, (19) Netshell.dll, (20) Ole2disp.dll, (21) Outllib.dll, (22) Psisdecd.dll, (23) Qdvd.dll, (24) Repodbc.dll, (25) Shdocvw.dll, (26) Shell32.dll, (27) Soa.dll, (28) Srchui.dll, (29) Stobject.dll, (30) Vdt70.dll, (31) Vmhelper.dll, and (32) Wbemads.dll, aka a variant of the \"COM Object Instantiation Memory Corruption vulnerability.\"",
+            "severity": 7.5,
+            "cvss": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+            "threat": "High",
+            "mitigation": "",
+            "product": "Microsoft Office Access MUI (English) 2010",
+            "version": "14.0.4763.1000",
+            "cwe": [
+                "CWE-119"
+            ]
+        },
+        {
+            "cve": [
+                "CVE-2006-1311"
+            ],
+            "name": "The RichEdit component in Microsoft Windows 2000 SP4 (CVE-2006-1311)",
+            "description": "The RichEdit component in Microsoft Windows 2000 SP4, XP SP2, and 2003 SP1; Office 2000 SP3, XP SP3, 2003 SP2, and Office 2004 for Mac; and Learning Essentials for Microsoft Office 1.0, 1.1, and 1.5 allows user-assisted remote attackers to execute arbitrary code via a malformed OLE object in an RTF file, which triggers memory corruption.",
+            "severity": 9.3,
+            "cvss": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+            "threat": "Critical",
+            "mitigation": "",
+            "product": "Microsoft Office Access MUI (English) 2010",
+            "version": "14.0.4763.1000",
+            "cwe": []
+        },
+        {
+            "cve": [
+                "CVE-2006-1540"
+            ],
+            "name": "MSO.DLL in Microsoft Office 2000, Office XP (2002), and Office 2003 allows user-assisted attackers to cause a denial of service and execute arbitrary code via multiple attack vectors, as originally demonstrated using a crafted document record with a malformed string, as demonstrated by replacing a certain \"01 00 00 00\" byte sequence with an \"FF FF FF FF\" byte sequence, possibly causing an invalid array index, in (1) an Excel .xls document, which triggers an access violation in ole32.dll; (2) an Excel .xlw d (CVE-2006-1540)",
+            "description": "MSO.DLL in Microsoft Office 2000, Office XP (2002), and Office 2003 allows user-assisted attackers to cause a denial of service and execute arbitrary code via multiple attack vectors, as originally demonstrated using a crafted document record with a malformed string, as demonstrated by replacing a certain \"01 00 00 00\" byte sequence with an \"FF FF FF FF\" byte sequence, possibly causing an invalid array index, in (1) an Excel .xls document, which triggers an access violation in ole32.dll; (2) an Excel .xlw document, which triggers an access violation in excel.exe; (3) a Word document, which triggers an access violation in mso.dll in winword.exe; and (4) a PowerPoint document, which triggers an access violation in powerpnt.txt.  NOTE: after the initial disclosure, this issue was demonstrated by triggering an integer overflow using an inconsistent size for a Unicode \"Sheet Name\" string.",
+            "severity": 9.3,
+            "cvss": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+            "threat": "Critical",
+            "mitigation": "",
+            "product": "Microsoft Office Access MUI (English) 2010",
+            "version": "14.0.4763.1000",
+            "cwe": [
+                "CWE-94"
+            ]
+        },
+        {
+            "cve": [
+                "CVE-2006-4694"
+            ],
+            "name": "Unspecified vulnerability in PowerPoint in Microsoft Office 2000, Office XP and Office 2003 allows user-assisted attackers to execute arbitrary code via a crafted record in a PPT file, as exploited by malware such as Exploit:Win32/Controlppt.W, Exploit:Win32/Controlppt.X, and Exploit-PPT.d/Trojan.PPDropper.F (CVE-2006-4694)",
+            "description": "Unspecified vulnerability in PowerPoint in Microsoft Office 2000, Office XP and Office 2003 allows user-assisted attackers to execute arbitrary code via a crafted record in a PPT file, as exploited by malware such as Exploit:Win32/Controlppt.W, Exploit:Win32/Controlppt.X, and Exploit-PPT.d/Trojan.PPDropper.F. NOTE: it has been reported that the attack vector involves SlideShowWindows.View.GotoNamedShow.",
+            "severity": 9.3,
+            "cvss": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+            "threat": "Critical",
+            "mitigation": "",
+            "product": "Microsoft Office Access MUI (English) 2010",
+            "version": "14.0.4763.1000",
+            "cwe": [
+                "CWE-94"
+            ]
+        },
+        {
+            "cve": [
+                "CVE-2007-0065"
+            ],
+            "name": "Heap-based buffer overflow in Object Linking and Embedding (OLE) Automation in Microsoft Windows 2000 SP4 (CVE-2007-0065)",
+            "description": "Heap-based buffer overflow in Object Linking and Embedding (OLE) Automation in Microsoft Windows 2000 SP4, XP SP2, Server 2003 SP1 and SP2, Vista, Office 2004 for Mac, and Visual basic 6.0 SP6 allows remote attackers to execute arbitrary code via a crafted script request.",
+            "severity": 10,
+            "cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+            "threat": "Critical",
+            "mitigation": "",
+            "product": "Microsoft Office Access MUI (English) 2010",
+            "version": "14.0.4763.1000",
+            "cwe": [
+                "CWE-94"
+            ]
+        },
+        {
+            "cve": [
+                "CVE-2007-3109"
+            ],
+            "name": "The CERN Image Map Dispatcher (htimage.exe) in Microsoft FrontPage allows remote attackers to determine the existence (CVE-2007-3109)",
+            "description": "The CERN Image Map Dispatcher (htimage.exe) in Microsoft FrontPage allows remote attackers to determine the existence, and possibly partial contents, of arbitrary files under the web root via a relative pathname in the PATH_INFO.",
+            "severity": 6.4,
+            "cvss": "AV:N/AC:L/Au:N/C:P/I:P/A:N",
+            "threat": "Medium",
+            "mitigation": "",
+            "product": "Microsoft Office Access MUI (English) 2010",
+            "version": "14.0.4763.1000",
+            "cwe": []
+        },
+        {
+            "cve": [
+                "CVE-2007-3282"
+            ],
+            "name": "Buffer overflow in the Microsoft Office MSODataSourceControl ActiveX object allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via a long argument to the DeleteRecordSourceIfUnused method (CVE-2007-3282)",
+            "description": "Buffer overflow in the Microsoft Office MSODataSourceControl ActiveX object allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via a long argument to the DeleteRecordSourceIfUnused method.",
+            "severity": 7.8,
+            "cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+            "threat": "High",
+            "mitigation": "",
+            "product": "Microsoft Office Access MUI (English) 2010",
+            "version": "14.0.4763.1000",
+            "cwe": []
+        },
+        {
+            "cve": [
+                "CVE-2021-43905"
+            ],
+            "name": "Microsoft Office app Remote Code Execution Vulnerability",
+            "description": "Microsoft Office app Remote Code Execution Vulnerability",
+            "severity": 9.6,
+            "cvss": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+            "threat": "Critical",
+            "mitigation": "",
+            "product": "Microsoft Office Access MUI (English) 2010",
+            "version": "14.0.4763.1000",
+            "cwe": []
+        },
+        {
+            "cve": [
+                "CVE-2023-36565"
+            ],
+            "name": "Microsoft Office Graphics Elevation of Privilege Vulnerability",
+            "description": "Microsoft Office Graphics Elevation of Privilege Vulnerability",
+            "severity": 7,
+            "cvss": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+            "threat": "High",
+            "mitigation": "",
+            "product": "Microsoft Office Access MUI (English) 2010",
+            "version": "14.0.4763.1000",
+            "cwe": [
+                "CWE-416"
+            ]
+        }
+    ]
+}

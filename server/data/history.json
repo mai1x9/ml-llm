@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "error": false,
+      "errmsg": null,
+      "data": [
+        {
+          "chat_heading": "How to start a garden",
+          "timestamp": 1621537200,
+          "ai_id": 1
+        },
+        {
+          "chat_heading": "Top 10 coding practices",
+          "timestamp": 1621540800,
+          "ai_id": 3
+        },
+        {
+          "chat_heading": "Benefits of meditation",
+          "timestamp": 1621544400,
+          "ai_id": 2
+        }
+      ]
+    }
+  ]
+}
