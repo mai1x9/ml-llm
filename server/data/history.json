@@ -1,25 +1,42 @@
 {
+  "error": false,
+  "errmsg": null,
+  "msg": "Successfully sent ai history",
   "data": [
     {
-      "error": false,
-      "errmsg": null,
-      "data": [
-        {
-          "chat_heading": "How to start a garden",
-          "timestamp": 1621537200,
-          "ai_id": 1
-        },
-        {
-          "chat_heading": "Top 10 coding practices",
-          "timestamp": 1621540800,
-          "ai_id": 3
-        },
-        {
-          "chat_heading": "Benefits of meditation",
-          "timestamp": 1621544400,
-          "ai_id": 2
-        }
-      ]
+      "ai_id": 7,
+      "chat_heading": "Create a summary report for GlobalProtect",
+      "timestamp": 1740039784
+    },
+    {
+      "ai_id": 6,
+      "chat_heading": "Create a summary report for vulnerabilities gro...",
+      "timestamp": 1740039702
+    },
+    {
+      "ai_id": 5,
+      "chat_heading": "Summarize mitigation steps for vulnerabilities ...",
+      "timestamp": 1740039643
+    },
+    {
+      "ai_id": 4,
+      "chat_heading": "What versions of the product are affected by th...",
+      "timestamp": 1740039576
+    },
+    {
+      "ai_id": 3,
+      "chat_heading": "How to mitigate the google chrome vulnerabilities",
+      "timestamp": 1740038031
+    },
+    {
+      "ai_id": 2,
+      "chat_heading": "Give me summary of vulnerabilities of Google Ch...",
+      "timestamp": 1739986748
+    },
+    {
+      "ai_id": 1,
+      "chat_heading": "What is CVE",
+      "timestamp": 1739986342
     }
   ]
 }
