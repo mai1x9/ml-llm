@@ -1,0 +1,57 @@
+{
+  "error": false,
+  "errmsg": null,
+  "msg": "Successfully sent ai history",
+  "data": [
+    {
+      "ai_id": 11,
+      "chat_heading": "What is CVE",
+      "timestamp": 1739985386
+    },
+    {
+      "ai_id": 1,
+      "chat_heading": "Example question 1...",
+      "timestamp": 1620000001
+    },
+    {
+      "ai_id": 2,
+      "chat_heading": "Example question 2...",
+      "timestamp": 1620000002
+    },
+    {
+      "ai_id": 3,
+      "chat_heading": "Example question 3...",
+      "timestamp": 1620000003
+    },
+    {
+      "ai_id": 4,
+      "chat_heading": "Example question 4...",
+      "timestamp": 1620000004
+    },
+    {
+      "ai_id": 5,
+      "chat_heading": "Example question 5...",
+      "timestamp": 1620000005
+    },
+    {
+      "ai_id": 6,
+      "chat_heading": "Example question 6...",
+      "timestamp": 1620000006
+    },
+    {
+      "ai_id": 7,
+      "chat_heading": "Example question 7...",
+      "timestamp": 1620000007
+    },
+    {
+      "ai_id": 8,
+      "chat_heading": "Example question 8...",
+      "timestamp": 1620000008
+    },
+    {
+      "ai_id": 9,
+      "chat_heading": "Example question 9...",
+      "timestamp": 1620000009
+    }
+  ]
+}

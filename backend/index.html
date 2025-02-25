@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket.IO Test</title>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+</head>
+<body>
+    <h1>Socket.IO Test</h1>
+    <button onclick="sendMessage()">Send Message</button>
+
+    <script>
+        const socket = io("http://localhost:4000"); // Connect to your server
+
+        socket.on("connect", () => {
+            console.log("Connected to server with ID:", socket.id);
+        });
+
+        socket.on("ai_response", (data) => {
+            console.log("AI Response:", data);
+        });
+
+        function sendMessage() {
+            const message = "Hello AI!";
+            console.log("Sending:", message);
+            socket.emit("user_input", message);
+        }
+    </script>
+</body>
+</html>
