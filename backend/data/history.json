@@ -4,44 +4,54 @@
   "msg": "Successfully sent ai history",
   "data": [
     {
-      "chat_id": 8,
-      "chat_heading": "What is the latest security update?",
-      "timestamp": 1740480461
+      "chat_id": 22,
+      "chat_heading": "its 3rd query in chjat id 22",
+      "timestamp": 1740488530
     },
     {
-      "chat_id": 7,
-      "chat_heading": "How to mitigate these vulnerabilities for google chrome",
-      "timestamp": 1740455320
+      "chat_id": 21,
+      "chat_heading": "what is the ai model we are using for searching query",
+      "timestamp": 1740487877
     },
     {
-      "chat_id": 6,
-      "chat_heading": "How to mitigate these vulnerabilities for google chrome",
-      "timestamp": 1740454815
+      "chat_id": 20,
+      "chat_heading": "its now working",
+      "timestamp": 1740487602
     },
     {
-      "chat_id": 5,
-      "chat_heading": "How to mitigate these vulnerabilities for google chrome",
-      "timestamp": 1740454010
+      "chat_id": 20,
+      "chat_heading": "it should be another chat id",
+      "timestamp": 1740487394
     },
     {
-      "chat_id": 4,
-      "chat_heading": "What is the latest security update?",
-      "timestamp": 1740452186
+      "chat_id": 20,
+      "chat_heading": "chat id need to be added",
+      "timestamp": 1740487183
     },
     {
-      "chat_id": 3,
-      "chat_heading": "What is the latest security update?",
-      "timestamp": 1740415828
+      "chat_id": 19,
+      "chat_heading": "whsat is the cve-id",
+      "timestamp": 1740486842
     },
     {
-      "chat_id": 2,
-      "chat_heading": "Give me a brief summary of the highest severity vulnerabilities of google chrome",
-      "timestamp": 1740409310
+      "chat_id": 18,
+      "chat_heading": "its disconnected",
+      "timestamp": 1740486692
     },
     {
-      "chat_id": 1,
-      "chat_heading": "Explain about the most severe vulnerabilities for Google Chrome",
-      "timestamp": 1740408979
+      "chat_id": 17,
+      "chat_heading": "hello",
+      "timestamp": 1740486399
+    },
+    {
+      "chat_id": 16,
+      "chat_heading": "hello",
+      "timestamp": 1740486193
+    },
+    {
+      "chat_id": 15,
+      "chat_heading": "hello",
+      "timestamp": 1740485803
     }
   ]
 }

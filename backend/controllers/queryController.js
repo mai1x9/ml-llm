@@ -9,17 +9,17 @@ const STREAM_API_URL = "http://localhost:11434/api/generate";
 chatRepository.initializeFiles();
 
 // Enrich prompt using data from CVE service
-const processQuery = async (question) => {
-  const similarCVEs = (await fetchSimilarEntries(question)) || [];
-  const context =
-    similarCVEs
-      .map(
-        (entry) =>
-          `CVE: ${entry.cve_id}\nDescription: ${entry.data.description}`
-      )
-      .join("\n") || "No relevant CVEs found.";
-  return `You are a cybersecurity expert. Answer: ${question}\nCVE data:\n${context}`;
-};
+// const processQuery = async (question) => {
+//   const similarCVEs = (await fetchSimilarEntries(question)) || [];
+//   const context =
+//     similarCVEs
+//       .map(
+//         (entry) =>
+//           `CVE: ${entry.cve_id}\nDescription: ${entry.data.description}`
+//       )
+//       .join("\n") || "No relevant CVEs found.";
+//   return `You are a cybersecurity expert. Answer: ${question}\nCVE data:\n${context}`;
+// };
 
 exports.getQueryResponse = async (req, res) => {
   try {
@@ -70,17 +70,17 @@ exports.getQueryResponse = async (req, res) => {
 };
 
 exports.streamResponse = async (req, res) => {
+  console.log("Received request:", req.body);
   try {
-    const { question, chat_id: existingChatId, socketId } = req.body;
-    if (!question?.trim())
-      return res.status(400).json({ error: "Invalid question" });
+    const { text, chat_id: existingChatId, socketId } = req.body; // Updated to use "text"
+    if (!text?.trim()) return res.status(400).json({ error: "Invalid text" });
     if (!socketId)
       return res
         .status(400)
         .json({ error: "Missing socketId in request body" });
 
     const chat_id = existingChatId || chatService.getNextChatId();
-    const prompt = await processQuery(question);
+    const prompt = await processQuery(text); // Pass "text" to processQuery
 
     const io = req.app.get("io");
     res.setHeader("Content-Type", "text/plain");
@@ -98,12 +98,12 @@ exports.streamResponse = async (req, res) => {
       try {
         const json = JSON.parse(chunk.toString());
         const chunkText = json.response || "";
-        const cleanedChunk = chatService.cleanResponse(chunkText); // Clean each chunk
+        const cleanedChunk = chatService.cleanResponse(chunkText);
         buffer += cleanedChunk;
 
-        // Emit when we hit a sentence-ending punctuation or newline
         if (buffer.match(/[.!?]\s*$/) || buffer.includes("\n")) {
           fullResponse += buffer;
+          console.log("Emitting ai_stream:", buffer);
           io.to(socketId).emit("ai_stream", buffer);
           buffer = "";
         }
@@ -117,8 +117,9 @@ exports.streamResponse = async (req, res) => {
         fullResponse += buffer;
         io.to(socketId).emit("ai_stream", buffer);
       }
-      if (!existingChatId) chatService.saveHistoryEntry(question, chat_id);
-      chatService.saveChatEntry(chat_id, question, fullResponse);
+      if (!existingChatId) chatService.saveHistoryEntry(text, chat_id); // Use "text" here
+      chatService.saveChatEntry(chat_id, text, fullResponse);
+      console.log("Emitting stream_end, chat_id:", chat_id);
       io.to(socketId).emit("stream_end", { chat_id });
       res.json({ chat_id });
     });
@@ -132,6 +133,19 @@ exports.streamResponse = async (req, res) => {
     console.error("Stream setup error:", error);
     res.status(500).json({ error: "Stream setup failed" });
   }
+};
+
+const processQuery = async (text) => {
+  // Updated parameter to "text"
+  const similarCVEs = (await fetchSimilarEntries(text)) || [];
+  const context =
+    similarCVEs
+      .map(
+        (entry) =>
+          `CVE: ${entry.cve_id}\nDescription: ${entry.data.description}`
+      )
+      .join("\n") || "No relevant CVEs found.";
+  return `You are a cybersecurity expert. Answer: ${text}\nCVE data:\n${context}`;
 };
 
 exports.getChatHistory = (req, res) => {

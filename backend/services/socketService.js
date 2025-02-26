@@ -4,8 +4,8 @@ const { fetchSimilarEntries } = require("../services/queryService");
 
 const STREAM_API_URL = "http://localhost:11434/api/generate";
 
-const processQuery = async (question) => {
-  const similarCVEs = (await fetchSimilarEntries(question)) || [];
+const processQuery = async (text) => {
+  const similarCVEs = (await fetchSimilarEntries(text)) || [];
   const context =
     similarCVEs
       .map(
@@ -13,7 +13,7 @@ const processQuery = async (question) => {
           `CVE: ${entry.cve_id}\nDescription: ${entry.data.description}`
       )
       .join("\n") || "No relevant CVEs found.";
-  return `You are a cybersecurity expert. Answer: ${question}\nCVE data:\n${context}`;
+  return `You are a cybersecurity expert. Answer: ${text}\nCVE data:\n${context}`;
 };
 
 module.exports = (io) => {
@@ -22,83 +22,69 @@ module.exports = (io) => {
   io.on("connection", (socket) => {
     console.log(`User connected: ${socket.id}`);
 
-    socket.on("query", async (data) => {
-      const { question, mode, chat_id: existingChatId } = data;
-      if (!question?.trim()) {
-        socket.emit("error", { error: "Invalid question" });
+    socket.on("new-message", async (data) => {
+      console.log("Received new-message:", data); // Keep for debugging
+      const { text, chat_id: existingChatId, socketId } = data;
+      if (!text?.trim()) {
+        socket.emit("error", { error: "Invalid text" });
         return;
       }
 
       const chat_id = existingChatId || chatService.getNextChatId();
-      const prompt = await processQuery(question);
+      const prompt = await processQuery(text);
 
-      if (mode === "stream") {
-        try {
-          const response = await axios.post(
-            STREAM_API_URL,
-            { model: "deepseek-r1:1.5b", prompt },
-            { responseType: "stream" }
-          );
+      try {
+        const response = await axios.post(
+          STREAM_API_URL,
+          { model: "deepseek-r1:1.5b", prompt },
+          { responseType: "stream" }
+        );
 
-          let fullResponse = "";
-          let buffer = "";
+        let fullResponse = "";
+        let buffer = "";
 
-          response.data.on("data", (chunk) => {
-            buffer += chunk.toString();
-            try {
-              const jsonChunks = buffer.split("\n").filter(Boolean);
-              buffer = ""; // Reset buffer after processing
+        response.data.on("data", (chunk) => {
+          try {
+            const json = JSON.parse(chunk.toString());
+            const chunkText = json.response || "";
+            const cleanedChunk = chatService.cleanResponse(chunkText);
+            buffer += cleanedChunk;
 
-              jsonChunks.forEach((jsonString) => {
-                try {
-                  const json = JSON.parse(jsonString);
-                  const chunkText = json.response || "";
-                  fullResponse += chunkText;
-                  socket.emit("ai_stream", { chat_id, chunk: chunkText });
-                } catch (parseErr) {
-                  console.error("JSON parse error:", parseErr);
-                  buffer += jsonString; // Retain unprocessed data
-                }
-              });
-            } catch (err) {
-              console.error("Chunk processing error:", err);
+            if (buffer.match(/[.!?]\s*$/) || buffer.includes("\n")) {
+              fullResponse += buffer;
+              // Optional debug log (comment out for production)
+              // console.log("Emitting ai_stream:", buffer);
+              io.to(socketId).emit("ai_stream", { chat_id, chunk: buffer });
+              buffer = "";
             }
-          });
+          } catch (err) {
+            console.error("Chunk error:", err);
+          }
+        });
 
-          response.data.on("end", () => {
-            chatService.saveHistoryEntry(question, chat_id);
-            chatService.saveChatEntry(chat_id, question, fullResponse);
-            socket.emit("stream_end", { chat_id });
-          });
+        response.data.on("end", () => {
+          if (buffer) {
+            fullResponse += buffer;
+            io.to(socketId).emit("ai_stream", { chat_id, chunk: buffer });
+          }
+          chatService.saveHistoryEntry(text, chat_id);
+          chatService.saveChatEntry(chat_id, text, fullResponse);
+          io.to(socketId).emit("stream_end", { chat_id });
+        });
 
-          response.data.on("error", (err) => {
-            console.error("Stream error:", err);
-            socket.emit("error", { error: "Stream failed", chat_id });
-          });
-        } catch (error) {
-          console.error("Query error:", error);
-          socket.emit("error", { error: "Processing failed", chat_id });
-        }
-      } else {
-        // Non-streaming mode
-        try {
-          const response = await axios.post(STREAM_API_URL, {
-            model: "deepseek-r1:1.5b",
-            prompt,
-          });
-
-          const fullResponse = response.data.response || "";
-          chatService.saveHistoryEntry(question, chat_id);
-          chatService.saveChatEntry(chat_id, question, fullResponse);
-
-          socket.emit("ai_response", {
-            response: chatService.cleanResponse(fullResponse),
+        response.data.on("error", (err) => {
+          console.error("Stream error:", err);
+          io.to(socketId).emit("stream_error", {
+            error: "Stream failed",
             chat_id,
           });
-        } catch (error) {
-          console.error("Query error:", error);
-          socket.emit("error", { error: "Processing failed", chat_id });
-        }
+        });
+      } catch (error) {
+        console.error("Query error:", error);
+        io.to(socketId).emit("stream_error", {
+          error: "Processing failed",
+          chat_id,
+        });
       }
     });
 

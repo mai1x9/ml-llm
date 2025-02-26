@@ -1,7 +1,5 @@
-// services/chatService.js
 const chatRepository = require("../repositories/jsonChatRepository");
 
-// Helper to get the next Chat ID based on history data
 const getNextChatId = () => {
   const history = chatRepository.getHistory();
   return history.data.length > 0
@@ -9,29 +7,35 @@ const getNextChatId = () => {
     : 1;
 };
 
-// Remove <think> tags from response (business logic)
 const cleanResponse = (response) => {
   return response.replace(/<think>.*?<\/think>/gs, "");
 };
 
-// Save an entry in the history JSON file
-const saveHistoryEntry = (question, chat_id) => {
+const saveHistoryEntry = (text, chat_id) => {
   const history = chatRepository.getHistory();
   const timestamp = Math.floor(Date.now() / 1000);
 
-  const newEntry = {
-    chat_id,
-    chat_heading: question, // Store full question without truncation
-    timestamp,
-  };
+  const existingEntryIndex = history.data.findIndex(
+    (entry) => entry.chat_id === chat_id
+  );
 
-  // Add new entry to beginning and keep only the last 10 entries
-  history.data = [newEntry, ...history.data].slice(0, 10);
+  if (existingEntryIndex !== -1) {
+    // Update timestamp only, keep original chat_heading
+    history.data[existingEntryIndex].timestamp = timestamp;
+  } else {
+    // Add new entry with initial chat_heading
+    const newEntry = {
+      chat_id,
+      chat_heading: text,
+      timestamp,
+    };
+    history.data = [newEntry, ...history.data].slice(0, 10);
+  }
+
   chatRepository.saveHistory(history);
 };
 
-// Save an entry in the chats JSON file
-const saveChatEntry = (chat_id, question, response) => {
+const saveChatEntry = (chat_id, text, response) => {
   const chats = chatRepository.getChats();
   const timestamp = Math.floor(Date.now() / 1000);
 
@@ -40,14 +44,14 @@ const saveChatEntry = (chat_id, question, response) => {
   if (!chatSession) {
     chatSession = {
       chat_id,
-      chat_heading: question, // Store full question without truncation
+      chat_heading: text, // First query as heading here too, if desired
       data: [],
     };
     chats.data.unshift(chatSession);
   }
 
   chatSession.data.push({
-    question,
+    question: text,
     response: cleanResponse(response),
     timestamp,
   });
