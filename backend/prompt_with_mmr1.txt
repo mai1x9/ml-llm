@@ -1,0 +1,260 @@
+Give me a summary of all the distinct vulnerabilities in mozilla firefox with severity score more than 9?
+
+CVE data:
+CVE: CVE-2013-1669
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 21 (CVE-2013-1669)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 21.0 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 10
+CVSS: AV:N/AC:L/Au:N/C:C/I:C/A:C
+Threat: Critical
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: N/A
+
+---
+
+CVE: CVE-2023-4049
+Name: Race conditions in reference counting code were found through code inspection (CVE-2023-4049)
+Description: Race conditions in reference counting code were found through code inspection. These could have resulted in potentially exploitable use-after-free vulnerabilities. This vulnerability affects Firefox < 116, Firefox ESR < 102.14, and Firefox ESR < 115.1.
+Severity: 5.9
+CVSS: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+Threat: Medium
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 110.0.1
+CWE: CWE-362
+
+---
+
+CVE: CVE-2022-34484
+Name: The Mozilla Fuzzing Team reported potential vulnerabilities present in Thunderbird 91.10 (CVE-2022-34484)
+Description: The Mozilla Fuzzing Team reported potential vulnerabilities present in Thunderbird 91.10. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 102, Firefox ESR < 91.11, Thunderbird < 102, and Thunderbird < 91.11.
+Severity: 8.8
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Threat: High
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 92.0
+CWE: CWE-416
+
+---
+
+CVE: CVE-2013-1688
+Name: The Profiler implementation in Mozilla Firefox before 22.0 parses untrusted data during UI rendering (CVE-2013-1688)
+Description: The Profiler implementation in Mozilla Firefox before 22.0 parses untrusted data during UI rendering, which allows user-assisted remote attackers to execute arbitrary JavaScript code via a crafted web site.
+Severity: 9.3
+CVSS: AV:N/AC:M/Au:N/C:C/I:C/A:C
+Threat: Critical
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: CWE-94
+
+---
+
+CVE: CVE-2022-29918
+Name: Mozilla developers Gabriele Svelto, Randell Jesup and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 99 (CVE-2022-29918)
+Description: Mozilla developers Gabriele Svelto, Randell Jesup and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 99. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 100.
+Severity: 8.8
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Threat: High
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: CWE-787
+
+---
+
+CVE: CVE-2021-23961
+Name: Further techniques that built on the slipstream research combined with a malicious webpage could have exposed both an internal network's hosts as well as services running on the user's local machine (CVE-2021-23961)
+Description: Further techniques that built on the slipstream research combined with a malicious webpage could have exposed both an internal network's hosts as well as services running on the user's local machine. This vulnerability affects Firefox < 85.
+Severity: 7.4
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N
+Threat: High
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: N/A
+
+---
+
+CVE: CVE-2016-5295
+Name: This vulnerability allows an attacker to use the Mozilla Maintenance Service to escalate privilege by having the Maintenance Service invoke the Mozilla Updater to run malicious local files (CVE-2016-5295)
+Description: This vulnerability allows an attacker to use the Mozilla Maintenance Service to escalate privilege by having the Maintenance Service invoke the Mozilla Updater to run malicious local files. This vulnerability requires local system access and is a variant of MFSA2013-44. Note: this issue only affects Windows operating systems. This vulnerability affects Firefox < 50.
+Severity: 7.8
+CVSS: CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+Threat: High
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: CWE-264
+
+---
+
+CVE: CVE-2022-46871
+Name: An out of date library (libusrsctp) contained vulnerabilities that could potentially be exploited (CVE-2022-46871)
+Description: An out of date library (libusrsctp) contained vulnerabilities that could potentially be exploited. This vulnerability affects Firefox < 108.
+Severity: 8.8
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Threat: High
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 92.0
+CWE: N/A
+
+---
+
+CVE: CVE-2014-1575
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 33.0 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via vectors related to improper interaction between threading and garbage collection in the GCRuntime::triggerGC function in js/src/jsgc.cpp (CVE-2014-1575)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 33.0 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via vectors related to improper interaction between threading and garbage collection in the GCRuntime::triggerGC function in js/src/jsgc.cpp, and unknown other vectors.
+Severity: 7.5
+CVSS: AV:N/AC:L/Au:N/C:P/I:P/A:P
+Threat: High
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: CWE-264
+
+---
+
+CVE: CVE-2011-3003
+Name: Mozilla Firefox before 7 (CVE-2011-3003)
+Description: Mozilla Firefox before 7.0 and SeaMonkey before 2.4 allow remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via an unspecified WebGL test case that triggers a memory-allocation error and a resulting out-of-bounds write operation.
+Severity: 10
+CVSS: AV:N/AC:L/Au:N/C:C/I:C/A:C
+Threat: Critical
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: CWE-119
+
+---
+
+CVE: CVE-2014-1534
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 30 (CVE-2014-1534)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 30.0 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 10
+CVSS: AV:N/AC:L/Au:N/C:C/I:C/A:C
+Threat: Critical
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: CWE-119
+
+---
+
+CVE: CVE-2007-2176
+Name: Unspecified vulnerability in Mozilla Firefox allows remote attackers to execute arbitrary code via unspecified vectors involving Javascript errors (CVE-2007-2176)
+Description: Unspecified vulnerability in Mozilla Firefox allows remote attackers to execute arbitrary code via unspecified vectors involving Javascript errors.  NOTE: this might be the same issue as CVE-2007-2175.
+Severity: 10
+CVSS: AV:N/AC:L/Au:N/C:C/I:C/A:C
+Threat: Critical
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 92.0
+CWE: N/A
+
+---
+
+CVE: CVE-2021-29972
+Name: A use-after-free vulnerability was found via testing, and traced to an out-of-date Cairo library (CVE-2021-29972)
+Description: A use-after-free vulnerability was found via testing, and traced to an out-of-date Cairo library. Updating the library resolved the issue, and may have remediated other, unknown security vulnerabilities as well. This vulnerability affects Firefox < 90.
+Severity: 8.8
+CVSS: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+Threat: High
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: CWE-416
+
+---
+
+CVE: CVE-2015-4501
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 41 (CVE-2015-4501)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 41.0 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 7.5
+CVSS: AV:N/AC:L/Au:N/C:P/I:P/A:P
+Threat: High
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: CWE-119
+
+---
+
+CVE: CVE-2013-0789
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 20.0 and SeaMonkey before 2.17 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via vectors related to the nsContentUtils::HoldJSObjects function and the nsAutoPtr class (CVE-2013-0789)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 20.0 and SeaMonkey before 2.17 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via vectors related to the nsContentUtils::HoldJSObjects function and the nsAutoPtr class, and other vectors.
+Severity: 10
+CVSS: AV:N/AC:L/Au:N/C:C/I:C/A:C
+Threat: Critical
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: N/A
+
+---
+
+CVE: CVE-2012-3983
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 16.0 (CVE-2012-3983)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 16.0, Thunderbird before 16.0, and SeaMonkey before 2.13 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 10
+CVSS: AV:N/AC:L/Au:N/C:C/I:C/A:C
+Threat: Critical
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: CWE-119
+
+---
+
+CVE: CVE-2014-1519
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 29 (CVE-2014-1519)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 29.0 and SeaMonkey before 2.26 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 9.3
+CVSS: AV:N/AC:M/Au:N/C:C/I:C/A:C
+Threat: Critical
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: N/A
+
+---
+
+CVE: CVE-2016-5257
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 49.0 (CVE-2016-5257)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 49.0, Firefox ESR 45.x before 45.4 and Thunderbird < 45.4 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 9.8
+CVSS: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+Threat: Critical
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: CWE-119
+
+---
+
+CVE: CVE-2015-4474
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 40 (CVE-2015-4474)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 40.0 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 10
+CVSS: AV:N/AC:L/Au:N/C:C/I:C/A:C
+Threat: Critical
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: N/A
+
+---
+
+CVE: CVE-2015-2726
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 39 (CVE-2015-2726)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 39.0 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 10
+CVSS: AV:N/AC:L/Au:N/C:C/I:C/A:C
+Threat: Critical
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: CWE-119

@@ -1,0 +1,43 @@
+You are a cybersecurity expert. Answer: Give me a summary of all the distinct google chrome vulnerabilities and rank them based in the descending order of severity?
+CVE data:
+CVE: CVE-2023-2939
+Description: Insufficient data validation in Installer in Google Chrome on Windows prior to 114.0.5735.90 allowed a local attacker to perform privilege escalation via crafted symbolic link. (Chromium security severity: Medium)
+CVE: CVE-2024-7979
+Description: Insufficient data validation in Installer in Google Chrome on Windows prior to 128.0.6613.84 allowed a local attacker to perform privilege escalation via a crafted symbolic link. (Chromium security severity: Medium)
+CVE: CVE-2024-7980
+Description: Insufficient data validation in Installer in Google Chrome on Windows prior to 128.0.6613.84 allowed a local attacker to perform privilege escalation via a crafted symbolic link. (Chromium security severity: Medium)
+CVE: CVE-2024-7977
+Description: Insufficient data validation in Installer in Google Chrome on Windows prior to 128.0.6613.84 allowed a local attacker to perform privilege escalation via a malicious file. (Chromium security severity: Medium)
+CVE: CVE-2024-3173
+Description: Insufficient data validation in Updater in Google Chrome prior to 120.0.6099.62 allowed a remote attacker to perform OS-level privilege escalation via a malicious file. (Chromium security severity: High)
+CVE: CVE-2024-0333
+Description: Insufficient data validation in Extensions in Google Chrome prior to 120.0.6099.216 allowed an attacker in a privileged network position to install a malicious extension via a crafted HTML page. (Chromium security severity: High)
+CVE: CVE-2023-4077
+Description: Insufficient data validation in Extensions in Google Chrome prior to 115.0.5790.170 allowed an attacker who convinced a user to install a malicious extension to inject scripts or HTML into a privileged page via a crafted Chrome Extension. (Chromium security severity: Medium)
+CVE: CVE-2024-3172
+Description: Insufficient data validation in DevTools in Google Chrome prior to 121.0.6167.85 allowed a remote attacker who convinced a user to engage in specific UI gestures to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)
+CVE: CVE-2024-9965
+Description: Insufficient data validation in DevTools in Google Chrome on Windows prior to 130.0.6723.58 allowed a remote attacker who convinced a user to engage in specific UI gestures to execute arbitrary code via a crafted HTML page. (Chromium security severity: Low)
+CVE: CVE-2024-9963
+Description: Insufficient data validation in Downloads in Google Chrome prior to 130.0.6723.58 allowed a remote attacker who convinced a user to engage in specific UI gestures to perform UI spoofing via a crafted HTML page. (Chromium security severity: Medium)
+CVE: CVE-2023-5481
+Description: Inappropriate implementation in Downloads in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to spoof security UI via a crafted HTML page. (Chromium security severity: Medium)
+CVE: CVE-2024-5843
+Description: Inappropriate implementation in Downloads in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to obfuscate security UI via a malicious file. (Chromium security severity: Medium)
+CVE: CVE-2023-5857
+Description: Inappropriate implementation in Downloads in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to potentially execute arbitrary code via a malicious file. (Chromium security severity: Medium)
+CVE: CVE-2023-5851
+Description: Inappropriate implementation in Downloads in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to obfuscate security UI via a crafted HTML page. (Chromium security severity: Medium)
+CVE: CVE-2023-4902
+Description: Inappropriate implementation in Input in Google Chrome prior to 117.0.5938.62 allowed a remote attacker to spoof security UI via a crafted HTML page. (Chromium security severity: Medium)
+CVE: CVE-2023-5486
+Description: Inappropriate implementation in Input in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to spoof security UI via a crafted HTML page. (Chromium security severity: Low)
+CVE: CVE-2023-4901
+Description: Inappropriate implementation in Prompts in Google Chrome prior to 117.0.5938.62 allowed a remote attacker to potentially spoof security UI via a crafted HTML page. (Chromium security severity: Medium)
+CVE: CVE-2023-4905
+Description: Inappropriate implementation in Prompts in Google Chrome prior to 117.0.5938.62 allowed a remote attacker to spoof security UI via a crafted HTML page. (Chromium security severity: Medium)
+CVE: CVE-2024-7001
+Description: Inappropriate implementation in HTML in Google Chrome prior to 127.0.6533.72 allowed a remote attacker who convinced a user to engage in specific UI gestures to perform UI spoofing via a crafted HTML page. (Chromium security severity: Medium)
+CVE: CVE-2024-7981
+Description: Inappropriate implementation in Views in Google Chrome prior to 128.0.6613.84 allowed a remote attacker to perform UI spoofing via a crafted HTML page. (Chromium security severity: Low)
+---

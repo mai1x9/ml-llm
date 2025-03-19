@@ -1,0 +1,43 @@
+You are a cybersecurity expert. Answer: Give me a summary of all the distinct google chrome vulnerabilities and rank them based in the descending order of severity?
+CVE data:
+CVE: CVE-2024-5834
+Description: Inappropriate implementation in Dawn in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)
+CVE: CVE-2024-0812
+Description: Inappropriate implementation in Accessibility in Google Chrome prior to 121.0.6167.85 allowed a remote attacker to potentially exploit object corruption via a crafted HTML page. (Chromium security severity: High)
+CVE: CVE-2024-7535
+Description: Inappropriate implementation in V8 in Google Chrome prior to 127.0.6533.99 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+CVE: CVE-2024-7965
+Description: Inappropriate implementation in V8 in Google Chrome prior to 128.0.6613.84 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+CVE: CVE-2024-5843
+Description: Inappropriate implementation in Downloads in Google Chrome prior to 126.0.6478.54 allowed a remote attacker to obfuscate security UI via a malicious file. (Chromium security severity: Medium)
+CVE: CVE-2024-3174
+Description: Inappropriate implementation in V8 in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to potentially exploit object corruption via a crafted HTML page. (Chromium security severity: High)
+CVE: CVE-2024-7981
+Description: Inappropriate implementation in Views in Google Chrome prior to 128.0.6613.84 allowed a remote attacker to perform UI spoofing via a crafted HTML page. (Chromium security severity: Low)
+CVE: CVE-2023-5857
+Description: Inappropriate implementation in Downloads in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to potentially execute arbitrary code via a malicious file. (Chromium security severity: Medium)
+CVE: CVE-2024-7978
+Description: Insufficient policy enforcement in Data Transfer in Google Chrome prior to 128.0.6613.84 allowed a remote attacker who convinced a user to engage in specific UI gestures to leak cross-origin data via a crafted HTML page. (Chromium security severity: Medium)
+CVE: CVE-2023-4909
+Description: Inappropriate implementation in Interstitials in Google Chrome prior to 117.0.5938.62 allowed a remote attacker to obfuscate security UI via a crafted HTML page. (Chromium security severity: Low)
+CVE: CVE-2024-0333
+Description: Insufficient data validation in Extensions in Google Chrome prior to 120.0.6099.216 allowed an attacker in a privileged network position to install a malicious extension via a crafted HTML page. (Chromium security severity: High)
+CVE: CVE-2023-3736
+Description: Inappropriate implementation in Custom Tabs in Google Chrome on Android prior to 115.0.5790.98 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: Medium)
+CVE: CVE-2024-5835
+Description: Heap buffer overflow in Tab Groups in Google Chrome prior to 126.0.6478.54 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)
+CVE: CVE-2023-4903
+Description: Inappropriate implementation in Custom Mobile Tabs in Google Chrome on Android prior to 117.0.5938.62 allowed a remote attacker to spoof security UI via a crafted HTML page. (Chromium security severity: Medium)
+CVE: CVE-2024-7977
+Description: Insufficient data validation in Installer in Google Chrome on Windows prior to 128.0.6613.84 allowed a local attacker to perform privilege escalation via a malicious file. (Chromium security severity: Medium)
+CVE: CVE-2024-3172
+Description: Insufficient data validation in DevTools in Google Chrome prior to 121.0.6167.85 allowed a remote attacker who convinced a user to engage in specific UI gestures to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)
+CVE: CVE-2024-0804
+Description: Insufficient policy enforcement in iOS Security UI in Google Chrome prior to 121.0.6167.85 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: Medium)
+CVE: CVE-2024-6101
+Description: Inappropriate implementation in V8 in Google Chrome prior to 126.0.6478.114 allowed a remote attacker to perform out of bounds memory access via a crafted HTML page. (Chromium security severity: High)
+CVE: CVE-2024-6990
+Description: Uninitialized Use in Dawn in Google Chrome on Android prior to 127.0.6533.88 allowed a remote attacker to potentially perform out of bounds memory access via a crafted HTML page. (Chromium security severity: Critical)
+CVE: CVE-2024-7001
+Description: Inappropriate implementation in HTML in Google Chrome prior to 127.0.6533.72 allowed a remote attacker who convinced a user to engage in specific UI gestures to perform UI spoofing via a crafted HTML page. (Chromium security severity: Medium)
+---

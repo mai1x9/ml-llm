@@ -14,17 +14,17 @@ const generateEmbedding = async (inputData, model = "nomic-embed-text") => {
     const formattedInput = Array.isArray(inputData)
       ? inputData
       : [String(inputData)];
-    console.log(
-      "🔹 Sending request:",
-      JSON.stringify({ model, input: formattedInput }, null, 2)
-    );
+    // console.log(
+    //   "🔹 Sending request:",
+    //   JSON.stringify({ model, input: formattedInput }, null, 2)
+    // );
 
     const { data } = await axios.post(EMBEDDING_API_URL, {
       model,
       input: formattedInput,
     });
 
-    console.log(" Embeddings received:", data);
+    // console.log(" Embeddings received:", data);
     return data.embeddings;
   } catch (error) {
     console.error(

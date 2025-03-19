@@ -4,39 +4,54 @@
   "msg": "Successfully sent ai history",
   "data": [
     {
-      "ai_id": 7,
-      "chat_heading": "Create a summary report for GlobalProtect",
-      "timestamp": 1740039784
+      "chat_id": 60,
+      "chat_heading": "give summary of CVE-2024-32002",
+      "timestamp": "1741932192874"
     },
     {
-      "ai_id": 6,
-      "chat_heading": "Create a summary report for vulnerabilities gro...",
-      "timestamp": 1740039702
+      "chat_id": 59,
+      "chat_heading": "give summary of CVE-2024-32002",
+      "timestamp": "1741931995794"
     },
     {
-      "ai_id": 5,
-      "chat_heading": "Summarize mitigation steps for vulnerabilities ...",
-      "timestamp": 1740039643
+      "chat_id": 58,
+      "chat_heading": "give summary of CVE-2024-32002",
+      "timestamp": "1741931825599"
     },
     {
-      "ai_id": 4,
-      "chat_heading": "What versions of the product are affected by th...",
-      "timestamp": 1740039576
+      "chat_id": 57,
+      "chat_heading": "give summary of CVE-2024-32002",
+      "timestamp": "1741930515760"
     },
     {
-      "ai_id": 3,
-      "chat_heading": "How to mitigate the google chrome vulnerabilities",
-      "timestamp": 1740038031
+      "chat_id": 56,
+      "chat_heading": "give summary of CVE-2024-32002",
+      "timestamp": "1741930350582"
     },
     {
-      "ai_id": 2,
-      "chat_heading": "Give me summary of vulnerabilities of Google Ch...",
-      "timestamp": 1739986748
+      "chat_id": 55,
+      "chat_heading": "what is the malwares ?",
+      "timestamp": "1741929673359"
     },
     {
-      "ai_id": 1,
-      "chat_heading": "What is CVE",
-      "timestamp": 1739986342
+      "chat_id": 54,
+      "chat_heading": "new chat id",
+      "timestamp": "1741875496175"
+    },
+    {
+      "chat_id": 53,
+      "chat_heading": "Give me a summary of all the distinct google chrome vulnerabilities and rank them based in the descending order of severity?",
+      "timestamp": "1741869246396"
+    },
+    {
+      "chat_id": 52,
+      "chat_heading": "Give me a summary of all the distinct google chrome vulnerabilities and rank them based in the descending order of severity?",
+      "timestamp": 1741865995850
+    },
+    {
+      "chat_id": 51,
+      "chat_heading": "give me 150 charaters of response",
+      "timestamp": 1741852019
     }
   ]
 }

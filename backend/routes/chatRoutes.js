@@ -4,7 +4,7 @@ const {
   streamResponse,
   getChatHistory,
   getChatById,
-} = require("../controllers/queryController");
+} = require("../controllers/chatController");
 
 const router = express.Router();
 

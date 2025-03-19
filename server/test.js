@@ -1,7 +1,7 @@
 const { io } = require("socket.io-client");
 const axios = require("axios");
 
-const socket = io("http://localhost:3002", {
+const socket = io("http://localhost:3000", {
   reconnection: false, // Disable reconnection to run only once
 });
 
@@ -12,7 +12,7 @@ socket.on("connect", async () => {
 
   // Correct payload structure for streamResponse
   const payload = {
-    text: "Give me a summary of all the distinct google chrome vulnerabilities and rank them based in the descending order of severity?",
+    text: "give summary of CVE-2024-32002",
     chat_id: null,
     socketId: socket.id,
   };
@@ -20,7 +20,7 @@ socket.on("connect", async () => {
   try {
     console.log("Sending payload:", payload);
     const response = await axios.post(
-      "http://localhost:3002/traqez/llm/query/stream", // Corrected endpoint
+      "http://localhost:3000/traqez/llm/query/stream", // Corrected endpoint
       payload,
       { headers: { "Content-Type": "application/json" } }
     );

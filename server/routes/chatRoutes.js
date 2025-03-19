@@ -1,11 +1,10 @@
-//queryRoutes.js
 const express = require("express");
 const {
   getQueryResponse,
   streamResponse,
   getChatHistory,
   getChatById,
-} = require("../controllers/queryController");
+} = require("../controllers/chatController");
 
 const router = express.Router();
 

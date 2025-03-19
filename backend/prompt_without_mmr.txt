@@ -1,0 +1,260 @@
+Give me a summary of all the distinct vulnerabilities in mozilla firefox with severity score more than 9?
+
+CVE data:
+CVE: CVE-2013-1669
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 21 (CVE-2013-1669)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 21.0 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 10
+CVSS: AV:N/AC:L/Au:N/C:C/I:C/A:C
+Threat: Critical
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: N/A
+
+---
+
+CVE: CVE-2014-1534
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 30 (CVE-2014-1534)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 30.0 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 10
+CVSS: AV:N/AC:L/Au:N/C:C/I:C/A:C
+Threat: Critical
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: CWE-119
+
+---
+
+CVE: CVE-2015-4474
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 40 (CVE-2015-4474)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 40.0 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 10
+CVSS: AV:N/AC:L/Au:N/C:C/I:C/A:C
+Threat: Critical
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: N/A
+
+---
+
+CVE: CVE-2015-2726
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 39 (CVE-2015-2726)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 39.0 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 10
+CVSS: AV:N/AC:L/Au:N/C:C/I:C/A:C
+Threat: Critical
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: CWE-119
+
+---
+
+CVE: CVE-2014-1554
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 32 (CVE-2014-1554)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 32.0 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 10
+CVSS: AV:N/AC:L/Au:N/C:C/I:C/A:C
+Threat: Critical
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: CWE-119
+
+---
+
+CVE: CVE-2015-7201
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 43 (CVE-2015-7201)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 43.0 and Firefox ESR 38.x before 38.5 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 10
+CVSS: AV:N/AC:L/Au:N/C:C/I:C/A:C
+Threat: Critical
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: CWE-119
+
+---
+
+CVE: CVE-2015-7202
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 43 (CVE-2015-7202)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 43.0 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 10
+CVSS: AV:N/AC:L/Au:N/C:C/I:C/A:C
+Threat: Critical
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: CWE-119
+
+---
+
+CVE: CVE-2013-5592
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 25 (CVE-2013-5592)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 25.0 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 10
+CVSS: AV:N/AC:L/Au:N/C:C/I:C/A:C
+Threat: Critical
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: N/A
+
+---
+
+CVE: CVE-2015-4473
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 40 (CVE-2015-4473)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 40.0 and Firefox ESR 38.x before 38.2 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 10
+CVSS: AV:N/AC:L/Au:N/C:C/I:C/A:C
+Threat: Critical
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: CWE-119
+
+---
+
+CVE: CVE-2015-4514
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 42 (CVE-2015-4514)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 42.0 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 7.5
+CVSS: AV:N/AC:L/Au:N/C:P/I:P/A:P
+Threat: High
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: CWE-119
+
+---
+
+CVE: CVE-2015-4501
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 41 (CVE-2015-4501)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 41.0 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 7.5
+CVSS: AV:N/AC:L/Au:N/C:P/I:P/A:P
+Threat: High
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: CWE-119
+
+---
+
+CVE: CVE-2014-1519
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 29 (CVE-2014-1519)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 29.0 and SeaMonkey before 2.26 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 9.3
+CVSS: AV:N/AC:M/Au:N/C:C/I:C/A:C
+Threat: Critical
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: N/A
+
+---
+
+CVE: CVE-2015-2709
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 38 (CVE-2015-2709)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 38.0 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 7.5
+CVSS: AV:N/AC:L/Au:N/C:P/I:P/A:P
+Threat: High
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: N/A
+
+---
+
+CVE: CVE-2015-0835
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 36 (CVE-2015-0835)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 36.0 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 7.5
+CVSS: AV:N/AC:L/Au:N/C:P/I:P/A:P
+Threat: High
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: N/A
+
+---
+
+CVE: CVE-2015-4513
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 42 (CVE-2015-4513)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 42.0 and Firefox ESR 38.x before 38.4 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 7.5
+CVSS: AV:N/AC:L/Au:N/C:P/I:P/A:P
+Threat: High
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: CWE-119
+
+---
+
+CVE: CVE-2015-2724
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 39.0 (CVE-2015-2724)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 39.0, Firefox ESR 31.x before 31.8 and 38.x before 38.1, and Thunderbird before 38.1 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 10
+CVSS: AV:N/AC:L/Au:N/C:C/I:C/A:C
+Threat: Critical
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: CWE-119
+
+---
+
+CVE: CVE-2015-4500
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 41 (CVE-2015-4500)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 41.0 and Firefox ESR 38.x before 38.3 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 7.5
+CVSS: AV:N/AC:L/Au:N/C:P/I:P/A:P
+Threat: High
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: CWE-119
+
+---
+
+CVE: CVE-2014-1548
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 31 (CVE-2014-1548)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 31.0 and Thunderbird before 31.0 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 10
+CVSS: AV:N/AC:L/Au:N/C:C/I:C/A:C
+Threat: Critical
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: N/A
+
+---
+
+CVE: CVE-2015-2725
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 39.0 (CVE-2015-2725)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 39.0, Firefox ESR 38.x before 38.1, and Thunderbird before 38.1 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 10
+CVSS: AV:N/AC:L/Au:N/C:C/I:C/A:C
+Threat: Critical
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: CWE-119
+
+---
+
+CVE: CVE-2016-5257
+Name: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 49.0 (CVE-2016-5257)
+Description: Multiple unspecified vulnerabilities in the browser engine in Mozilla Firefox before 49.0, Firefox ESR 45.x before 45.4 and Thunderbird < 45.4 allow remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unknown vectors.
+Severity: 9.8
+CVSS: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+Threat: Critical
+Mitigation: N/A
+Product: Mozilla Firefox (x64 en-US)
+Version: 5.0.2
+CWE: CWE-119

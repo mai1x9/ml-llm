@@ -1,40 +1,30 @@
-//app.js
 const express = require("express");
 const http = require("http");
 const cors = require("cors");
 const { Server } = require("socket.io");
-
-const queryRoutes = require("./routes/queryRoutes");
-const { allowedOrigins, corsOptions } = require("./config/corsOptions");
-const socketService = require("./services/socketService");
+const chatRoutes = require("./routes/chatRoutes");
+const { corsOptions } = require("./config/corsOptions");
+const chatService = require("./services/chatService");
 
 const app = express();
 const server = http.createServer(app);
 
+// Middleware
 app.use(cors(corsOptions));
 app.use(express.json());
-app.use("/traqez/llm", queryRoutes);
 
-// Initialize WebSocket server
+// Routes
+app.use("/traqez/llm", chatRoutes);
+
+// Socket.IO setup
 const io = new Server(server, {
-  cors: {
-    origin: "*",
-    methods: ["GET", "POST"],
-  },
+  cors: { origin: "*", methods: ["GET", "POST"] },
 });
-
-io.on("connection_error", (err) => {
-  console.error("Socket.IO Connection Error:", err.message);
-});
-
-// Attach WebSocket event handlers
-socketService(io);
-
-// Store io instance globally if needed elsewhere
+chatService.initializeSocket(io); // Updated to call a method from chatService
 app.set("io", io);
 
-// Start the server
-const PORT = process.env.PORT || 4000;
+// Start server
+const PORT = process.env.PORT || 3002;
 server.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);
 });

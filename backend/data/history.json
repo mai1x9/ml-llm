@@ -4,54 +4,54 @@
   "msg": "Successfully sent ai history",
   "data": [
     {
-      "chat_id": 22,
-      "chat_heading": "its 3rd query in chjat id 22",
-      "timestamp": 1740488530
+      "chat_id": 49,
+      "chat_heading": "Give me a summary of all the distinct google chrome vulnerabilities and rank them based in the descending order of severity?",
+      "timestamp": 1741859133
     },
     {
-      "chat_id": 21,
-      "chat_heading": "what is the ai model we are using for searching query",
-      "timestamp": 1740487877
+      "chat_id": 48,
+      "chat_heading": "what are available virus stacks ?",
+      "timestamp": 1741847922
     },
     {
-      "chat_id": 20,
-      "chat_heading": "its now working",
-      "timestamp": 1740487602
+      "chat_id": 47,
+      "chat_heading": "Give me a summary of all the distinct google chrome vulnerabilities and rank them based in the descending order of severity?",
+      "timestamp": 1741847481
     },
     {
-      "chat_id": 20,
-      "chat_heading": "it should be another chat id",
-      "timestamp": 1740487394
+      "chat_id": 46,
+      "chat_heading": "What are the CVEs for Chrome vulnerabilities?",
+      "timestamp": 1741847272
     },
     {
-      "chat_id": 20,
-      "chat_heading": "chat id need to be added",
-      "timestamp": 1740487183
+      "chat_id": 45,
+      "chat_heading": "Give me a summary of all the distinct google chrome vulnerabilities and rank them based in the descending order of severity?",
+      "timestamp": 1741846716
     },
     {
-      "chat_id": 19,
-      "chat_heading": "whsat is the cve-id",
-      "timestamp": 1740486842
+      "chat_id": 44,
+      "chat_heading": "How to mitigate Chrome vulnerabilities for versions prior to 120.0.6099.109?",
+      "timestamp": 1740732295
     },
     {
-      "chat_id": 18,
-      "chat_heading": "its disconnected",
-      "timestamp": 1740486692
+      "chat_id": 43,
+      "chat_heading": "How to mitigate Chrome vulnerabilities for versions older than 120.0.6099.109?",
+      "timestamp": 1740731898
     },
     {
-      "chat_id": 17,
-      "chat_heading": "hello",
-      "timestamp": 1740486399
+      "chat_id": 42,
+      "chat_heading": "How to mitigate Chrome vulnerabilities for versions older than 120.0.6099.109?",
+      "timestamp": 1740731524
     },
     {
-      "chat_id": 16,
-      "chat_heading": "hello",
-      "timestamp": 1740486193
+      "chat_id": 41,
+      "chat_heading": "What are the CVEs for Chrome vulnerabilities?",
+      "timestamp": 1740730871
     },
     {
-      "chat_id": 15,
-      "chat_heading": "hello",
-      "timestamp": 1740485803
+      "chat_id": 40,
+      "chat_heading": "What are the CVEs for Chrome vulnerabilities?",
+      "timestamp": 1740730217
     }
   ]
 }
