@@ -24,7 +24,7 @@ chatService.initializeSocket(io); // Updated to call a method from chatService
 app.set("io", io);
 
 // Start server
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 3000;
 server.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);
 });
