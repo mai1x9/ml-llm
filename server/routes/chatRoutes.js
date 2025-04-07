@@ -4,12 +4,14 @@ const {
   streamResponse,
   getChatHistory,
   getChatById,
+  getQuestions,
 } = require("../controllers/chatController");
 const { generateSummaries } = require("../controllers/backgroundController");
 
 const router = express.Router();
 
 // Existing routes (unchanged)
+router.post("/start", getQuestions);
 router.post("/query", getQueryResponse);
 router.post("/query/stream", streamResponse);
 router.get("/history", getChatHistory);

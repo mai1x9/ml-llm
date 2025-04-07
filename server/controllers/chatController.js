@@ -61,3 +61,19 @@ exports.getChatById = (req, res) => {
     res.status(500).json({ error: "Failed to load chat" });
   }
 };
+exports.getQuestions = (req, res) => {
+  const { dashboard, type } = req.body;
+
+  if (!dashboard || !type) {
+    return res
+      .status(400)
+      .json({ error: "Missing 'dashboard' or 'type' parameter" });
+  }
+
+  try {
+    const questions = chatService.getQuestionsByType(dashboard, type);
+    res.json({ questions });
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+};

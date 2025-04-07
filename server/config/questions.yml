@@ -1,0 +1,24 @@
+dashboard: vulnmgmt
+questions:
+  general:
+    - "What is a CVE and why is it important in cybersecurity?"
+    - "Can you explain the typical lifecycle of a vulnerability?"
+    - "How can organizations develop an effective vulnerability management strategy?"
+    - "What are the common challenges in maintaining up-to-date vulnerability management?"
+    - "How does threat intelligence enhance vulnerability management efforts?"
+    - "What role do automated scanning tools play in identifying vulnerabilities?"
+    - "How can vulnerability management integrate with overall cybersecurity strategies?"
+    - "What are best practices for patch management in reducing security risks?"
+    - "How do you prioritize vulnerabilities based on risk and potential impact?"
+    - "What trends are emerging in vulnerability management in today’s cyber landscape?"
+  specific:
+    - "What does the CVE-<ID> vulnerability entail and what are its potential impacts?"
+    - "Can you provide a detailed analysis of CVE-<ID> including its description and severity?"
+    - "What mitigation strategies would be effective against the vulnerability described in CVE-<ID>?"
+    - "How can the details of CVE-<ID> guide our remediation and patching processes?"
+    - "What historical context or similar vulnerabilities relate to CVE-<ID>?"
+    - "How might CVE-<ID> interact with other vulnerabilities in a complex environment?"
+    - "What configurations or system setups increase the risk of exploitation for CVE-<ID>?"
+    - "What are the recommended monitoring practices for detecting exploitation attempts of CVE-<ID>?"
+    - "Can you summarize potential exploit scenarios related to CVE-<ID>?"
+    - "How can the CVE-<ID> data be used to enhance our vulnerability scoring and prioritization?"

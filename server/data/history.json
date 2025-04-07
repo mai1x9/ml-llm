@@ -4,54 +4,54 @@
   "msg": "Successfully sent ai history",
   "data": [
     {
-      "chat_id": 60,
-      "chat_heading": "give summary of CVE-2024-32002",
-      "timestamp": "1741932192874"
+      "chat_id": 81,
+      "chat_heading": "How can the details of CVE-<ID> guide our remediation and patching processes?",
+      "timestamp": "1743839924319"
     },
     {
-      "chat_id": 59,
-      "chat_heading": "give summary of CVE-2024-32002",
-      "timestamp": "1741931995794"
+      "chat_id": 80,
+      "chat_heading": "What historical context or similar vulnerabilities relate to CVE-<ID>?",
+      "timestamp": "1743838080775"
     },
     {
-      "chat_id": 58,
-      "chat_heading": "give summary of CVE-2024-32002",
-      "timestamp": "1741931825599"
+      "chat_id": 79,
+      "chat_heading": "How can the details of CVE-<ID> guide our remediation and patching processes?",
+      "timestamp": "1743837480757"
     },
     {
-      "chat_id": 57,
-      "chat_heading": "give summary of CVE-2024-32002",
-      "timestamp": "1741930515760"
+      "chat_id": 78,
+      "chat_heading": "What historical context or similar vulnerabilities relate to CVE-<ID>?",
+      "timestamp": "1743837103956"
     },
     {
-      "chat_id": 56,
-      "chat_heading": "give summary of CVE-2024-32002",
-      "timestamp": "1741930350582"
+      "chat_id": 77,
+      "chat_heading": "How can the details of CVE-<ID> guide our remediation and patching processes?",
+      "timestamp": "1743836807749"
     },
     {
-      "chat_id": 55,
-      "chat_heading": "what is the malwares ?",
-      "timestamp": "1741929673359"
+      "chat_id": 76,
+      "chat_heading": "What is a CVE and why is it important in cybersecurity?",
+      "timestamp": "1743836078603"
     },
     {
-      "chat_id": 54,
-      "chat_heading": "new chat id",
-      "timestamp": "1741875496175"
+      "chat_id": 75,
+      "chat_heading": "hi",
+      "timestamp": "1743835802811"
     },
     {
-      "chat_id": 53,
-      "chat_heading": "Give me a summary of all the distinct google chrome vulnerabilities and rank them based in the descending order of severity?",
-      "timestamp": "1741869246396"
+      "chat_id": 74,
+      "chat_heading": "What mitigation strategies would be effective against the vulnerability described in CVE-<ID>?",
+      "timestamp": "1743831848408"
     },
     {
-      "chat_id": 52,
-      "chat_heading": "Give me a summary of all the distinct google chrome vulnerabilities and rank them based in the descending order of severity?",
-      "timestamp": 1741865995850
+      "chat_id": 73,
+      "chat_heading": "How can the details of CVE-<ID> guide our remediation and patching processes?",
+      "timestamp": "1743769607985"
     },
     {
-      "chat_id": 51,
-      "chat_heading": "give me 150 charaters of response",
-      "timestamp": 1741852019
+      "chat_id": 72,
+      "chat_heading": "What are the common challenges in maintaining up-to-date vulnerability management?",
+      "timestamp": "1743769467963"
     }
   ]
 }
